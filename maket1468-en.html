@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css?v-2" />
+    <link rel="stylesheet" href="css/media.css?v-2" />
+    <!-- script -->
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light header">
+        <div class="container header__navigation">
+          <!-- <div class="header__navigation"> -->
+          <a class="navbar-brand" href="#">
+            <img src="img/Subtract.svg" alt="Logo" />
+            <img src="img/Enbiosis.svg" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- </div> -->
+          <div class="header__menu">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav head-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our solutions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Microbiome</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+                <li class="nav-item login__btn">
+                  <div class="nav-item__login">
+                    <a class="nav-link" href="#"></a>
+                  </div>
+                </li>
+                <li class="nav-item lang__btn">
+                  <div class="nav-item__language dropdown">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle switch-lang"
+                      data-toggle="dropdown"
+                    >
+                      <i class="icon-earth"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">EN - English</a>
+                      <a class="dropdown-item" href="#">TR - Turkish</a>
+                      <a class="dropdown-item" href="#">RU - Русский</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="collapse navbar-collapse d-end-flex"
+              id="collapsibleNavbar"
+            >
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item nav-link login-navlink-btn">
+                  <button
+                    type="button"
+                    class="login-btn btn btn-outline-danger"
+                  >
+                    login
+                  </button>
+                </li>
+                <li class="nav-item nav-link drop-lang">
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle"
+                      data-toggle="dropdown"
+                    >
+                      <i class="icon-earth"></i> Lanquage
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">EN - English</a>
+                      <a class="dropdown-item" href="#">TR - Turkish</a>
+                      <a class="dropdown-item" href="#">RU - Русский</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row revers-bg">
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <h2 class="font-weight-bold mb-5 nt-media">Buy</h2>
+            <div class="forms-block mb-4">
+              <form action="">
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <label for="name" class="font-weight-bold mb-3"
+                      >Your name and surname</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control info-input"
+                      placeholder="Radgheh Cudropali"
+                    />
+                  </div>
+                  <div class="col-md-6"></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <label for="email" class="font-weight-bold mb-3"
+                      >E-mail address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control info-input"
+                      placeholder="email@gmail.com"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label for="phone" class="font-weight-bold mb-3"
+                      >Your Phone Number:</label
+                    >
+                    <input
+                      type="phone"
+                      class="form-control info-input"
+                      placeholder="+7 28 232 14 23"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="font-weight-bold mb-3">State</label>
+                    <select class="form-control info-input">
+                      <option>Choose the state</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label
+                      for="disabledSelect "
+                      class="font-weight-bold mb-3"
+                      disabled
+                      >Country</label
+                    >
+                    <select
+                      class="form-control info-input"
+                      id="disabledSelect "
+                      disabled
+                    >
+                      <option>Choose the Country</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row info-input">
+                  <div class="col-md-12 mb-3">
+                    <label for="name" class="font-weight-bold mb-3"
+                      >Address</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control info-address"
+                      placeholder="Enter full address "
+                    />
+                  </div>
+                  <div class="col-md-12 check-from-reg">
+                    <div
+                      class="form-check form-check-inline address-check mb-3"
+                    >
+                      <label class="form-check-inline"
+                        >Is the billing address the same as the shipping address
+                        ?</label
+                      >
+
+                      <div class="radio">
+                        <input
+                          class="custom-radio"
+                          type="radio "
+                          id="color-1 "
+                          name="color "
+                          value="indigo "
+                          checked
+                        />
+                        <label for="color-1 ">Yes</label>
+                      </div>
+
+                      <div class="radio">
+                        <input
+                          class="custom-radio"
+                          type="radio "
+                          id="color-2 "
+                          name="color "
+                          value="red "
+                        />
+                        <label for="color-2 ">No</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <h2 class="font-weight-bold mb-5 nt-media-bl text-center">Buy</h2>
+            <div class="banner-box">
+              <span class="mt-3 banner-title"
+                >Microbiome Health Package<br />Premium</span
+              >
+              <div class="books mt-3">
+                <img src="./img/twobook.png" alt="book" class="book" />
+              </div>
+              <div class="row mb-3 mt-3 hard-box">
+                <div class="col-md-7">
+                  <select class="form-control box-selet">
+                    <option>Installment Option</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="col-md-5 quantity-bk">
+                  <div class="quantity quantity-bk">
+                    <div class="plus-minus">
+                      <div class="minus">–</div>
+                      <input
+                        class="quantity-input"
+                        type="text "
+                        value="1 "
+                      />pack
+                      <div class="plus">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-form-light">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Coupon code"
+                />
+              </div>
+              <div class="price mt-3">
+                <span class="title">Price:</span>
+                <span class="new-price"
+                  >2250 TL<sub class="sub-m">(2250 x 1)</sub></span
+                >
+                <span class="old-price mb-3">2250 TL (2250 x 1) </span>
+              </div>
+              <div class="check-box-banner mt-3 mb-3 font-weight-bold">
+                <label class="form-check-inline">Do you have a dietitian</label>
+                <div class="address-check">
+                  <div class="radio">
+                    <input
+                      class="custom-radio"
+                      type="radio"
+                      id="color-4"
+                      name="color2"
+                      value="yellow"
+                    />
+                    <label for="color-4">Yes</label>
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      class="custom-radio"
+                      type="radio"
+                      id="color-5"
+                      name="color2"
+                      value="green"
+                    />
+                    <label for="color-5">No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mb-3">
+          <form class="credit-card-form" action=" ">
+            <div class="credit-card">
+              <div class="header-title">
+                <p class="mt-3">
+                  Your card | <span>Please enter the informations</span>
+                </p>
+              </div>
+              <div class="flex-between info-input">
+                <span class="square"></span>
+                <span class="icon-connection"></span>
+              </div>
+              <div class="d-inline-flex mt-3 bg-light-inpt credit-number">
+                <div class="input-form-credit-light credit-margin">
+                  <input
+                    type="text "
+                    class="form-control text-center card-number"
+                    placeholder="0000 "
+                  />
+                </div>
+                <span class="dots">-</span>
+                <div class="input-form-credit-light credit-margin">
+                  <input
+                    type="text "
+                    class="form-control text-center card-number"
+                    placeholder="0000 "
+                  />
+                </div>
+                <span class="dots">-</span>
+                <div class="input-form-credit-light credit-margin">
+                  <input
+                    type="text "
+                    class="form-control text-center card-number"
+                    placeholder="0000 "
+                  />
+                </div>
+                <span class="dots">-</span>
+                <div class="input-form-credit-light">
+                  <input
+                    type="text "
+                    class="form-control text-center card-number"
+                    placeholder="0000 "
+                  />
+                </div>
+              </div>
+              <div class="right mt-3">
+                <div class="input-form-light-date">
+                  <input
+                    type="text "
+                    class="form-control text-center"
+                    placeholder="MM/YY "
+                  />
+                </div>
+              </div>
+              <div class="flex-between mt-3">
+                <div class="input-form-credit-light credit-name">
+                  <input
+                    type="text "
+                    class="form-control input-name"
+                    placeholder="Your name "
+                  />
+                </div>
+                <span class="icon-mastercard"></span>
+              </div>
+            </div>
+            <div class="form-group-int mb-4 mt-3 security-wrap">
+              <label for="name " class="font-weight-bold">Security code</label>
+              <input
+                type="text "
+                class="form-control mb-4"
+                placeholder="999 "
+              />
+            </div>
+            <div class="check-list">
+              <ul>
+                <li>
+                  <icon class="icon-check"></icon>I accept
+                  <a href="# ">the distance sale contract</a>
+                </li>
+                <li>
+                  <icon class="icon-check"></icon>I accept
+                  <a href="# ">the thepre-briefing form</a>
+                </li>
+                <li>
+                  <icon class="icon-check"></icon>I accept
+                  <a href="# ">the theinformed consent form</a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-block mt-3"><button>Buy</button></div>
+          </form>
+        </div>
+      </div>
+      <div class="bg-blue mt-3">
+        <div class="container">
+          <h3>if you have any questions please contact us</h3>
+          <p>
+            if you want more informations about ENBIOSIS Biotechnology, you can
+            fill out the <br />
+            form. We`ll be in touch as soon as possible
+          </p>
+          <form class="feedback" action=" ">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <input
+                  type="text "
+                  class="form-control info-input"
+                  placeholder="Name and surname "
+                />
+              </div>
+              <div class="col-md-6"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <input
+                  type="email "
+                  class="form-control mb-4 info-input"
+                  placeholder="E-mail "
+                />
+              </div>
+              <div class="col-md-6 info-input">
+                <input
+                  type="phone "
+                  class="form-control mb-3"
+                  placeholder="Phone number "
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="message-text mb-4"
+                placeholder="Massage "
+                id="exampleFormControlTextarea1 "
+                rows="3 "
+              ></textarea>
+            </div>
+            <div class="mb-3 text-center">
+              <button type="button " class="btn btn-outline-light btn-send">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="pt-3 pb-1">
+      <div class="container">
+        <div class="flex-between logo-socical">
+          <a class="navbar-brand footer-logo" href="# ">
+            <img src="img/Subtract.svg " alt="Logo " />
+            <img src="img/Enbiosis.svg " alt="Logo " />
+          </a>
+          <div class="d-inline-flex">
+            <ul class="social-networks">
+              <li>
+                <a href="# ">
+                  <icon class="icon-facebook"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-inst"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-youtube"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-linkedin"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-twiter"></icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-between">
+          <ul class="bottom-menu">
+            <li>
+              <a href="# " class="font-weight-bold">Our solutions</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">Microbiome</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">About us</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">Contact us</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">FAQ`s</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-between mb-4">
+          <ul class="informations">
+            <li class="inf-adr">
+              <span href="# "
+                >Turkey Office:<br />Maslak 1453 T4-B/91 Sariyer/istanbul</span
+              >
+            </li>
+            <li class="inf-adr">
+              <span href="# "
+                >UAE Dubai Office:<br />Park avenue building Office:205 Dubai
+                Silicon Oasis/UAE</span
+              >
+            </li>
+
+            <li>
+              <span class="email"
+                >+90 (850) 840 77 93<br />destek@enbiosis.com<br />Info@enbiosis.com</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

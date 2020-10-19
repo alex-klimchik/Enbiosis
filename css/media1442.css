@@ -1,0 +1,208 @@
+@media (max-width: 326px) {
+.microbiome-bg__small {
+    background: url("../img/microbiome-sm.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 243px;
+    margin-top: -72px;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media (max-width: 426px) {
+  .block3 {
+    padding-top: 88px;
+  }
+
+  .slick-list:focus {
+    outline: none;
+  }
+
+  .microbiome-slider__title {
+    padding-top: 340px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .last-block__header {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 326px) and (max-width: 576px) {
+.microbiome-bg__small {
+    background: url("../img/microbiome-md.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 243px;
+    margin-top: -72px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  
+
+  .microbiome-text__first {
+    padding: 24px 0;
+  }
+
+  .microbiome-text__last {
+    padding: 24px 0 39px 0;
+  }
+
+  .balance-provide__title {
+    text-align: center;
+    padding-bottom: 32px;
+  }
+
+  .balance-provide {
+    padding-top: 0;
+  }
+
+  .doctor-small__small {
+    background: url("../img/doctor-small.svg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 225px;
+    margin-bottom: 15px;
+  }
+
+  .last-block__boocks-small {
+    background: url("../img/last-book_small.png") no-repeat right;
+    margin-top: 25px;
+    width: 100%;
+    height: 110px;
+  }
+
+  .block2-small {
+    text-align: center;
+  }
+  .block2-small__img {
+    margin: 0 auto;
+    background: url("../img/clock-small.png");
+    width: 290px;
+    height: 290px;
+    margin-bottom: 16px;
+  }
+
+  .block2-small__text {
+    text-align: left;
+    width: 226px;
+    font-size: 10px;
+  }
+
+  .balance-provide__accardion {
+    margin: 0 5px;
+  }
+
+  .last-block {
+    background: #58c4d9;
+    padding-left: 0;
+    height: 550px;
+  }
+
+  .last-block__header {
+    padding-top: 50px;
+  }
+
+  .last-block__subtitle {
+    font-weight: 400;
+  }
+
+  .last-block__price {
+    padding: 16px 0 38px 0;
+  }
+
+  .last-block__title {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .balance-provide__clock {
+    display: none;
+  }
+  .block2 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .block2-small {
+    display: none;
+  }
+  .doctor-small__small {
+    display: none;
+  }
+
+  .microbiome-bg__small {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .balance-provide__clock {
+    margin-left: -100px;
+  }
+  .last-block {
+    padding-left: 0;
+  }
+  .last-block__boocks {
+    display: none;
+  }
+
+  .last-block {
+    background: #58c4d9;
+    height: 575px;
+  }
+
+  .balance-provide__clock {
+    top: 280px;
+  }
+
+  .block2 {
+    padding-left: 50px;
+  }
+
+  /* .collapse:not(.show) {
+    display: block !important;
+} */
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .balance-provide__clock {
+    top: 240px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .balance-provide__girl {
+    display: none;
+  }
+  .microbiome-bg {
+    display: none;
+  }
+
+  .microscope_img {
+    display: none;
+  }
+
+  .block2 {
+    display: flex;
+    justify-content: flex-end !important;
+  }
+}
+@media (min-width: 1200px) {
+  .block2 {
+    margin-left: 320px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .microbiome-slider__item {
+    width: 490px;
+    margin: 0 15px;
+  }
+}

@@ -1,0 +1,500 @@
+.head-block {
+    background-color: #59C4D9;
+}
+
+.head__title,
+.head__subtitle {
+    color: #ffffff;
+
+}
+
+.head__title {
+    font-size: 32px;
+    margin-top: 48px;
+    line-height: 39px;
+}
+
+.head__subtitle {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 32px;
+}
+
+.buy__btn,
+.organizations__btn,
+.analusis__btn,
+.microbiome__btn,
+.comments__btn,
+.aware__btn,
+.aware__input {
+    width: 290px;
+    height: 48px;
+    border-radius: 127px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+    /* margin: 0 auto; */
+
+}
+
+.buy__btn {
+    background: #E3614D;
+    margin-bottom: 28px;
+}
+
+.organizations__btn {
+    background-color: transparent;
+    border: 1px solid #E3614D;
+    margin-bottom: 83px;
+}
+
+.head__book {
+    background-image: url(../img/book.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 302px;
+    height: 132px;
+    margin-left: -15px;
+}
+
+.head__mob {
+    background-image: url(../img/samsung.png);
+    width: 93px;
+    height: 205px;
+    position: relative;
+    z-index: 10;
+    top: -210px;
+    left: 200px;
+}
+
+.head__remark {
+    display: none;
+}
+
+.rewards__wrap {
+    margin-top: -270px;
+}
+
+.slide-descr-wrap .second-copy {
+    min-height: 236px;
+}
+
+.video__wrap {
+    background-image: url(../img/video1-mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 290px;
+    height: 146px;
+    /* border: 1px solid grey; */
+    margin: 0 auto;
+    margin-top: 46px;
+    margin-bottom: 126px;
+}
+
+/* .video__props {
+   
+} */
+
+.analusis__text {
+    text-align: center;
+}
+
+.analusis__image {
+    background-image: url(../img/analusis-image.png);
+    /* width: 460px; */
+    width: 100%;
+    height: 236px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 38px;
+}
+
+.analusis__btn,
+.microbiome__btn,
+.comments__btn,
+.aware__btn {
+    background-color: transparent;
+    border: 1px solid #E3614D;
+    color: #E3614D;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 94px;
+}
+
+.microbiome {
+    background-image: url(../img/microbiome-mob.png);
+    background-repeat: round;
+    background-size: cover;
+    height: 1170px;
+    margin-bottom: 48px;
+}
+
+.microbiome-container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.microbiome__title {
+    padding-top: 82px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 14px;
+}
+
+.microbiome__image {
+    background-image: url(../img/microbiome-img.png);
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+.microbiome__description {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 32px;
+}
+
+.microbiome__btn {
+    margin-bottom: 116px;
+}
+
+.balance {
+    margin-bottom: 72px;
+}
+
+.balance-provide__title {
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.comments {
+    background-image: url(../img/cooments-back-mob.png);
+    background-repeat: round;
+    background-size: cover;
+    height: 1190px;
+    margin-bottom: 82px;
+}
+
+.comments__title {
+    padding-top: 108px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.comments__video_wrap {
+    background-image: url(../img/video2-mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 160px;
+    /* border: 1px solid grey; */
+    width: 290px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+/* .comments__video {
+    
+    
+} */
+
+.comments__btn {
+    margin-top: -90px;
+}
+
+/* slider */
+
+.comments__slider_block {
+    margin-bottom: 80px;
+    border-radius: 24px;
+}
+
+.comments__slider_block:focus {
+    outline: none;
+}
+
+.slick-track:focus {
+    outline: none;
+}
+
+.comments__cont {
+    height: 580px;
+    background-color: #fff;
+}
+
+.comments__slider_item {
+    background-color: #fff;
+    border-radius: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 24px;
+    filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.09));
+}
+
+.comments__slider_head {
+    display: flex;
+    padding-left: 16px;
+    padding-top: 24px;
+    margin-bottom: 16px;
+}
+
+.comments__slider_item_avatar {
+    background-image: url(../img/avatar.jpg);
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 48px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+.comments__slider_item_name {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    padding-right: 6px;
+    text-align: left;
+}
+
+.comments__slider_item_text {
+    font-size: 14px;
+    line-height: 27px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.comments__slider_item_category {
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0.5;
+    text-align: right;
+    padding-right: 16px;
+}
+
+.comments__slider_item_category_name {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    opacity: 0.5;
+    text-align: right;
+    padding-right: 16px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+
+
+.slick-dots li button::before {
+    font-family: 'slick';
+    font-size: 36px !important;
+    line-height: 20px;
+    position: absolute;
+    top: -32px !important;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    /* <-- Вот этот символ */
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots .slick-active button::before {
+    color: red;
+}
+
+.slick-dots li button {
+    font-size: 0;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:before {
+    content: '•';
+    font-size: 22px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    opacity: .25;
+    color: black;
+}
+
+.comments__indicators {
+    background-color: red;
+    position: absolute;
+}
+
+.process__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.process__list {
+    text-align: center;
+}
+
+.process__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.process__item:last-child {
+    margin-bottom: 66px;
+}
+
+.process_item_image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.process1 {
+    background-image: url(../img/process1.svg);
+}
+
+.process2 {
+    background-image: url(../img/process2.svg);
+}
+
+.process3 {
+    background-image: url(../img/process3.svg);
+}
+
+.process4 {
+    background-image: url(../img/process4.svg);
+}
+
+.process__item_title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 32px;
+}
+
+.process__item_description {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.second-maket {
+    background-image: url(../img/team-back-mob.png);
+    background-size: cover;
+    background-repeat: round;
+    height: 830px;
+    margin-bottom: 72px;
+}
+
+.second-title {
+    padding-top: 110px;
+}
+
+.second {
+    border-radius: unset;
+}
+
+.press-block {
+    margin-bottom: 44px;
+}
+
+.press__title {
+    color: black;
+    padding-top: 30px;
+}
+
+.press__wrap {
+    background-image: unset;
+    padding-bottom: 0;
+}
+
+.aware {
+    background-image: url(../img/aware-back-mob.png);
+    background-size: cover;
+    background-repeat: round;
+    height: 660px;
+    margin-bottom: 68px;
+}
+
+.aware__title {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.aware__description {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.aware__input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    cursor: unset;
+}
+
+.aware__input:focus {
+    outline: none;
+
+}
+
+.aware__input::placeholder {
+    padding: 0 10px;
+    padding-left: 24px;
+    font-size: 16px;
+}
+
+.guide-block {
+    margin-bottom: 32px;
+}
+
+.home-guide__title {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+footer {
+    background-color: #fff;
+    filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.09));
+}

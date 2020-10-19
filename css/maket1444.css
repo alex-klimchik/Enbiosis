@@ -1,0 +1,245 @@
+.turkey {
+    background-image: url(../img/turkey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 26px;
+    width: 44px;
+    margin-top: 8px;
+    padding-right: 0;
+}
+
+.britain {
+    background-image: url(../img/britain.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 56px;
+    height: 41px;
+}
+
+.guide {
+    background-color: #49CDCD;
+}
+
+.first-block {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.guide__title {
+    color: white;
+    padding-top: 42px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.guide__subtitle {
+    color: white;
+    margin-bottom: 0;
+    font-size: 12px;
+
+
+}
+
+
+.prices {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.guide__price {
+    color: white;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    margin-top: 8px;
+
+}
+
+.buy {
+    width: 146px;
+    height: 28px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
+    background-color: #EE7663;
+    color: white;
+    border: none;
+    border-radius: 127px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.guide__old-price {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: normal;
+    text-decoration-line: line-through;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+.guide__tablet {
+    background-image: url(../img/tablet.png);
+    width: 226px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 252px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 500;
+
+}
+
+.guide__book {
+    background-image: url(../img/book-guide.png);
+    width: 164px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 278px;
+    margin-left: 10px;
+}
+
+
+
+.icon-facebook {
+    background-image: url(../img/cib_facebook.svg);
+}
+
+.icon-inst {
+    background-image: url(../img/instagram-with-circle.svg);
+}
+
+.icon-youtube {
+    background-image: url(../img/youtube-with-circle.svg);
+}
+
+.icon-linkedin {
+    background-image: url(../img/linkedin-with-circle.svg);
+}
+
+.icon-twiter {
+    background-image: url(../img/twitter-with-circle.svg);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: auto 100%;
+    vertical-align: middle;
+}
+
+.bottom-menu li a {
+    color: white !important;
+}
+
+.email,
+.informations li {
+    color: #6c9bb7;
+}
+
+.mainpic {
+    width: 344px;
+    height: 302px;
+    margin-top: -94px;
+    top: 57%;
+    right: -1%;
+    z-index: 500;
+}
+
+.floor {
+    top: 78%;
+    background-color: #1D6591;
+    margin-top: -12px;
+}
+
+/* modal-window */
+
+.send-btn {
+    margin: 0 auto;
+    width: 255px;
+    height: 48px;
+    background: #E55D48;
+    border: 1px solid #E55D48;
+    box-sizing: border-box;
+    border-radius: 127px;
+    color: white;
+    font-weight: bold;
+}
+
+.modal-footer,
+.modal-header {
+    border: none;
+}
+
+.modal-footer {
+    margin-top: -14px;
+    margin-bottom: 14px;
+}
+
+.modal__title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal__text {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.bg-blue {
+    padding: 0;
+    background-image: none;
+}
+
+.bg-blue .container {
+    width: 500px;
+}
+
+.bg-blue h3 {
+    color: black;
+    margin: 0 auto;
+}
+
+.bg-blue p {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.message-text {
+    padding-bottom: 0;
+}
+
+.mb-4 {
+    margin-bottom: 0 !important;
+}
+
+.modal-content {
+    border-radius: 16px;
+    margin: 0 auto;
+}
+
+.btn:focus {
+    outline: none;
+    border: none;
+}
+
+.form__description {
+    font-size: 12px;
+}
+
+.navbar-right {
+    justify-content: center;
+}
+
+.login-btn {
+    margin-right: 30px;
+}
+
+.modal-backdrop {
+    z-index: unset;
+}
