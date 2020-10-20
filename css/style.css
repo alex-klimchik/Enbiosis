@@ -86,6 +86,7 @@ body {
 }
 
 .books {
+  margin-top: 0 !important;
   text-align: center;
   width: 100%;
   margin-bottom: 8px;
@@ -216,6 +217,9 @@ main {
   border-bottom-color: #dcdcdc;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  border-radius: 38px;
+  border: none;
+  height: auto;
 }
 
 .forms-block input {
@@ -242,18 +246,23 @@ main {
   margin-top: 24 !important;
 }
 
-.input-form-credit-light .form-control {
-  background: #f8f8f8 !important;
-  border-radius: 38px !important;
-  border: none !important;
-  height: 48px !important;
+.credit-margin {
+  margin: 0 8px;
 }
 
-.forms-block .form-control {
-  background: #f8f8f8 !important;
-  border-radius: 38px !important;
-  border: none !important;
-  height: 48px !important;
+.credit-margin:first-child {
+  margin-left: 0;
+}
+
+.credit-margin:last-child {
+  margin-right: 0;
+}
+
+.input-form-credit-light .form-control {
+  background: #f8f8f8;
+  border-radius: 38px;
+  border: none;
+  height: 48px;
 }
 
 .address-check {
@@ -388,8 +397,8 @@ main {
   width: 100%;
 }
 
-.old-price {
-  margin-bottom: 24px !important;
+.old-price__buy {
+  margin-bottom: 24px;
 }
 
 .price .old-price {
@@ -401,7 +410,7 @@ main {
 }
 
 .price .new-price {
-  font-size: 40px;
+  font-size: 38px;
   color: #178a9f;
 }
 
@@ -410,6 +419,7 @@ main {
 }
 
 .credit-card {
+  margin-top: 40px;
   padding: 40px;
   width: 616px;
   height: 382px;
@@ -433,12 +443,13 @@ main {
   border-radius: 8px;
 }
 
-.header-title {
+.header-title__credit {
   color: #ffffff;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.header-title p span {
+.header-title__credit p span {
   color: rgba(255, 255, 255, 0.5);
   font-weight: normal;
 }
@@ -619,6 +630,7 @@ main {
 
 .info-input {
   margin-bottom: 8px;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 .info-address {
@@ -699,7 +711,6 @@ main {
 
 .radio {
   padding-right: 20px;
-  margin-bottom: 24px;
 }
 
 .navbar-light .navbar-toggler {
@@ -740,7 +751,6 @@ button:focus {
   font-size: 16px;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 36px;
 }
 
 .banner-box .title {

@@ -1,86 +1,154 @@
 $(document).ready(function () {
-  
-$(".multiple-items")
-  .on("init beforeChange", function (e, slick, curr, next) {
-    const count = slick.slideCount,
-      show = slick.options.slidesToShow,
-      center = slick.options.centerMode,
-      index = (next | 0) - center * (count > show ? (show / 2) | 0 : 0),
-      selector = (shift) => `[data-slick-index="${index + shift * count}"]`;
+  $(".multiple-items")
+    .on("init beforeChange", function (e, slick, curr, next) {
+      const count = slick.slideCount,
+        show = slick.options.slidesToShow,
+        center = slick.options.centerMode,
+        index = (next | 0) - center * (count > show ? (show / 2) | 0 : 0),
+        selector = (shift) => `[data-slick-index="${index + shift * count}"]`;
 
-    $(".slick-xxx", this).removeClass("slick-xxx");
-    $([0, 1, -1].map(selector).join(", "), this).addClass("slick-xxx");
-  })
-  .slick({
+      $(".slick-xxx", this).removeClass("slick-xxx");
+      $([0, 1, -1].map(selector).join(", "), this).addClass("slick-xxx");
+    })
+    .slick({
+      infinite: true,
+      centerMode: true,
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 3,
+      arrows: false,
+      autoplay: false,
+      autoplaySpeed: 1000,
+      centerMode: true,
+      centerPadding: "0",
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 580,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+
+  $(".responsive")
+    .on("init beforeChange", function (e, slick, curr, next) {
+      const count = slick.slideCount,
+        show = slick.options.slidesToShow,
+        center = slick.options.centerMode,
+        index = (next | 0) - center * (count > show ? (show / 2) | 0 : 0),
+        selector = (shift) => `[data-slick-index="${index + shift * count}"]`;
+
+      $(".slick-xxx", this).removeClass("slick-xxx");
+      $([0, 1, -1].map(selector).join(", "), this).addClass("slick-xxx");
+    })
+    .slick({
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 3,
+      arrows: false,
+      autoplay: false,
+      autoplaySpeed: 1000,
+      centerMode: true,
+      centerPadding: "0",
+      responsive: [
+        {
+          breakpoint: 2000,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 5,
+          },
+        },
+        {
+          breakpoint: 1500,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 5,
+          },
+        },
+        {
+          breakpoint: 1100,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 580,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+
+  $(".comments__slider_block").slick({
     infinite: true,
-    centerMode: true,
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     arrows: false,
+    // dots: true,
     autoplay: false,
-    autoplaySpeed: 1000,
     centerMode: true,
     centerPadding: "0",
     responsive: [
       {
-        breakpoint: 1100,
+        breakpoint: 2600,
         settings: {
           arrows: false,
+          dots: true,
           centerMode: true,
           centerPadding: "40px",
           slidesToShow: 3,
         },
       },
-      {
-        breakpoint: 769,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 580,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-
-$(".responsive")
-  .on("init beforeChange", function (e, slick, curr, next) {
-    const count = slick.slideCount,
-      show = slick.options.slidesToShow,
-      center = slick.options.centerMode,
-      index = (next | 0) - center * (count > show ? (show / 2) | 0 : 0),
-      selector = (shift) => `[data-slick-index="${index + shift * count}"]`;
-
-    $(".slick-xxx", this).removeClass("slick-xxx");
-    $([0, 1, -1].map(selector).join(", "), this).addClass("slick-xxx");
-  })
-  .slick({
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 3,
-    arrows: false,
-    autoplay: false,
-    autoplaySpeed: 1000,
-    centerMode: true,
-    centerPadding: "0",
-    responsive: [
       {
         breakpoint: 2000,
         settings: {
           arrows: false,
+          dots: true,
           centerMode: true,
           centerPadding: "40px",
-          slidesToShow: 5,
+          slidesToShow: 3,
         },
       },
       {
@@ -89,7 +157,8 @@ $(".responsive")
           arrows: false,
           centerMode: true,
           centerPadding: "40px",
-          slidesToShow: 5,
+          slidesToShow: 3,
+          dots: true,
         },
       },
       {
@@ -97,8 +166,9 @@ $(".responsive")
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: "40px",
+          centerPadding: "40",
           slidesToShow: 3,
+          dots: true,
         },
       },
       {
@@ -107,6 +177,7 @@ $(".responsive")
           arrows: false,
           centerMode: true,
           centerPadding: "40px",
+          dots: false,
           slidesToShow: 3,
         },
       },
@@ -117,86 +188,13 @@ $(".responsive")
           centerMode: true,
           centerPadding: "40px",
           slidesToShow: 1,
+          dots: true,
         },
       },
     ],
   });
 
-$(".comments__slider_block").slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  // dots: true,
-  autoplay: false,
-  centerMode: true,
-  centerPadding: "0",
-  responsive: [
-    {
-      breakpoint: 2600,
-      settings: {
-        arrows: false,
-        dots: true,
-        centerMode: true,
-        centerPadding: "40px",
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 2000,
-      settings: {
-        arrows: false,
-        dots: true,
-        centerMode: true,
-        centerPadding: "40px",
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 1500,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: "40px",
-        slidesToShow: 3,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 1100,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: "40",
-        slidesToShow: 3,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 769,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: "40px",
-        dots: false,
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 580,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: "40px",
-        slidesToShow: 1,
-        dots: true,
-      },
-    },
-  ],
-});
-
-
-$(".microbiome-slider").slick({
+  $(".microbiome-slider").slick({
     arrows: false,
     dots: false,
     speed: 300,
@@ -217,7 +215,8 @@ $(".microbiome-slider").slick({
           slidesToShow: 2,
           slidesToScroll: 1,
         },
-      }, {
+      },
+      {
         breakpoint: 882,
         settings: {
           slidesToShow: 1.5,
@@ -247,5 +246,4 @@ $(".microbiome-slider").slick({
       },
     ],
   });
-
 });
