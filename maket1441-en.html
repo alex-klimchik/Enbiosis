@@ -40,11 +40,52 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav head-menu">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Our solutions</a>
+                  <a
+                    class="nav-link sub-menu"
+                    data-toggle="collapse"
+                    data-target="#subMenu"
+                    id="open-sub-menu_main"
+                    href="#"
+                    >Our solutions<img
+                      class="sub-menu__arrow-down"
+                      src="img/arrow-down-submenu.svg"
+                      alt=""
+                  /></a>
                 </li>
+                <div
+                  class="collapse sub-menu__visibility sub-menu__mobile"
+                  id="subMenu"
+                >
+                  <ul class="navbar-nav head-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">IBS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bagisiklik</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Kilo-kontrolu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Gida-hassasiyeti</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bagirsak hastaliklari</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        >Kisisellestirilmis beslenme</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Mikrobiyom testleri</a>
+                    </li>
+                  </ul>
+                </div>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Microbiome</a>
                 </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="#">About us</a>
                 </li>
@@ -108,6 +149,33 @@
           </div>
         </div>
       </nav>
+      <div class="sub-menu__main">
+        <div class="container">
+          <ul class="sub-menu__head-menu">
+            <li class="sub-menu__item">
+              <a class="sub-menu__-link" href="#">IBS</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Bagisiklik</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Kilo-kontrolu</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Gida-hassasiyeti</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Bagirsak hastaliklari</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Kisisellestirilmis beslenme</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Mikrobiyom testleri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -150,7 +218,7 @@
           src="img/discoverrock.svg"
           alt=""
         />
-<img
+        <img
           class="secondblock-discover__imgrock-big"
           src="img/discoverrockbig.svg"
           alt=""
@@ -171,23 +239,21 @@
                 between our quality of life and our microbiome is a known fact.
               </div>
             </div>
-            <div
-              class="col-3 col-md-8 secondblock-discover__imgrock"
-            ></div>
+            <div class="col-3 col-md-8 secondblock-discover__imgrock"></div>
             <div class="container">
               <div class="row col-md-8 secondblock-discover__gruop">
-                <div class="col-12 col-lg-6 ">
+                <div class="col-12 col-lg-6">
                   <div class="secondblock-discover__buttons">
                     Personalized nutrion guide
                   </div>
-</div>    
+                </div>
                 <div class="col-12 col-lg-6">
-                  <div class="secondblock-discover__buttons ">
+                  <div class="secondblock-discover__buttons">
                     Microbiome analysis report
                   </div>
                 </div>
               </div>
-            </div></div>
+            </div>
           </div>
         </div>
       </div>
@@ -316,24 +382,43 @@
                 </li>
               </ul>
             </div>
-          <div class="thirdblock-big d-flex justify-content-between">
-            <div class="thirdblock-big__column">
-              <div class="thirdblock-big__title">Gut Scores:</div>
-                <div class="thirdblock-big__text">It shows your current status through 15 different modules, from intestinal movement to microbiome age, carbohydrate, fat, protein metabolisms to sleep quality.</div>
-              <div class="thirdblock-big__title">Close Profiles:</div>
-                <div class="thirdblock-big__text">Based on microbiome profiles in our database, it shows the lifestyle and health status statistics of profiles closest to your microbiome.</div>
+            <div class="thirdblock-big d-flex justify-content-between">
+              <div class="thirdblock-big__column">
+                <div class="thirdblock-big__title">Gut Scores:</div>
+                <div class="thirdblock-big__text">
+                  It shows your current status through 15 different modules,
+                  from intestinal movement to microbiome age, carbohydrate, fat,
+                  protein metabolisms to sleep quality.
+                </div>
+                <div class="thirdblock-big__title">Close Profiles:</div>
+                <div class="thirdblock-big__text">
+                  Based on microbiome profiles in our database, it shows the
+                  lifestyle and health status statistics of profiles closest to
+                  your microbiome.
+                </div>
+              </div>
+              <div class="thirdblock-big__column">
+                <div class="thirdblock-big__title">Microbiome Diversity:</div>
+                <div class="thirdblock-big__text">
+                  It shows the degree to which the bacterial ecosystem in your
+                  microbiome is composed of different genera and how homogeneous
+                  their distribution is.
+                </div>
+                <div class="thirdblock-big__title">Taxonomic Analysis:</div>
+                <div class="thirdblock-big__text">
+                  It shows the rates of microorganisms that are prominent in the
+                  health and balance of the microbiome.
+                </div>
+              </div>
+              <div class="thirdblock-big__column">
+                <div class="thirdblock-big__title">Notable Microorganisms:</div>
+                <div class="thirdblock-big__text">
+                  It shows your current status through 15 different modules,
+                  from intestinal movement to microbiome age, carbohydrate, fat,
+                  protein metabolisms to sleep quality.
+                </div>
+              </div>
             </div>
-            <div class="thirdblock-big__column">
-              <div class="thirdblock-big__title">Microbiome Diversity:</div>
-                <div class="thirdblock-big__text">It shows the degree to which the bacterial ecosystem in your microbiome is composed of different genera and how homogeneous their distribution is.</div>
-              <div class="thirdblock-big__title">Taxonomic Analysis:</div>
-                <div class="thirdblock-big__text">It shows the rates of microorganisms that are prominent in the health and balance of the microbiome.</div>
-            </div>  
-            <div class="thirdblock-big__column">
-              <div class="thirdblock-big__title">Notable Microorganisms:</div>
-                <div class="thirdblock-big__text">It shows your current status through 15 different modules, from intestinal movement to microbiome age, carbohydrate, fat, protein metabolisms to sleep quality.</div>
-            </div>
-          </div>
             <div class="thirdblock_imagemobile">
               <img src="img/thirdblock_mobile.svg" alt="" />
             </div>
@@ -347,59 +432,74 @@
         <div class="row">
           <div class="fourthblock-sidebar col-lg-5">
             <div class="fourthblock-sidebar__listitem">
-              <div class="fourthblock-sidebar__barley">
-              Barley</div>
-              <div class="fourthblock-sidebar__right"><img src="img/sidebar8.svg" alt=""></div>
+              <div class="fourthblock-sidebar__barley">Barley</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar8.svg" alt="" />
+              </div>
             </div>
             <div class="fourthblock-sidebar__listitem">
               <div class="fourthblock-sidebar__krilloil">
-              Krill Oil<br>
-Supplements</div>
-              <div class="fourthblock-sidebar__right"><img src="img/sidebar8.svg" alt=""></div>
+                Krill Oil<br />
+                Supplements
+              </div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar8.svg" alt="" />
+              </div>
             </div>
-<div class="fourthblock-sidebar__listitem">
+            <div class="fourthblock-sidebar__listitem">
               <div class="fourthblock-sidebar__fishoil">
-              Fish Oil<br>
-Supplements</div>
-              <div class="fourthblock-sidebar__right"><img src="img/sidebar8.svg" alt=""></div>
+                Fish Oil<br />
+                Supplements
+              </div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar8.svg" alt="" />
+              </div>
             </div>
             <div class="fourthblock-sidebar__listitem">
-              <div class="fourthblock-sidebar__safflower">
-              Safflower Oil</div>
-              <div class="fourthblock-sidebar__right"><img src="img/sidebar5.svg" alt=""></div>
+              <div class="fourthblock-sidebar__safflower">Safflower Oil</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar5.svg" alt="" />
+              </div>
             </div>
             <div class="fourthblock-sidebar__listitem">
-              <div class="fourthblock-sidebar__pump">
-              Pumpkin</div>
-              <div class="fourthblock-sidebar__right"><img src="img/sidebar5.svg" alt=""></div>
+              <div class="fourthblock-sidebar__pump">Pumpkin</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar5.svg" alt="" />
+              </div>
             </div>
             <div class="fourthblock-sidebar__listitem">
-              <div class="fourthblock-sidebar__shell">
-              Shell Bean</div>
-              <div class="fourthblock-sidebar__right"><img src="img/sidebar5.svg" alt=""></div>
+              <div class="fourthblock-sidebar__shell">Shell Bean</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar5.svg" alt="" />
+              </div>
             </div>
             <div class="fourthblock-sidebar__listitem">
               <div class="fourthblock-sidebar__cheese">
-              White Cheese<br>
-(Full-Fat)</div>
-              <div class="fourthblock-sidebar__right"><img src="img/sidebar5.svg" alt=""></div>
+                White Cheese<br />
+                (Full-Fat)
+              </div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar5.svg" alt="" />
+              </div>
             </div>
             <div class="fourthblock-sidebar__listitem">
-              <div class="fourthblock-sidebar__bread">
-              White Bread</div>
-              <div class="fourthblock-sidebar__right"><img src="img/sidebar5.svg" alt=""></div>
+              <div class="fourthblock-sidebar__bread">White Bread</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar5.svg" alt="" />
+              </div>
             </div>
             <div class="fourthblock-sidebar__listitem">
-              <div class="fourthblock-sidebar__pistachio">
-              Pistachio</div>
-              <div class="fourthblock-sidebar__right"><img src="img/sidebar3.svg" alt=""></div>
+              <div class="fourthblock-sidebar__pistachio">Pistachio</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar3.svg" alt="" />
+              </div>
             </div>
             <div class="fourthblock-sidebar__listitem">
-              <div class="fourthblock-sidebar__whiteflour">
-              White Flour</div>
-              <div class="fourthblock-sidebar__right"><img src="img/sidebar3.svg" alt=""></div>
+              <div class="fourthblock-sidebar__whiteflour">White Flour</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar3.svg" alt="" />
+              </div>
             </div>
-            
           </div>
           <div class="fourthblock-small col-12 offset-lg-1 col-lg-6">
             <div class="fourthblock-small__header">
@@ -460,60 +560,60 @@ Supplements</div>
           <div class="row">
             <div class="col-md-12">
               <div class="fifthblock">
-                  <div class="fifthblock-column">
-                    <div class="fifthblock-column__imagepc">
-                      <img src="img/fifthblock-pc.svg" alt="" />
-                    </div>
-                    <div class="fifthblock-column__title">
-                      Order enbiosis<br />
-                      microbiome kit
-                    </div>
-                    <div class="fifthblock-column__text">
-                      order from www.enbiosis.com, sign up from the website with
-                      the code in your kit and complete the survey questions.
-                    </div>
+                <div class="fifthblock-column">
+                  <div class="fifthblock-column__imagepc">
+                    <img src="img/fifthblock-pc.svg" alt="" />
                   </div>
-                  <div class="fifthblock-column">
-                    <div class="fifthblock-column__imageblood">
-                      <img src="img/fifthblock-blood.svg" alt="" />
-                    </div>
-                    <div class="fifthblock-column__title">Sampling</div>
-                    <div class="fifthblock-column__text">
-                      Follow the steps in the kit delivered by cargo to your
-                      address and easily take the sample required for your
-                      microbiome analysis. Then send it to the address in the
-                      box for free.
-                    </div>
+                  <div class="fifthblock-column__title">
+                    Order enbiosis<br />
+                    microbiome kit
                   </div>
-                  <div class="fifthblock-column">
-                    <div class="fifthblock-column__imagemicroscope">
-                      <img src="img/fifthblock-microscope.svg" alt="" />
-                    </div>
-                    <div class="fifthblock-column__title">
-                      Laborotory analysis
-                    </div>
-                    <div class="fifthblock-column__text">
-                      Your sample is processed in our metagenome laboratory and
-                      sequenced with 16S rRNA next generation sequencing method.
-                      The resulting data is analyzed and reported in detail with
-                      our artificial intelligence algorithms.
-                    </div>
+                  <div class="fifthblock-column__text">
+                    order from www.enbiosis.com, sign up from the website with
+                    the code in your kit and complete the survey questions.
                   </div>
-                  <div class="fifthblock-column">
-                    <div class="fifthblock-column__imagechecklist">
-                      <img src="img/fifthblock-checklist.svg" alt="" />
-                    </div>
-                    <div class="fifthblock-column__title">
-                      Enbiosis Personalized<br />
-                      Nutrition Guide
-                    </div>
-                    <div class="fifthblock-column__text">
-                      Your reports will be checked by our experts and then
-                      delivered to you. Your nutritional scores are interpreted
-                      by ENBIOISIS dietitians and presented with a free
-                      30-minute dietitian interview.
-                    </div>
+                </div>
+                <div class="fifthblock-column">
+                  <div class="fifthblock-column__imageblood">
+                    <img src="img/fifthblock-blood.svg" alt="" />
                   </div>
+                  <div class="fifthblock-column__title">Sampling</div>
+                  <div class="fifthblock-column__text">
+                    Follow the steps in the kit delivered by cargo to your
+                    address and easily take the sample required for your
+                    microbiome analysis. Then send it to the address in the box
+                    for free.
+                  </div>
+                </div>
+                <div class="fifthblock-column">
+                  <div class="fifthblock-column__imagemicroscope">
+                    <img src="img/fifthblock-microscope.svg" alt="" />
+                  </div>
+                  <div class="fifthblock-column__title">
+                    Laborotory analysis
+                  </div>
+                  <div class="fifthblock-column__text">
+                    Your sample is processed in our metagenome laboratory and
+                    sequenced with 16S rRNA next generation sequencing method.
+                    The resulting data is analyzed and reported in detail with
+                    our artificial intelligence algorithms.
+                  </div>
+                </div>
+                <div class="fifthblock-column">
+                  <div class="fifthblock-column__imagechecklist">
+                    <img src="img/fifthblock-checklist.svg" alt="" />
+                  </div>
+                  <div class="fifthblock-column__title">
+                    Enbiosis Personalized<br />
+                    Nutrition Guide
+                  </div>
+                  <div class="fifthblock-column__text">
+                    Your reports will be checked by our experts and then
+                    delivered to you. Your nutritional scores are interpreted by
+                    ENBIOISIS dietitians and presented with a free 30-minute
+                    dietitian interview.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -522,9 +622,7 @@ Supplements</div>
       <div class="sixblock">
         <div class="container">
           <div class="row">
-            <div class="faq_list discover-title">
-              Frquently asked questions
-            </div>
+            <div class="faq_list discover-title">Frquently asked questions</div>
             <div class="col-12 fifthblock-test">
               <ul class="question-list">
                 <li class="question-list__item">
@@ -653,17 +751,18 @@ Supplements</div>
 
             <div class="container">
               <div class="row">
-<div class="col d-flex justify-content-center">
-                <div class="col-12 col-md-4 secondblock-discover__group">
-                  <div class="sixthblock-discover__buttons">See more</div>
-                </div></div>
+                <div class="col d-flex justify-content-center">
+                  <div class="col-12 col-md-4 secondblock-discover__group">
+                    <div class="sixthblock-discover__buttons">See more</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-        <div class="lastblock-discover">
-      <div class="container">
+      <div class="lastblock-discover">
+        <div class="container">
           <img src="img/bg_elips.svg" alt="Logo" class="elips-bg-left" />
           <img
             src="img/bg_elips_bottom.svg"

@@ -26,7 +26,7 @@ body {
 }
 
 .header__navigation {
-  display: flex!important;
+  display: flex !important;
 }
 
 .header__menu {
@@ -35,7 +35,7 @@ body {
 }
 
 .dropdown-menu {
-  position: absolute!important;
+  position: absolute !important;
 }
 
 .nav-item__language {
@@ -752,7 +752,6 @@ button:focus {
   position: relative;
 }
 
-
 /* You own nutrition guide HOME 1446  */
 
 ul,
@@ -861,7 +860,6 @@ li {
   margin-bottom: 24px;
 }
 
-
 .guid-box__ico-doctor2 {
   position: absolute;
   right: 0;
@@ -961,7 +959,6 @@ main {
   margin-left: 6px;
 }
 
-
 .question-list__item_btn.collapsed::after {
   content: "";
   background-image: url(../img/minus.svg);
@@ -1000,7 +997,6 @@ main {
 .hidden .question-list__item_btn {
   line-height: 22px;
 }
-
 
 .mt-4 {
   margin-top: 0px !important;
@@ -1827,3 +1823,55 @@ button {
   display: none;
 }
 
+/*Sub MEnu */
+
+.sub-menu__main {
+  width: 100%;
+  background-color: #f8f8f8;
+  height: auto;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.sub-menu__mobile {
+  width: 100%;
+  background-color: #dedede;
+}
+
+.sub-menu__arrow-down {
+  margin-left: 5px;
+}
+
+._active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu__main a {
+  color: #000;
+  font-size: 16px;
+}
+
+.sub-menu__main a:hover {
+  text-decoration: none;
+}
+
+.sub-menu__head-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-menu__item {
+  padding: 21px 14px;
+}
+
+.sub-menu__item:first-child {
+  padding: 21px 12px 21px 0;
+}
+
+.sub-menu__item:last-child {
+  padding: 21px 0 21px 12px;
+}
