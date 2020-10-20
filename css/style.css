@@ -222,7 +222,8 @@ main {
   height: auto;
 }
 
-.forms-block input {
+.forms-block input,
+.forms-block select {
   background: #f8f8f8;
   border-radius: 38px;
   border: none;
@@ -3013,4 +3014,9 @@ footer {
 
 .check-from-reg {
   padding: 0;
+}
+
+
+.phone-input {
+  border: none;
 }

@@ -45,6 +45,14 @@
   .text {
     margin-bottom: 40px;
   }
+
+  .guide__tablet {
+    top: 42px;
+  }
+
+  .guide__book {
+    top: 296px
+  }
 }
 
 @media (max-width: 326px) {
@@ -83,6 +91,14 @@
 }
 
 @media (min-width: 375px) {
+
+  .guide__tablet {
+    top: unset;
+  }
+
+  .guide__book {
+    top: 278px;
+  }
   .question-list__item_answer::after {
     top: -55px;
   }
@@ -342,6 +358,10 @@
   }
 }
 @media (min-width: 576px) {
+
+  .header__menu {
+    display: none;
+  }
   .block2-small {
     display: none;
   }
@@ -361,6 +381,11 @@
   }
   .offices {
     flex-wrap: nowrap;
+  }
+
+  .head__title,
+  .head__subtitle {
+    width: 500px;
   }
 }
 @media (max-width: 576px) {
@@ -638,6 +663,14 @@
   }
 }
 @media (min-width: 768px) {
+  .header__menu {
+    display: flex;
+  }
+
+  .head__title,
+  .head__subtitle {
+    width: unset;
+  }
   .banner-box .doctor-icon {
     right: 32%;
     top: 22%;
@@ -1211,6 +1244,10 @@
     line-height: 24px;
   }
 
+  .clock-textside {
+    margin-left: 60px;
+  }
+
   /* .collapse:not(.show) {
         display: block !important; */
 }
@@ -1436,6 +1473,11 @@
   }
 }
 @media (min-width: 1024px) {
+
+  .footer-logo {
+    margin-bottom: 24px;
+  }
+  
   .question-list__item_btn.collapsed::after {
     right: -5%;
   }
@@ -1641,10 +1683,6 @@
     margin-top: 180px;
   }
 
-  /* .head-cont {
-    height: 1000px;
-  } */
-
   .head-cont {
     height: 676px;
   }
@@ -1664,6 +1702,14 @@
   .rewards__wrap {
     background-repeat: round;
     margin-top: -422px;
+  }
+
+  .rewards__wrap1440 {
+    margin-top: -114px;
+  }
+
+  .rewards__wrap1443 {
+    margin-top: -62px;
   }
 
   .video__wrap,
@@ -1809,107 +1855,6 @@
     line-height: 30px;
   }
 }
-
-/* @media (min-width: 1024px) {
-
-  .question-list__item_btn.collapsed::after {
-    right: -5%;
-  }
-
-  .navbar-expand-sm .navbar-toggler {
-    display: none!important;
-}
-
-
-.navbar-right {
-  display: flex;
-  justify-content: space-around;
-}
-
-.login-btn {
-  display: flex;
-}
-
-.nav-item__login,
-.nav-item__language
-.lang-btn
-{
-  display: none;
-}
-
-.nav-item__language {
-  display: none;
-}
-
-.drop-lang {
-  margin-top: -4px;
-}
-
-
-  .check-box-banner {
-    margin-bottom: 0 !important;
-  }
-  .banner-box .banner-title {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .radio {
-    margin-bottom: 0px;
-  }
-
-  .banner-box .doctor-icon {
-    right: 10%;
-    top: 10%;
-  }
-
-  .form-check-inline {
-    margin-right: 10px;
-  }
-
-  .price {
-    margin: 0 20px;
-  }
-
-  .credit-margin {
-    margin-right: 10px;
-  }
-
-  .quantity-bk {
-    padding-left: 0px;
-  }
-
-  .credit-card {
-    margin-top: 16px;
-  }
-
-  .input-form-credit-light {
-    font-weight: bold;
-  }
-
-  .card-number::placeholder {
-    font-weight: 700;
-  }
-
-  .books {
-    margin-bottom: 0;
-  }
-
-  .footer-logo {
-    margin-bottom: 24px;
-  }
-
-  .informations {
-    align-items: center;
-  }
-
-  .header__menu {
-    display: flex;
-    width: 100%;
-  }
-
- 
-} */
 
 @media (min-width: 1100px) {
   .cont,
