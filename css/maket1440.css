@@ -35,7 +35,6 @@
     font-size: 20px;
     line-height: 24px;
     cursor: pointer;
-    /* margin: 0 auto; */
 
 }
 
@@ -77,6 +76,10 @@
     margin-top: -270px;
 }
 
+/* .rewards__wrap1440 {
+    margin-top: -270px;
+} */
+
 .slide-descr-wrap .second-copy {
     min-height: 236px;
 }
@@ -87,15 +90,11 @@
     background-size: contain;
     width: 290px;
     height: 146px;
-    /* border: 1px solid grey; */
     margin: 0 auto;
     margin-top: 46px;
     margin-bottom: 126px;
 }
 
-/* .video__props {
-   
-} */
 
 .analusis__text {
     text-align: center;
@@ -191,17 +190,12 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 160px;
-    /* border: 1px solid grey; */
     width: 290px;
     display: block;
     margin: 0 auto;
     margin-bottom: 32px;
 }
 
-/* .comments__video {
-    
-    
-} */
 
 .comments__btn {
     margin-top: -90px;
@@ -301,7 +295,6 @@
     width: 20px;
     height: 20px;
     content: '•';
-    /* <-- Вот этот символ */
     text-align: center;
     opacity: .25;
     color: black;

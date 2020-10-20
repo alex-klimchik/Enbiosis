@@ -3,9 +3,6 @@
         margin-left: 34px;
     }
 
-    /* .carousel-indicators {
-        margin-bottom: -242px;
-    } */
     .carousel-control-prev-icon {
         margin-left: -34px;
     }
@@ -49,11 +46,6 @@
         margin-bottom: 40px;
     }
 
-
-    /* .slick-xxx+.slick-slide {
-        transform: unset;
-    } */
-
 }
 
 @media (min-width: 375px) {
@@ -80,11 +72,6 @@
         margin-bottom: 16px;
     }
 
-    /* .cont,
-    .slider-item__image {
-        width: 296px;
-    } */
-
     .cont {
         margin: 0 auto;
     }
@@ -94,7 +81,6 @@
     }
 
     .global__image {
-        /* background-image: url(../img/roadpic.png); */
         width: 100%;
         height: 246px;
         background-repeat: no-repeat;
@@ -102,10 +88,6 @@
         margin-bottom: 32px;
     }
 
-    /* .cont {
-        margin-left: 0;
-        margin-right: 0;
-    } */
 
 }
 
