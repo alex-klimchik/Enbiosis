@@ -7,7 +7,7 @@
         height: 1080px;
     }
 
-    .cont {
+    .cont1440 {
         margin-bottom: 24px;
     }
 
@@ -145,11 +145,6 @@
         height: 264px;
     }
 
-    /* .video__props,
-    .comments__video {
-        width: 600px;
-        height: 264px;
-    } */
 
     .analusis__image {
         background-image: url(../img/analusis-image-desctop.png);
@@ -228,10 +223,6 @@
         top: 144px;
     }
 
-    /* .collapse:not(.show) {
-        display: block !important;
-    } */
-
     .collapse1442:not(.show) {
         display: none !important;
     }
@@ -269,11 +260,6 @@
         height: 464px;
     }
 
-    /* .video__props,
-    .comments__video {
-        width: 800px;
-        height: 464px;
-    } */
 
     .analusis__image {
         height: 472px;
@@ -532,13 +518,6 @@
     }
 
     
-
-    /* .video__props,
-    .comments__video {
-        width: 1100px;
-        height: 556px;
-    } */
-
     .comments__cont {
         width: 600px;
         height: 396px;

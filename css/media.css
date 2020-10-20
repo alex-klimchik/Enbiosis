@@ -1,5 +1,54 @@
+@media (min-width: 320px) {
+  .carousel-control-next-icon {
+    margin-left: 34px;
+  }
+
+  .carousel-control-prev-icon {
+    margin-left: -34px;
+  }
+
+  .cont,
+  .slider-item__image {
+    width: 262px;
+  }
+
+  .cont {
+    height: 210px;
+    margin-bottom: 24px;
+  }
+
+  .team__cont {
+    margin-bottom: 44px;
+  }
+
+  .draggable {
+    padding: 0 2px !important;
+  }
+
+  .show__road {
+    display: none;
+  }
+
+  .slide-descr-wrap {
+    min-height: 226px;
+  }
+
+  .health {
+    padding: 0 24px;
+  }
+
+  .global__image {
+    background-size: contain;
+    height: 180px;
+  }
+
+  .text {
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 326px) {
-.microbiome-bg__small {
+  .microbiome-bg__small {
     background: url("../img/microbiome-sm.png") no-repeat;
     background-size: cover;
     width: 100%;
@@ -9,7 +58,7 @@
   }
 }
 @media (min-width: 326px) and (max-width: 576px) {
-.microbiome-bg__small {
+  .microbiome-bg__small {
     background: url("../img/microbiome-md.jpg") no-repeat center center;
     background-size: cover;
     width: 100%;
@@ -23,11 +72,233 @@
     margin-top: 90px;
   }
 }
+
+@media (min-width: 360px) {
+  .question-list__item_btn::after {
+    margin-left: 156px;
+  }
+  .question-list__item_answer::after {
+    top: -60px;
+  }
+}
+
+@media (min-width: 375px) {
+  .question-list__item_answer::after {
+    top: -55px;
+  }
+  .question-list__item_btn::after {
+    margin-left: 162px;
+  }
+
+  .carousel-control-next-icon {
+    margin-right: -14px;
+  }
+  .carousel-control-prev-icon {
+    margin-left: -50px;
+  }
+  .road__arrow_wrap {
+    width: 355px;
+  }
+
+  .team__cont {
+    width: 296px;
+    height: 544px;
+  }
+
+  .team__image {
+    width: 296px;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 16px;
+  }
+
+  .cont {
+    margin: 0 auto;
+  }
+
+  .slider-item__text {
+    font-size: 14px;
+  }
+
+  .global__image {
+    width: 100%;
+    height: 246px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 32px;
+  }
+
+  .head__mob {
+    left: 252px;
+  }
+
+  .microbiome {
+    height: 1080px;
+  }
+
+  .cont1440 {
+    margin-bottom: 24px;
+  }
+
+  .comments__cont {
+    height: 528px;
+  }
+}
+
+@media (min-width: 414px) {
+  .question-list__item_btn::after {
+    margin-left: 180px;
+  }
+
+  .team__title {
+    margin-bottom: 36px;
+  }
+  .about__wrap {
+    height: 542px;
+  }
+
+  .road {
+    margin-top: 0;
+  }
+
+  .cont {
+    width: 264px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .team__cont {
+    width: 296;
+    margin-right: 2px;
+    margin-left: 16px;
+    margin-bottom: 50px;
+  }
+
+  .team__slider .slick-list .draggable {
+    padding: 0px 144px !important;
+  }
+
+  .road__arrow_wrap {
+    width: 355px;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 36px;
+  }
+
+  .cont,
+  .team__cont {
+    margin: 0 auto;
+  }
+
+  .team__cont {
+    margin-bottom: 30px;
+  }
+
+  .head__mob {
+    left: 290px;
+  }
+
+  .head__book {
+    width: 314px;
+  }
+
+  .rewards__wrap {
+    margin-top: -264px;
+  }
+
+  .rewards__wrap1443 {
+    margin-top: -24px;
+  }
+
+  .video__wrap,
+  .comments__video_wrap {
+    width: 330px;
+    height: 182px;
+  }
+
+  .comments__cont {
+    height: 532px;
+  }
+
+  .comments__btn {
+    margin-top: -36px;
+  }
+
+  .slick-dots li button::before {
+    top: 8px !important;
+  }
+
+  .analusis__image {
+    height: 262px;
+  }
+
+  /* 1444 */
+
+  .guide__tablet {
+    background-size: cover;
+    width: 212px;
+    height: 282px;
+}
+
+.guide__title {
+    padding-top: 48px;
+}
+
+.floor {
+    margin-top: -16px;
+}
+
+.guide__book {
+    width: 188px;
+    height: 82px;
+    background-size: cover;
+    top: 290px;
+}
+}
+
+@media (min-width: 425px) {
+  .about__wrap {
+    height: 558px;
+  }
+
+  .slider-item__image {
+    width: 264px;
+  }
+
+  .analusis__image {
+    height: 268px;
+  }
+
+  .microbiome-container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  /* 1444 */
+
+  .logo-socical1444 {
+    display: flex!important;
+    flex-direction: column;
+}
+
+.social__icons {
+    margin: 0 auto;
+}
+
+.guide__book {
+    width: 200px;
+    height: 88px;
+}
+}
+
 @media (min-width: 425px) and (max-width: 773px) {
   .first-block__boock-mobile {
     margin-top: -120px;
   }
 }
+
 @media (max-width: 426px) {
   .block3 {
     padding-top: 88px;
@@ -47,6 +318,17 @@
     padding-top: 50px;
   }
 }
+
+@media (min-width: 530px) {
+  .head__mob {
+    left: 346px;
+  }
+
+  .head__book {
+    margin-left: 70px;
+  }
+}
+
 @media (min-width: 555px) and (max-width: 773px) {
   .last-block__header {
     padding-top: 50px;
@@ -71,17 +353,24 @@
     display: none;
   }
 
-
+  .question-list__item_answer::after {
+    top: -38px;
+  }
+  .question-list__item_btn::after {
+    margin-left: 246px;
+  }
+  .offices {
+    flex-wrap: nowrap;
+  }
 }
 @media (max-width: 576px) {
-  
-.block3 {
-padding-top: 0 !important;
-}
+  .block3 {
+    padding-top: 0 !important;
+  }
 
   .last-block {
-    background: #58c4d9  !important;
-    height: 630px  !important;
+    background: #58c4d9 !important;
+    height: 630px !important;
     padding-left: 0 !important;
   }
   .microbiome-text__first {
@@ -283,8 +572,6 @@ padding-top: 0 !important;
   .guid-box__ico2 {
     left: 0;
   }
-
-
 }
 @media (min-width: 757px) and (max-width: 991px) {
   .first-block__boock-mobile {
@@ -299,32 +586,34 @@ padding-top: 0 !important;
 }
 @media (max-width: 767px) {
   .navbar-toggler[aria-expanded="true"].navbar-expand-sm .navbar-collapse {
-    display: table!important;
+    display: table !important;
   }
 
-    .navbar-toggler[aria-expanded="false"].navbar-expand-sm .navbar-collapse {
-      display: none!important;
-    }
+  .navbar-toggler[aria-expanded="false"].navbar-expand-sm .navbar-collapse {
+    display: none !important;
+  }
 
-    .header__menu {
-      background-color: white;
-      margin-right: -18px;
-        margin-left: -16px;
-        width: 100vw;
-    
-    }
-    
-    .head-menu {
-      align-items: center;
-    }
-    
-    .navbar-right {
-      flex-direction: row;
-      padding: 0 20px;
-      padding-bottom: 20px;
-      justify-content: center;
-      /* justify-content: space-between; */
-    }
+  .header__menu {
+    background-color: white;
+    margin-right: -18px;
+    margin-left: -16px;
+    width: 100vw;
+  }
+
+  .head-menu {
+    align-items: center;
+  }
+
+  .navbar-right {
+    flex-direction: row;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  .navbar-right1444 {
+    justify-content: space-around;
+  }
   .first-block__mobile-book {
     display: none;
   }
@@ -336,10 +625,9 @@ padding-top: 0 !important;
     display: none;
   }
 
-
-.last-block__header{
+  .last-block__header {
     padding-top: 40px !important;
-}
+  }
 
   .balance-provide__clock {
     top: 280px;
@@ -355,316 +643,586 @@ padding-top: 0 !important;
     top: 22%;
   }
 
-}
-@media (max-width: 999px) {
-  /* .navbar-expand-sm .navbar-collapse {
-    display: none !important;
-  } */
-  .banner-box {
-    margin-bottom: 20px;
-  }
-  .feedback {
-    margin: auto;
-    width: 100%;
-  }
-  .guid-box__ico2 {
-    left: 140px;
-  }
-  .credit-card {
-    width: 100%;
-    height: auto;
-  }
-  .credit-card-form {
-    width: 100%;
-    margin-bottom: 48px;
-  }
-  .bg-blue {
-    padding: 90px 10px;
-  }
-  .bottom-menu li {
-    padding-right: 11px;
-  }
-  .doctor-icon {
-    right: 233px;
-  }
-  .hard-box .col-md-7,
-  .hard-box .col-md-5 {
-    padding: 0 !important;
-  }
-
-  .hard-box .col-md-7 {
-    width: 170px;
-  }
-
-  /* .navbar-expand-sm .navbar-collapse {
-    display: none!important;
-  } */
-  /* .navbar-toggler[aria-expanded="true"].navbar-expand-sm .navbar-collapse {
-    display: table!important;
-  }
-
-    .navbar-toggler[aria-expanded="false"].navbar-expand-sm .navbar-collapse {
-      display: none!important;
-    }
-
-    .header__menu {
-      background-color: white;
-      margin-right: -18px;
-        margin-left: -16px;
-        width: 100vw;
-    
-    }
-    
-    .head-menu {
-      align-items: center;
-    }
-    
-    .navbar-right {
-      flex-direction: row;
-      padding: 0 20px;
-      padding-bottom: 20px;
-      justify-content: space-between;
-    } */
-
-  
-
-}
-@media (min-width: 1024px) {
-  .check-box-banner {
-    margin-bottom: 0 !important;
-  }
-  .banner-box .banner-title {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .radio {
-    margin-bottom: 0px;
-  }
-
-  .banner-box .doctor-icon {
-    right: 10%;
-    top: 10%;
-  }
-
-  .form-check-inline {
-    margin-right: 10px;
-  }
-
-  .price {
-    margin: 0 20px;
-  }
-
-  .credit-margin {
-    margin-right: 10px;
-  }
-
-  .quantity-bk {
-    padding-left: 0px;
-  }
-
-  .credit-card {
-    margin-top: 16px;
-  }
-
-  .input-form-credit-light {
-    font-weight: bold;
-  }
-
-  .card-number::placeholder {
-    font-weight: 700;
-  }
-
-  .books {
-    margin-bottom: 0;
-  }
-
-  .footer-logo {
-    margin-bottom: 24px;
-  }
-
-  .informations {
-    align-items: center;
-  }
-
-  .header__menu {
-    display: flex;
-    width: 100%;
-  }
-
- 
-}
-@media (max-width: 1215px) {
-  .head-menu .nav-item .nav-link {
-    padding-right: 8px;
-    padding-left: 8px;
-  }
-  .hard-box.col-md-5,
-  .hard-box.col-md-7 {
-    padding: 0;
-  }
-
-  .radio {
-    margin-bottom: 0px;
-  }
-}
-@media (min-width: 360px) {
-  .question-list__item_btn::after {
-    margin-left: 156px;
-  }
-  .question-list__item_answer::after {
-    top: -60px;
-  }
-}
-@media (min-width: 375px) {
-  .question-list__item_answer::after {
-    top: -55px;
-  }
-  .question-list__item_btn::after {
-    margin-left: 162px;
-  }
-}
-@media (min-width: 414px) {
-  .question-list__item_btn::after {
-    margin-left: 180px;
-  }
-}
-@media (min-width: 576px) {
-  .question-list__item_answer::after {
-    top: -38px;
-  }
-  .question-list__item_btn::after {
-    margin-left: 246px;
-  }
-  .offices {
-    flex-wrap: nowrap;
-  }
-}
-@media (min-width: 768px) {
   .question-list__item_btn::after {
     margin-left: 330px;
   }
 
-  /* .navbar-expand-sm .navbar-toggler {
-    display: block!important;
-} */
+  .header__menu {
+    display: flex;
+  }
 
-/* .collapse:not(.show) {
-  display: none!important;
-} */
+  .navbar-right {
+    display: none;
+  }
 
+  .nav-item__login {
+    background-image: url(../img/login.svg);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-top: 16px;
+    margin-left: 12px;
+  }
 
+  .nav-item__language {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-top: 6px;
+  }
 
-/* .collapse:not(.show) {
-  display: block!important;
-} */
+  .nav-item__language {
+    display: block;
+  }
 
-/*  */
-/* .collapse:not(.show) {
-  display: none!important;
-} */
-/*  */
+  .about {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: relative;
+  }
 
+  .november {
+    display: table;
+    position: relative;
+    background-image: url(../img/blue2.png);
+  }
 
-/* .collapse1445:not(.show) {
-  display: none!important;
-} */
+  .nineteen,
+  .twenty,
+  .twenty-one,
+  .twenty-two {
+    display: table;
+  }
 
-/* .collapse1445 {
-  height: 100px;
+  .about__wrap {
+    background-image: url(../img/mainpic-desctop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 125%;
+    height: 422px;
+  }
 
+  .text {
+    margin-top: 10px;
+    padding-left: 46px;
+  }
+
+  .about__description {
+    line-height: 1.5;
+  }
+
+  .about__title {
+    margin-bottom: 10px;
+  }
+
+  .about__subtitle {
+    margin-bottom: 8px;
+  }
+
+  .rewards__wrap {
+    background-image: url(../img/greyback.png);
+    background-size: cover;
+    margin-top: -32px;
+    height: 556px;
+  }
+
+  
+
+  .slider__wrap {
+    display: none;
+  }
+
+  .reward__cont {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+
+  .reward__item {
+    text-align: center;
+    width: 230px;
+  }
+
+  .cont,
+  .slider-item__image {
+    width: 184px;
+  }
+
+  .press__wrap {
+    background-image: url(../img/pressback-desctop.png);
+    margin-bottom: 68px;
+  }
+
+  .road {
+    padding-top: 150px;
+    overflow: hidden;
+  }
+
+  .road__title,
+  .road__subtitle {
+    text-align: left;
+    margin-left: 34px;
+  }
+
+  .road__subtitle {
+    margin-bottom: 40px;
+  }
+
+  .global__title {
+    margin-bottom: 44px;
+  }
+
+  .global__image {
+    background-image: url(../img/globalback-desctop.png);
+    height: 454px;
+  }
+
+  .refs__list {
+    display: flex;
+    padding-right: 50px;
+  }
+
+  .arrow-right2 {
+    display: table;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #58c4d9;
+  }
+
+  .product {
+    background-image: url(../img/product.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .test {
+    background-image: url(../img/test.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .analys {
+    background-image: url(../img/analys.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .enobiosys {
+    background-image: url(../img/enobiosis.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .probiotic {
+    background-image: url(../img/probiotic.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .pregnancy {
+    background-image: url(../img/pregnant.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .blood {
+    background-image: url(../img/blood.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .kit {
+    background-image: url(../img/kit.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .personal {
+    background-image: url(../img/personal.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .bakteri {
+    background-image: url(../img/bakteri.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .heart {
+    background-image: url(../img/heart.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .event3,
+  .event4,
+  .event5,
+  .event6,
+  .event7 {
+    display: table;
+  }
+
+  .event3,
+  .event4 {
+    width: 196px;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .event5 {
+    width: 160px;
+  }
+
+  .event6 {
+    width: 200px;
+  }
+
+  .event7 {
+    width: 158px;
+  }
+
+  .event3,
+  .event4,
+  .event5,
+  .event6,
+  .event7 {
+    display: table;
+  }
+
+  .event3,
+  .event4 {
+    width: 196px;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .event5 {
+    width: 160px;
+  }
+
+  .event6 {
+    width: 200px;
+  }
+
+  .event7 {
+    width: 158px;
+  }
+
+  /* roadmap */
+
+  .text-top {
+    margin-top: 20px;
+  }
+
+  .road__arrow_wrap {
+    width: 1330px;
+  }
+
+  .road__events {
+    width: 1330px;
+  }
+
+  .event3,
+  .event4,
+  .event5,
+  .event6,
+  .event7 {
+    display: table;
+  }
+
+  .event3,
+  .event4 {
+    width: 196px;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .event5 {
+    width: 160px;
+  }
+
+  .event6 {
+    width: 200px;
+  }
+
+  .event7 {
+    width: 158px;
+  }
+
+  .road__arrow_blue {
+    width: 200px;
+  }
+
+  .text {
+    margin-left: -4px;
+  }
+
+  .event1 {
+    width: 196px;
+    text-align: center;
+  }
+
+  .team__cont {
+    width: 200px;
+    height: 582px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .team__image {
+    width: 200px;
+  }
+
+  .slider-container .slick-center div {
+    transform: scale(1.1);
+  }
+
+  .team__slider .slick-center div {
+    transform: scale(1.1);
+  }
+
+  .cont,
+  .slider-item__image {
+    width: 212px;
+  }
+
+  .cont {
+    margin-bottom: 30px;
+  }
+
+  .slider-item__text {
+    font-size: 12px;
+  }
+
+  .team__cont {
+    width: 230px;
+    height: 550px;
+  }
+
+  .team__image {
+    width: 230px;
+  }
+
+  .refs {
+    margin-bottom: 40px;
+  }
+
+  .text {
+    margin-bottom: 0;
+  }
+
+  /* 1440 */
+
+  .buy__btn,
+  .organizations__btn {
+    width: 202px;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .head-block__buttons {
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  .buy__btn {
+    margin-right: 20px;
+  }
+
+  .head__title {
+    margin-top: 90px;
+  }
+
+  .head__mob {
+    background-image: url(../img/samsung-desctop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 214px;
+    height: 464px;
+    top: -444px;
+    left: 473px;
+  }
+
+  .head__book {
+    background-image: url(../img/book-desctop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 424px;
+    height: 172px;
+    margin-left: 88px;
+  }
+
+  .reward__cont {
+    padding-top: 112px;
+  }
+
+  .rewards__wrap {
+    background-image: url(../img/reward-back-desctop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -542px;
+    height: 600px;
+  }
+
+  .rewards__wrap1443 {
+    margin-top: -42px;
+  }
+
+  .video__wrap {
+    background-image: url(../img/video1-desctop.png);
+    background-size: contain;
+  }
+
+  .comments__video_wrap {
+    background-image: url(../img/video2-desctop.png);
+    background-size: contain;
+  }
+
+  .video__wrap,
+  .comments__video_wrap {
+    width: 500px;
+    height: 264px;
+  }
+
+  .analusis__image {
+    background-image: url(../img/analusis-image-desctop.png);
+    height: 356px;
+  }
+
+  .analusis__btn {
+    width: 255px;
+    margin-top: -66px;
+  }
+
+  .microbiome {
+    background-image: url(../img/microbiome-back-desctop.png);
+    background-repeat: round;
+    background-size: cover;
+    height: unset;
+  }
+
+  .microbiome__wrap {
+    display: flex;
+  }
+
+  .microbiome__image {
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .microbiome__description {
+    font-size: 14px;
+  }
+
+  .microbiome__btn {
+    margin: 0;
+    margin-bottom: 116px;
+  }
+
+  .comments {
+    background-image: url(../img/comments-back-desctop.png);
+    height: 1300px;
+  }
+
+  .second-maket {
+    background-image: url(../img/team-back-desctop.png);
+    background-size: cover;
+    height: 930px;
+  }
+
+  .aware {
+    background-image: url(../img/aware-back-desctop.png);
+    background-repeat: no-repeat;
+    height: 496px;
+  }
+
+  .comments__slider_item_text {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .comments__cont {
+    height: 522px;
+  }
+
+  .comments__slider_item_name {
+    font-size: 12px;
+  }
+
+  .comments__slider_item_category,
+  .comments__slider_item_category_name {
+    padding-left: 22px;
+  }
+
+  .balance-provide__clock {
+    top: 144px;
+  }
+
+  .collapse1442:not(.show) {
+    display: none !important;
+  }
+
+  .press__wrap1440 {
+    background-image: unset;
+  }
+
+  /* 1444 */
+
+   .guide__title,
+    .guide__price {
+        font-size: 24px;
+    }
+
+    .guide__title {
+        padding-top: 88px;
+    }
+
+    .guide__subtitle,
+    .duide__old-price {
+        font-size: 20px;
+    }
+
+    .guide__tablet {
+        width: 330px;
+        height: 456px;
+    }
+
+    .prices {
+        margin-top: 20px;
+    }
+
+    .guide__book {
+        width: 378px;
+        height: 165px;
+        top: 374px;
+    }
+
+    .buy {
+        width: 164px;
+        height: 40px;
+    }
+
+    .bottom {
+        margin-bottom: 32px;
+    }
+
+    .form__description {
+        font-size: 11px;
+        line-height: 24px;
+    }
+
+    /* .collapse:not(.show) {
+        display: block !important; */
+    
 }
 
-.collapse1445 .collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  transition: height 0.35s ease;
-} */
-
-/* .navbar-expand-sm .navbar-toggler {
-  display: none!important;
-} */
-
-.header__menu {
-  display: flex;
+.modal-backdrop {
+  z-index: 600;
+}
 }
 
-.navbar-right {
-  display: none;
-}
-
-.nav-item__login {
-  background-image: url(../img/login.svg);
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  margin-top: 16px;
-  /* margin-right: 30px; */
-  margin-left: 12px;
-}
-
-.nav-item__language {
-  /* background-image: url(../img/Vector.svg); */
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  margin-top: 6px;
-
-}
-
-.nav-item__language {
-  display: block;
-}
-
-/* .switch-lang {
-  margin-top: -6px;
-} */
-
-
-/* .login-btn {
-  background-image: url(../img/login.svg);
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-} */
-
-/* .navbar-right {
-  display: none;
-} */
-
-
-
-/* .login-btn {
-  display: none;
-}
-
-.login-navlink-btn {
-  background-image: url(../img/login.svg);
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  margin-top: 16px;
-  padding-right: 10px!important;
-}
-
-.navbar-right {
-  width: 63px;
-}
-
-.icon-earth {
-  margin-top: -6px;
-} */
-
-/* .collapse:not(.show) {
-  display: block !important;
-} */
-
-/* .collapse1445:not(.show) {
-  display: none!important;
-} */
-
-}
 @media (min-width: 992px) {
   .question-list__item_answer::after {
     top: -18px;
@@ -674,7 +1232,7 @@ padding-top: 0 !important;
     margin-left: 454px;
   }
 
- .secondblock-discover__imgrock {
+  .secondblock-discover__imgrock {
     display: none;
   }
 
@@ -806,15 +1364,6 @@ padding-top: 0 !important;
   .lastblock-discover {
     position: relative;
   }
-
-  /* .collapse1445:not(.show) {
-    display: none!important;
-  } */
-
-  /* .collapse:not(.show) {
-    display: none!important;
-  }
-   */
 }
 @media (max-width: 992px) {
   .secondblock-discover__imgrock-big {
@@ -852,7 +1401,422 @@ padding-top: 0 !important;
     padding-top: 30px;
   }
 }
+
+@media (max-width: 999px) {
+  .banner-box {
+    margin-bottom: 20px;
+  }
+  .feedback {
+    margin: auto;
+    width: 100%;
+  }
+  .guid-box__ico2 {
+    left: 140px;
+  }
+  .credit-card {
+    width: 100%;
+    height: auto;
+  }
+  .credit-card-form {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  .bg-blue {
+    padding: 90px 10px;
+  }
+  .bottom-menu li {
+    padding-right: 11px;
+  }
+  .doctor-icon {
+    right: 233px;
+  }
+  .hard-box .col-md-7,
+  .hard-box .col-md-5 {
+    padding: 0 !important;
+  }
+
+  .hard-box .col-md-7 {
+    width: 170px;
+  }
+}
 @media (min-width: 1024px) {
+  .question-list__item_btn.collapsed::after {
+    right: -5%;
+  }
+
+  .navbar-expand-sm .navbar-toggler {
+    display: none !important;
+  }
+
+  .navbar-right {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .login-btn {
+    display: flex;
+  }
+
+  .nav-item__login,
+  .nav-item__language .lang-btn {
+    display: none;
+  }
+
+  .nav-item__language {
+    display: none;
+  }
+
+  .drop-lang {
+    margin-top: -4px;
+  }
+
+  .about__title {
+    margin-top: 58px;
+    margin-bottom: 40px;
+  }
+
+  .about__subtitle {
+    margin-bottom: 24px;
+  }
+
+  .rewards__wrap {
+    background-image: url(../img/greyback-desctop.png);
+    background-size: cover;
+    margin-top: -46px;
+  }
+
+  .text {
+    margin-left: 14px;
+  }
+
+  .items:focus {
+    outline: none;
+  }
+
+  .about__wrap {
+    height: 626px;
+    width: 150%;
+  }
+
+  .about__description {
+    line-height: 30px;
+  }
+
+  .rewards__wrap {
+    padding-top: 50px;
+  }
+
+  .reward__item {
+    width: 333px;
+  }
+
+  .cont,
+  .slider-item__image {
+    width: 250px;
+  }
+
+  .global {
+    padding: 0 150px;
+  }
+
+  .global__padding {
+    padding: 0 150px;
+  }
+
+  .team__cont {
+    margin-right: 16px;
+    margin-left: 16px;
+    height: 560px;
+  }
+
+  .road {
+    padding-top: 180px;
+    overflow: hidden;
+  }
+
+  .global__image {
+    height: 576px;
+  }
+
+  .refs__list {
+    justify-content: center;
+    padding-right: 50px;
+  }
+
+  .arrow-right {
+    margin-left: -6px;
+  }
+
+  .blue2 {
+    margin-left: -1px;
+  }
+
+  .text-top {
+    margin-top: 24px;
+  }
+
+  .twenty {
+    display: table;
+  }
+
+  /* roadmap */
+
+  .road__arrow_wrap,
+  .road__events {
+    width: 1144px;
+  }
+
+  .road__arrow_white {
+    width: 124px;
+  }
+
+  .road__arrow_blue {
+    width: 140px;
+  }
+
+  .november {
+    width: 186px;
+  }
+
+  .arrow-right3 {
+    display: table;
+  }
+
+  .event1 {
+    width: 142px;
+  }
+
+  .event2,
+  .event4,
+  .event6 {
+    width: 124px;
+  }
+
+  .event3 {
+    width: 186px;
+  }
+
+  .event5 {
+    width: 140px;
+  }
+
+  .event7 {
+    width: 140px;
+  }
+
+  .event3,
+  .event4,
+  .event5,
+  .event6,
+  .event7 {
+    display: table;
+  }
+
+  .arrow-right {
+    margin-left: -1px;
+  }
+
+  .boy1,
+  .road__events_text {
+    margin-left: 20px;
+  }
+
+  .team__item:focus {
+    outline: none;
+  }
+
+  .team__cont {
+    width: 278px;
+    height: 528px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .team__image {
+    width: 278px;
+  }
+
+  .road {
+    padding-top: 130px;
+  }
+
+  /* 1440 */
+  .head__title {
+    margin-top: 180px;
+  }
+
+  /* .head-cont {
+    height: 1000px;
+  } */
+
+  .head-cont {
+    height: 676px;
+  }
+
+  .head__mob {
+    width: 300px;
+    height: 656px;
+    top: -624px;
+    left: 632px;
+  }
+
+  .head__book {
+    width: 596px;
+    height: 246px;
+  }
+
+  .rewards__wrap {
+    background-repeat: round;
+    margin-top: -422px;
+  }
+
+  .video__wrap,
+  .comments__video_wrap {
+    width: 800px;
+    height: 464px;
+  }
+
+  .analusis__image {
+    height: 472px;
+  }
+
+  .microbiome__image {
+    margin-top: -10px;
+  }
+
+  .comments {
+    height: 1520px;
+  }
+
+  .process__list {
+    display: flex;
+  }
+
+  .process__item {
+    width: 230px;
+  }
+
+  .process__item_title {
+    padding: 0;
+  }
+
+  .aware__input {
+    width: 390px;
+  }
+
+  footer {
+    background-color: #f8f8f8;
+    filter: unset;
+  }
+
+  .guide__block {
+    position: relative;
+  }
+
+  .guide__circle_top {
+    background-image: url(../img/bg_elips.svg);
+    width: 577px;
+    height: 577px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -120px;
+    left: -166px;
+  }
+
+  .guide__circle_bottom {
+    background-image: url(../img/ellipse-bottom.svg);
+    width: 366px;
+    height: 577px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    margin-top: 400px;
+    z-index: -1;
+  }
+
+  .comments__slider_item_text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .comments__slider_item_name {
+    font-size: 16px;
+  }
+
+  .comments__slider_item_avatar {
+    margin-left: 8px;
+  }
+
+  .comments__cont {
+    margin-left: 32px;
+  }
+
+  /* 1444 */
+
+  .logo-socical1444 {
+    display: block!important;
+}
+
+.guide__title,
+.guide__price {
+    font-size: 40px;
+}
+
+.guide__subtitle,
+.guide__old-price {
+    font-size: 16px;
+}
+
+.prices {
+    margin-bottom: 38px;
+}
+
+.buy {
+    width: 255px;
+    height: 48px;
+    font-size: 20px;
+}
+
+.guide__tablet {
+    width: 396px;
+    height: 576px;
+}
+
+.guide__book {
+    width: 490px;
+    height: 216px;
+    top: 430px;
+    margin-left: 62px;
+}
+
+.floor {
+    margin-top: -36px;
+}
+
+.modal-content {
+   width: 584px;
+   padding: 0 16px;
+}
+
+.bg-blue1444 .container {
+   width: 584px;
+   padding-right: 38px;
+   padding-left: 38px;
+}
+
+
+.floor .container {
+   padding-top: 20px;
+}
+
+.form__description {
+   font-size: 12px;
+   line-height: 30px;
+}
+}
+
+/* @media (min-width: 1024px) {
+
   .question-list__item_btn.collapsed::after {
     right: -5%;
   }
@@ -860,18 +1824,6 @@ padding-top: 0 !important;
   .navbar-expand-sm .navbar-toggler {
     display: none!important;
 }
-
-/* .collapse:not(.show) {
-  display: flex!important;
-} */
-
-/* .collapse1445:not(.show) {
-  display: none!important;
-} */
-
-/* .collapse:not(.show) {
-  display: none!important;
-} */
 
 
 .navbar-right {
@@ -898,7 +1850,210 @@ padding-top: 0 !important;
   margin-top: -4px;
 }
 
+
+  .check-box-banner {
+    margin-bottom: 0 !important;
+  }
+  .banner-box .banner-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .radio {
+    margin-bottom: 0px;
+  }
+
+  .banner-box .doctor-icon {
+    right: 10%;
+    top: 10%;
+  }
+
+  .form-check-inline {
+    margin-right: 10px;
+  }
+
+  .price {
+    margin: 0 20px;
+  }
+
+  .credit-margin {
+    margin-right: 10px;
+  }
+
+  .quantity-bk {
+    padding-left: 0px;
+  }
+
+  .credit-card {
+    margin-top: 16px;
+  }
+
+  .input-form-credit-light {
+    font-weight: bold;
+  }
+
+  .card-number::placeholder {
+    font-weight: 700;
+  }
+
+  .books {
+    margin-bottom: 0;
+  }
+
+  .footer-logo {
+    margin-bottom: 24px;
+  }
+
+  .informations {
+    align-items: center;
+  }
+
+  .header__menu {
+    display: flex;
+    width: 100%;
+  }
+
+ 
+} */
+
+@media (min-width: 1100px) {
+  .cont,
+  .slider-item__image {
+    width: 170px;
+  }
+
+  .team__cont,
+  .team__image {
+    width: 186px;
+  }
+
+  .team__cont {
+    height: 588px;
+  }
+
+  .slider-container .slick-center div {
+    transform: none;
+  }
+
+  .team__slider .slick-center div {
+    transform: none;
+  }
+
+  /* slider */
+
+  .slide {
+    height: 200px;
+  }
+
+  .slick-slide {
+    transition: transform 0.5s;
+    transform: scale(0.6);
+    font-size: 48px;
+  }
+
+  .slick-xxx {
+    transform: scale(0.8);
+  }
+
+  .slick-xxx + .slick-slide {
+    transform: scale(1);
+  }
+
+  .slick-xxx + .slick-slide + .slick-slide {
+    transform: scale(1);
+  }
+
+  .slick-xxx + .slick-slide + .slick-slide + .slick-slide {
+    transform: scale(1);
+  }
+
+  .slick-xxx + .slick-slide + .slick-slide + .slick-slide + .slick-slide {
+    transform: scale(0.8);
+  }
+
+  .cont,
+  .slider-item__image {
+    width: 182px;
+  }
+
+  .team__cont,
+  .team__image {
+    width: 210px;
+  }
+
+  .team__cont {
+    height: 570px;
+  }
+
+  .team__name {
+    font-size: 15px;
+  }
+
+  .rewards__wrap {
+    margin-top: -58px;
+  }
+
+  /* 1440 */
+
+  .comments {
+    height: 1391px;
+  }
+
+  .comments__slider_block .slick-center div {
+    transform: scale(1.1);
+  }
+
+  .comments__slider_item_text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .comments__cont {
+    width: 550px;
+    height: 408px;
+  }
+
+  .comments__slider_item_avatar {
+    margin-left: 34px;
+  }
+
+  .comments__cont {
+    margin-left: -98px;
+  }
+
+  .comments__slider_item_name {
+    margin-top: 10px;
+  }
+
+  .comments__slider_item_category,
+  .comments__slider_item_category_name {
+    padding-right: 40px;
+    font-size: 16px;
+  }
+
+  .slick-dots li button::before {
+    top: -60px !important;
+  }
+
+  .comments__btn {
+    margin-top: -86px;
+  }
+
+  .analusis__image {
+    height: 508px;
+  }
+
+  .microbiome__image {
+    width: 60%;
+    margin-left: 44px;
+    background-repeat: round;
+  }
+
+  .microbiome__title {
+    margin-left: 264px;
+  }
 }
+
 @media (min-width: 1200px) {
   .question-list__item_btn.collapsed::after {
     right: -5%;
@@ -910,6 +2065,139 @@ padding-top: 0 !important;
   .block2 {
     margin-left: 320px;
   }
+
+  .cont,
+  .slider-item__image,
+  .team__cont,
+  .team__image {
+    width: 204px;
+  }
+
+  .team__cont {
+    height: 564px;
+  }
+
+  .team__name {
+    font-size: 14px;
+  }
+
+  .team__position {
+    font-size: 12px;
+  }
+
+  .road__arrow_wrap,
+  .road__events {
+    width: 1126px;
+  }
+
+  /* 1440 */
+
+  .head__title {
+    font-size: 48px;
+    margin-top: 152px;
+    line-height: 58px;
+  }
+
+  .buy__btn,
+  .organizations__btn,
+  .analusis__btn,
+  .microbiome__btn,
+  .comments__btn,
+  .aware__btn {
+    width: 254px;
+    font-size: 20px;
+  }
+
+  .buy__btn {
+    margin-right: 32px;
+    margin-bottom: 16px;
+  }
+
+  .head__remark {
+    display: table;
+    font-size: 12px;
+    line-height: 16px;
+    color: white;
+  }
+
+  .head__mob {
+    top: -430px;
+    left: 768px;
+  }
+
+  .head__book {
+    position: absolute;
+    top: 506px;
+    width: 710px;
+    left: 206px;
+  }
+
+  .analusis__image {
+    height: 556px;
+  }
+
+  .microbiome__image {
+    height: 368px;
+    margin-top: -92px;
+  }
+
+  .microbiome__title {
+    margin-left: 218px;
+  }
+
+  .comments__slider_block .slick-center div {
+    transform: scale(1.3);
+  }
+
+  .comments__slider_block .slick-center .comments__slider_item_avatar {
+    margin-left: 80px;
+  }
+
+  .comments__slider_block .slick-center .comments__slider_item_name {
+    margin-left: 30px;
+  }
+
+  .process__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .process__list {
+    justify-content: space-between;
+  }
+
+  .microbiome {
+    background-repeat: round;
+  }
+
+  .aware__input {
+    width: 354px;
+  }
+
+  /* 1444 */
+
+  .guide__title {
+    padding-top: 137px;
+}
+
+.guide__subtitle {
+    margin-bottom: 8px;
+}
+
+.guide__tablet {
+    width: 562px;
+    height: 778px;
+}
+
+.guide__book {
+    width: 624px;
+    height: 274px;
+    top: 496px;
+    margin-left: 0;
+}
+
+.floor {
+    margin-top: -70px;
+}
 }
 @media (max-width: 1200px) {
   .balance-provide__girl {
@@ -928,9 +2216,325 @@ padding-top: 0 !important;
     justify-content: flex-end !important;
   }
 }
+
+@media (max-width: 1215px) {
+  .head-menu .nav-item .nav-link {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  .hard-box.col-md-5,
+  .hard-box.col-md-7 {
+    padding: 0;
+  }
+
+  .radio {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .team__cont,
+  .team__image {
+    width: 230px;
+  }
+
+  .team__cont {
+    height: 536px;
+  }
+
+  .team__name {
+    font-size: 14px;
+  }
+
+  .team__position {
+    font-size: 12px;
+  }
+
+  .road__arrow_wrap,
+  .road__events {
+    width: 1204px;
+  }
+
+  .text {
+    margin-left: 52px;
+  }
+
+  /* 1440 */
+
+  .analusis__image {
+    height: 600px;
+  }
+
+  .microbiome__title {
+    margin-left: 250px;
+  }
+
+  .microbiome__image {
+    height: 334px;
+    width: 50%;
+    margin-right: 100px;
+  }
+
+  .comments__slider_block .slick-center .comments__slider_item_avatar {
+    margin-bottom: 10px;
+  }
+
+  .block2 {
+    margin-left: 336px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .analusis__image {
+    height: 668px;
+  }
+
+  .video__wrap,
+  .comments__video_wrap {
+    width: 1100px;
+    height: 556px;
+  }
+
+  .comments .comments__cont {
+    width: 600px;
+    height: 396px;
+  }
+
+  .comments__btn {
+    margin-top: -110px;
+  }
+
+  .microbiome__image {
+    margin-top: -68px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  .text {
+    margin-left: 30px;
+  }
+
+  .cont,
+  .slider-item__image {
+    width: 240px;
+  }
+
+  .rewards__wrap {
+    margin-top: -60px;
+  }
+
+  .arrow-right3 {
+    display: none;
+  }
+
+  .road__arrow_wrap {
+    width: 1394px;
+    font-size: 16px;
+  }
+
+  .road__events {
+    width: 1394px;
+  }
+
+  .road__arrow_white {
+    width: 160px;
+  }
+
+  .november {
+    width: 188px;
+    padding-left: 10px;
+  }
+
+  .road__arrow_blue {
+    width: 192px;
+  }
+
+  .event1,
+  .event3,
+  .event5,
+  .event7 {
+    width: 192px;
+  }
+
+  .event2,
+  .event4,
+  .event6,
+  .event8 {
+    width: 160px;
+  }
+
+  .event3,
+  .event4 {
+    margin-left: 0;
+  }
+
+  .items:focus {
+    outline: none;
+  }
+
+  .team__cont {
+    width: 240px;
+    height: 568px;
+    padding-bottom: 30px;
+  }
+
+  .team__image {
+    width: 240px;
+  }
+
+  .team__descr {
+    font-size: 12px;
+    line-height: unset;
+    margin-bottom: 30px;
+  }
+
+  .road__events_text {
+    margin-left: 0;
+  }
+
+  .team__cont {
+    width: 270px;
+    height: 546px;
+  }
+
+  .team__image {
+    width: 270px;
+  }
+
+  .show__road {
+    display: table;
+  }
+
+  /* 1440 */
+
+  .microbiome__title {
+    margin-left: 200px;
+  }
+
+  .head__mob {
+    left: 928px;
+  }
+
+  .head__book {
+    left: 286px;
+  }
+
+  /* 1444 */
+
+  .modal-content {
+    width: 660px;
+    padding: 0 16px;
+    margin-left: -69px;
+}
+
+.bg-blue1444 .container {
+    width: 660px;
+    padding-right: 46px;
+    padding-left: 46px;
+}
+
+.form__description {
+    font-size: 13px;
+    text-align: center;
+}
+
+.guide__book {
+  margin-left: 134px;
+}
+}
+
 @media (min-width: 1441px) {
   .microbiome-slider__item {
     width: 490px;
     margin: 0 15px;
   }
 }
+
+@media (min-width: 1900px) {
+  .text {
+    padding-left: 280px;
+  }
+
+  .team__cont {
+    width: 316px;
+    height: 598px;
+  }
+
+  .team__image {
+    width: 316px;
+  }
+
+  /* 1440 */
+
+  .head__mob {
+    left: 878px;
+  }
+
+  .head__book {
+    left: 500px;
+    width: 754px;
+  }
+
+  .analusis__image {
+    height: 880px;
+  }
+
+  .microbiome__image {
+    background-repeat: no-repeat;
+  }
+
+  .comments .comments__cont {
+    width: 846px;
+    height: 340px;
+  }
+
+  .comments__slider_block .slick-center .comments__slider_item_avatar {
+    margin-left: 112px;
+  }
+
+  .aware {
+    background-repeat: round;
+  }
+}
+
+@media (min-width: 2300px) {
+  .head__book {
+    left: 660px;
+  }
+
+  .analusis__image {
+    height: 1062px;
+}
+}
+
+@media (min-width: 2500px) {
+  .text {
+    padding-left: 570px;
+  }
+
+  .team__cont,
+  .team__image {
+    width: 440px;
+  }
+
+  .team__cont {
+    height: 830px;
+  }
+
+  .team__name {
+    font-size: 30px;
+  }
+
+  .team__position {
+    font-size: 26px;
+  }
+
+  .team__descr {
+    font-size: 18px;
+  }
+}
+

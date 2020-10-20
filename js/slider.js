@@ -131,6 +131,16 @@ $(".comments__slider_block").slick({
   centerPadding: "0",
   responsive: [
     {
+      breakpoint: 2600,
+      settings: {
+        arrows: false,
+        dots: true,
+        centerMode: true,
+        centerPadding: "40px",
+        slidesToShow: 3,
+      },
+    },
+    {
       breakpoint: 2000,
       settings: {
         arrows: false,
