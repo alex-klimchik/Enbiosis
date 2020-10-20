@@ -104,11 +104,11 @@
 
 
 
-.icon-facebook {
+/* .icon-facebook {
     background-image: url(../img/cib_facebook.svg);
-}
+} */
 
-.icon-inst {
+/* .icon-inst {
     background-image: url(../img/instagram-with-circle.svg);
 }
 
@@ -127,16 +127,16 @@
     height: 32px;
     background-size: auto 100%;
     vertical-align: middle;
-}
+} */
 
-.bottom-menu li a {
+/* .bottom-menu li a {
     color: white !important;
-}
+} */
 
-.email,
+/* .email,
 .informations li {
     color: #6c9bb7;
-}
+} */
 
 .mainpic {
     width: 344px;
@@ -187,21 +187,21 @@
     margin-bottom: 48px;
 }
 
-.bg-blue {
+.bg-blue1444 {
     padding: 0;
     background-image: none;
 }
 
-.bg-blue .container {
+.bg-blue1444 .container {
     width: 500px;
 }
 
-.bg-blue h3 {
+.bg-blue1444 h3 {
     color: black;
     margin: 0 auto;
 }
 
-.bg-blue p {
+.bg-blue1444 p {
     color: black;
     margin-bottom: 30px;
 }
