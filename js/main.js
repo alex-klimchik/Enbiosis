@@ -168,3 +168,15 @@ $(document).ready(function () {
     $("#btn1, #btn2, #btn3, #btn4, #btn5, #btn6").css("color", "black");
   });
 });
+
+// validation date 1468
+
+(function($){ 
+  $('.mask').inputmask("datetime",{
+    mask: "1.y", 
+    placeholder: "MM/YY", 
+    leapday: "-02-29", 
+    separator: ".", 
+    alias: "dd/mm/yyyy"
+  });  
+})(jQuery)

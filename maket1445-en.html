@@ -32,18 +32,59 @@
             data-toggle="collapse"
             data-target="#collapsibleNavbar"
           >
-            <span class="navbar-toggler-icon"></span>
+            <p class="navbar-toggler-icon"></p>
           </button>
           <!-- </div> -->
           <div class="header__menu">
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav head-menu">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Our solutions</a>
+                  <a
+                    class="nav-link sub-menu"
+                    data-toggle="collapse"
+                    data-target="#subMenu"
+                    id="open-sub-menu_main"
+                    href="#"
+                    >Our solutions<img
+                      class="sub-menu__arrow-down"
+                      src="img/arrow-down-submenu.svg"
+                      alt=""
+                  /></a>
                 </li>
+                <div
+                  class="collapse sub-menu__visibility sub-menu__mobile"
+                  id="subMenu"
+                >
+                  <ul class="navbar-nav head-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">IBS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bagisiklik</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Kilo-kontrolu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Gida-hassasiyeti</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bagirsak hastaliklari</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        >Kisisellestirilmis beslenme</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Mikrobiyom testleri</a>
+                    </li>
+                  </ul>
+                </div>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Microbiome</a>
                 </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="#">About us</a>
                 </li>
@@ -79,21 +120,21 @@
             >
               <ul class="navbar-nav navbar-right">
                 <li class="nav-item nav-link login-navlink-btn">
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     class="login-btn btn btn-outline-danger"
                   >
                     login
-                </a>
+                  </button>
                 </li>
                 <li class="nav-item nav-link drop-lang">
                   <div class="dropdown">
                     <button
                       type="button"
-                      class="btn dropdown-toggle"
+                      class="btn dropdown-toggle dropdown-simple dropdown-hover"
                       data-toggle="dropdown"
                     >
-                      <i class="icon-earth"></i> Lanquage
+                      Lanquage
                     </button>
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="#">EN - English</a>
@@ -107,6 +148,33 @@
           </div>
         </div>
       </nav>
+      <div class="sub-menu__main">
+        <div class="container">
+          <ul class="sub-menu__head-menu">
+            <li class="sub-menu__item">
+              <a class="sub-menu__-link" href="#">IBS</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Bagisiklik</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Kilo-kontrolu</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Gida-hassasiyeti</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Bagirsak hastaliklari</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Kisisellestirilmis beslenme</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Mikrobiyom testleri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -382,9 +450,7 @@
               ></textarea>
             </div>
             <div class="mb-3 text-center">
-              <a href="#" class="btn btn-outline-light btn-send">
-                Send
-              </a>
+              <a href="#" class="btn btn-outline-light btn-send"> Send </a>
             </div>
           </form>
         </div>
@@ -470,5 +536,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
