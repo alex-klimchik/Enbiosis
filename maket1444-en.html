@@ -14,7 +14,8 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-sm navbar-light header">
-        <div class="container">
+        <div class="container header__navigation">
+          <!-- <div class="header__navigation"> -->
           <a class="navbar-brand" href="#">
             <img src="img/Subtract.svg" alt="Logo" />
             <img src="img/Enbiosis.svg" alt="Logo" />
@@ -25,152 +26,149 @@
             data-toggle="collapse"
             data-target="#collapsibleNavbar"
           >
-            <span class="navbar-toggler-icon"></span>
+            <p class="navbar-toggler-icon"></p>
           </button>
+          <!-- </div> -->
           <div class="header__menu">
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav head-menu">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Our solutions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Microbiome</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link btn"
-                  href="#"
-                  data-toggle="modal"
-                  data-target="#myModal"
-                  >Contact us</a
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav head-menu">
+                <li class="nav-item">
+                  <a
+                    class="nav-link sub-menu"
+                    data-toggle="collapse"
+                    data-target="#subMenu"
+                    id="open-sub-menu_main"
+                    href="#"
+                    >Our solutions<img
+                      class="sub-menu__arrow-down"
+                      src="img/arrow-down-submenu.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <div
+                  class="collapse sub-menu__visibility sub-menu__mobile"
+                  id="subMenu"
                 >
-              </li>
-              <li class="nav-item login__btn">
-                <div class="nav-item__login">
-                  <a class="nav-link" href="#"></a>
+                  <ul class="navbar-nav head-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">IBS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bagisiklik</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Kilo-kontrolu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Gida-hassasiyeti</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bagirsak hastaliklari</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        >Kisisellestirilmis beslenme</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Mikrobiyom testleri</a>
+                    </li>
+                  </ul>
                 </div>
-              </li>
-              <li class="nav-item lang__btn">
-                <div class="nav-item__language dropdown">
-                  <button
-                    type="button"
-                    class="btn dropdown-toggle switch-lang"
-                    data-toggle="dropdown"
-                  >
-                    <i class="icon-earth"></i>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">EN - English</a>
-                    <a class="dropdown-item" href="#">TR - Turkish</a>
-                    <a class="dropdown-item" href="#">RU - Русский</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Microbiome</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+                <li class="nav-item login__btn">
+                  <div class="nav-item__login">
+                    <a class="nav-link" href="#"></a>
                   </div>
-                </div>
-              </li>
-              <!-- <li class="nav-item nav-link">
-                <div class="language turkey"></div>
-              </li>
-              <li class="nav-item nav-link">
-                <div class="language britain"></div>
-              </li> -->
-            </ul>
-          </div>
-          <div
-            class="modal fade"
-            id="myModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-            >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="bg-blue mt-4 bg-blue1444">
-                    <div class="container">
-                      <h3>Contact Us</h3>
-                      <p class="form__description">
-                        if you want more informations about ENBIOSIS
-                        Biotechnology, you can fill out the <br />
-                        form. We`ll be in touch as soon as possible
-                      </p>
-                      <form class="feedback" action=" ">
-                        <div class="row mb-3">
-                          <div class="col-md-6">
-                            <input
-                              type="text "
-                              class="form-control"
-                              placeholder="Name and surname "
-                            />
-                          </div>
-                          <div class="col-md-6"></div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <input
-                              type="email "
-                              class="form-control mb-4"
-                              placeholder="E-mail "
-                            />
-                          </div>
-                          <div class="col-md-6">
-                            <input
-                              type="phone "
-                              class="form-control mb-3"
-                              placeholder="Phone number "
-                            />
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                          <textarea
-                            class="message-text mb-4"
-                            placeholder="Massage "
-                            id="exampleFormControlTextarea1 "
-                            rows="3 "
-                          ></textarea>
-                        </div>
-                      </form>
+                </li>
+                <li class="nav-item lang__btn">
+                  <div class="nav-item__language dropdown">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle switch-lang"
+                      data-toggle="dropdown"
+                    >
+                      <i class="icon-earth"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">EN - English</a>
+                      <a class="dropdown-item" href="#">TR - Turkish</a>
+                      <a class="dropdown-item" href="#">RU - Русский</a>
                     </div>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <a href="#" class="btn send-btn">Send</a>
-                </div>
-              </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="collapse navbar-collapse d-end-flex"
+              id="collapsibleNavbar"
+            >
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item nav-link login-navlink-btn">
+                  <button
+                    type="button"
+                    class="login-btn btn btn-outline-danger"
+                  >
+                    login
+                  </button>
+                </li>
+                <li class="nav-item nav-link drop-lang">
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle dropdown-simple dropdown-hover"
+                      data-toggle="dropdown"
+                    >
+                      Lanquage
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">EN - English</a>
+                      <a class="dropdown-item" href="#">TR - Turkish</a>
+                      <a class="dropdown-item" href="#">RU - Русский</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div
-            class="collapse navbar-collapse d-end-flex"
-            id="collapsibleNavbar"
-            >
-            <ul class="navbar-nav navbar-right navbar-right1444">
-              <li class="nav-item nav-link">
-                <a  href="#"class="login-btn btn btn-outline-danger">
-                  login
-                </a>
-              </li>
-              <li class="nav-item nav-link">
-                <div class="language turkey"></div>
-              </li>
-              <li class="nav-item nav-link">
-                <div class="language britain"></div>
-              </li>
-            </ul>
-          </div>
-        </div>
         </div>
       </nav>
+      <div class="sub-menu__main">
+        <div class="container">
+          <ul class="sub-menu__head-menu">
+            <li class="sub-menu__item">
+              <a class="sub-menu__-link" href="#">IBS</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Bagisiklik</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Kilo-kontrolu</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Gida-hassasiyeti</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Bagirsak hastaliklari</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Kisisellestirilmis beslenme</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Mikrobiyom testleri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -189,8 +187,8 @@
                   <span class="guide__old-price">140.99</span>
                 </div>
                 <div class="buy-btn1444">
-                <a href="#" class="buy font-weight-bold ">Buy biotechnology</a>
-              </div>
+                  <a href="#" class="buy font-weight-bold">Buy biotechnology</a>
+                </div>
               </div>
             </div>
             <div class="guide__tablet"></div>
@@ -240,7 +238,9 @@
         <div class="flex-between">
           <ul class="bottom-menu">
             <li>
-              <a href="# " class="font-weight-bold bottom-list">Our solutions</a>
+              <a href="# " class="font-weight-bold bottom-list"
+                >Our solutions</a
+              >
             </li>
             <li>
               <a href="# " class="font-weight-bold bottom-list">Microbiome</a>

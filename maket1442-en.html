@@ -1,583 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maket 1442</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <!-- script -->
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maket 1442</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <!-- style -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/media.css" />
-  <!-- script -->
-  <script src="./js/slider.js"></script>
-  <script src="./js/main.js"></script>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-sm navbar-light header">
-      <div class="container header__navigation">
-        <!-- <div class="header__navigation"> -->
-        <a class="navbar-brand" href="#">
-          <img src="img/Subtract.svg" alt="Logo" />
-          <img src="img/Enbiosis.svg" alt="Logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- </div> -->
-        <div class="header__menu">
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav head-menu">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Our solutions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Microbiome</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
-              </li>
-              <li class="nav-item login__btn">
-                <div class="nav-item__login">
-                  <a class="nav-link" href="#"></a>
-                </div>
-              </li>
-              <li class="nav-item lang__btn">
-                <div class="nav-item__language dropdown">
-                  <button
-                    type="button"
-                    class="btn dropdown-toggle switch-lang"
-                    data-toggle="dropdown"
-                  >
-                    <i class="icon-earth"></i>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">EN - English</a>
-                    <a class="dropdown-item" href="#">TR - Turkish</a>
-                    <a class="dropdown-item" href="#">RU - Русский</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="collapse navbar-collapse d-end-flex"
-            id="collapsibleNavbar"
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light header">
+        <div class="container header__navigation">
+          <!-- <div class="header__navigation"> -->
+          <a class="navbar-brand" href="#">
+            <img src="img/Subtract.svg" alt="Logo" />
+            <img src="img/Enbiosis.svg" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
           >
-            <ul class="navbar-nav navbar-right">
-              <li class="nav-item nav-link login-navlink-btn">
-                <a
-                  href="#"
-                  class="login-btn btn btn-outline-danger"
+            <p class="navbar-toggler-icon"></p>
+          </button>
+          <!-- </div> -->
+          <div class="header__menu">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav head-menu">
+                <li class="nav-item">
+                  <a
+                    class="nav-link sub-menu"
+                    data-toggle="collapse"
+                    data-target="#subMenu"
+                    id="open-sub-menu_main"
+                    href="#"
+                    >Our solutions<img
+                      class="sub-menu__arrow-down"
+                      src="img/arrow-down-submenu.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <div
+                  class="collapse sub-menu__visibility sub-menu__mobile"
+                  id="subMenu"
                 >
-                  login
-              </a>
-              </li>
-              <li class="nav-item nav-link drop-lang">
-                <div class="dropdown">
+                  <ul class="navbar-nav head-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">IBS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bagisiklik</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Kilo-kontrolu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Gida-hassasiyeti</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bagirsak hastaliklari</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        >Kisisellestirilmis beslenme</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Mikrobiyom testleri</a>
+                    </li>
+                  </ul>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Microbiome</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+                <li class="nav-item login__btn">
+                  <div class="nav-item__login">
+                    <a class="nav-link" href="#"></a>
+                  </div>
+                </li>
+                <li class="nav-item lang__btn">
+                  <div class="nav-item__language dropdown">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle switch-lang"
+                      data-toggle="dropdown"
+                    >
+                      <i class="icon-earth"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">EN - English</a>
+                      <a class="dropdown-item" href="#">TR - Turkish</a>
+                      <a class="dropdown-item" href="#">RU - Русский</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="collapse navbar-collapse d-end-flex"
+              id="collapsibleNavbar"
+            >
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item nav-link login-navlink-btn">
                   <button
                     type="button"
-                    class="btn dropdown-toggle"
-                    data-toggle="dropdown"
+                    class="login-btn btn btn-outline-danger"
                   >
-                    <i class="icon-earth"></i> Lanquage
+                    login
                   </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">EN - English</a>
-                    <a class="dropdown-item" href="#">TR - Turkish</a>
-                    <a class="dropdown-item" href="#">RU - Русский</a>
+                </li>
+                <li class="nav-item nav-link drop-lang">
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle dropdown-simple dropdown-hover"
+                      data-toggle="dropdown"
+                    >
+                      Lanquage
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">EN - English</a>
+                      <a class="dropdown-item" href="#">TR - Turkish</a>
+                      <a class="dropdown-item" href="#">RU - Русский</a>
+                    </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <img src="img/microbiome.jpg" alt="Logo" class="microbiome-bg" />
-  <main class="main-block">
-    <div class="microbiome-bg__small"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-xl-7">
-          <div class="microbiome-text__main">
-            <p class="microbiome-text__title">
-              Ecosystem in your body: <br />
-              <span class="microbiome-text__subtitle">Microbiome</span>
-            </p>
-          </div>
-          <div class="microbiome-text">
-            <p class="microbiome-text__first">
-              Our bodies are home to trillions of microorganisms that
-              accompany us from the moment we are born, which are of
-              indisputable importance to our health and quality of life. These
-              microscopic creatures, their genetic materials, genome products
-              and their interactions with the environment make up our
-              microbiome as a whole.
-            </p>
-            <p class="microbiome-text__second">
-              The microbiome world that exists within us contacts us with the
-              metabolites they produce, although we are not aware of them. If
-              a microbiome is diverse and balanced, it is the biggest factor
-              in establishing this communication in favor of our health.
-            </p>
-          </div>
-          <p class="microbiome-text__last">
-            A balanced microbiome protects us against metabolic problems,
-            autoimmune diseases, diseases associated with the digestive system
-            and mental problems, and increases our existing quality of life by
-            contributing to physiological and psychological recovery.
-          </p>
-          <div class="microbiome-quote">
-            <div class="microbiome-quote__title">
-              "Your microbiome is like your ID card"
-            </div>
-            <div class="microbiome-quote__subtitle">
-              For your microbiome health, there should be solutions specific
-              to you.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="microbiome-carousel">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="microbiome-text__main">
-              <p class="microbiome-text__title">
-                Microbiome <br />
-                <span class="microbiome-text__subtitle">How is it shaped?</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row d-flex justify-content-around">
-          <div class="microbiome-slider">
-            <div class="microbiome-slider__item d-flex justify-content-center">
-              <div class="microbiome-slider__img1">
-                <div class="microbiome-slider__title">Drugs used</div>
-                <div class="microbiome-slider__text">
-                  It shows your current status through 15 different modules,
-                  from intestinal movement to microbiome age, carbohydrate,
-                  fat, protein metabolisms to sleep quality.
-                </div>
-              </div>
-            </div>
-            <div class="microbiome-slider__item">
-              <div class="microbiome-slider__img2">
-                <div class="microbiome-slider__title">Drugs used</div>
-                <div class="microbiome-slider__text">
-                  It shows your current status through 15 different modules,
-                  from intestinal movement to microbiome age, carbohydrate,
-                  fat, protein metabolisms to sleep quality.
-                </div>
-              </div>
-            </div>
-            <div class="microbiome-slider__item">
-              <div class="microbiome-slider__img3">
-                <div class="microbiome-slider__title">Drugs used</div>
-                <div class="microbiome-slider__text">
-                  It shows your current status through 15 different modules,
-                  from intestinal movement to microbiome age, carbohydrate,
-                  fat, protein metabolisms to sleep quality.
-                </div>
-              </div>
-            </div>
-            <div class="microbiome-slider__item">
-              <div class="microbiome-slider__img4">
-                <div class="microbiome-slider__title">Drugs used</div>
-                <div class="microbiome-slider__text">
-                  It shows your current status through 15 different modules,
-                  from intestinal movement to microbiome age, carbohydrate,
-                  fat, protein metabolisms to sleep quality.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="balance-provide">
-      <img src="img/girljuice.svg" class="balance-provide__girl" />
-      <div class="balance-provide__clock">
-        <div class="clock-white"></div>
-        <div class="balance-provide__arrow"></div>
-        <div class="hover__clock"></div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col d-flex justify-content-center balance-provide__title">
-            What does microbiome balance provide?
-          </div>
-        </div>
-        <div class="row block2">
-          <div class="col-sm-6 col-xl-5">
-            <div id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default balance-provide__item">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <a class="balance-provide__accardion balance-provide__1 collapsed" data-toggle="collapse"
-                    data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                    Strong immune system
-                  </a>
-                </div>
-                <div id="collapse1" class=" collapse   balance-provide__text " aria-labelledby="heading1"
-                  data-parent="#accordion">
-
-                  Our microbiome has a significant impact on our immune
-                  system. A healthy microbiome supports the immune system in
-                  body defense both by secreting metabolites that stimulate
-                  immune defense and by protecting the gut barrier. Imbalances
-                  in the microbiome play an important role in the emergence or
-                  progression of autoimmune diseases
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading balance-provide__weight" role="tab" id="headingTwo">
-                  <a class="balance-provide__accardion balance-provide__2 collapsed" data-toggle="collapse"
-                    data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                    Weight control
-                  </a>
-                </div>
-                <div id="collapse2" class="collapse balance-provide__text" aria-labelledby="heading2"
-                  data-parent="#accordion">
-
-                  Our microbiome has a significant impact on our immune
-                  system. A healthy microbiome supports the immune system in
-                  body defense both by secreting metabolites that stimulate
-                  immune defense and by protecting the gut barrier. Imbalances
-                  in the microbiome play an important role in the emergence or
-                  progression of autoimmune diseases
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="heading3">
-                  <a class="balance-provide__accardion balance-provide__3 collapsed" data-toggle="collapse"
-                    data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                    Mental health
-                  </a>
-                </div>
-                <div id="collapse3" class="collapse balance-provide__text" aria-labelledby="heading3"
-                  data-parent="#accordion">
-
-                  Our microbiome has a significant impact on our immune
-                  system. A healthy microbiome supports the immune system in
-                  body defense both by secreting metabolites that stimulate
-                  immune defense and by protecting the gut barrier. Imbalances
-                  in the microbiome play an important role in the emergence or
-                  progression of autoimmune diseases
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingFour">
-                  <a class="balance-provide__accardion balance-provide__4 collapsed" data-toggle="collapse"
-                    data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                    Sleep Quality
-                  </a>
-                </div>
-                <div id="collapse4" class="collapse balance-provide__text" aria-labelledby="heading4"
-                  data-parent="#accordion">
-
-                  Our microbiome has a significant impact on our immune
-                  system. A healthy microbiome supports the immune system in
-                  body defense both by secreting metabolites that stimulate
-                  immune defense and by protecting the gut barrier. Imbalances
-                  in the microbiome play an important role in the emergence or
-                  progression of autoimmune diseases
-                </div>
-              </div>
-              <div class="panel panel-default balance-provide__item1">
-                <div class="panel-heading" role="tab" id="headingFive">
-                  <a class="balance-provide__accardion balance-provide__5 collapsed" data-toggle="collapse"
-                    data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-
-                    Digestive system
-                  </a>
-                </div>
-                <div id="collapse5" class="collapse balance-provide__text" aria-labelledby="heading5"
-                  data-parent="#accordion">
-
-                  Our microbiome has a significant impact on our immune
-                  system. A healthy microbiome supports the immune system in
-                  body defense both by secreting metabolites that stimulate
-                  immune defense and by protecting the gut barrier. Imbalances
-                  in the microbiome play an important role in the emergence or
-                  progression of autoimmune diseases
-                </div>
-              </div>
-              <div class="panel panel-default balance-provide__item2">
-                <div class="panel-heading" role="tab" id="headingSix">
-                  <a class="balance-provide__accardion balance-provide__6 collapsed" data-toggle="collapse"
-                    data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                    Skin health
-                  </a>
-                </div>
-                <div id="collapse6" class="collapse balance-provide__text" aria-labelledby="heading6"
-                  data-parent="#accordion">
-
-                  Our microbiome has a significant impact on our immune
-                  system. A healthy microbiome supports the immune system in
-                  body defense both by secreting metabolites that stimulate
-                  immune defense and by protecting the gut barrier. Imbalances
-                  in the microbiome play an important role in the emergence or
-                  progression of autoimmune diseases
-                </div>
-              </div>
-              <div class="panel panel-default balance-provide__item3">
-                <div class="panel-heading" role="tab" id="headingTSeven">
-                  <a class="balance-provide__accardion balance-provide__7 collapsed" data-toggle="collapse"
-                    data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                    More
-                  </a>
-                </div>
-                <div id="collapse7" class="collapse balance-provide__text" aria-labelledby="heading7"
-                  data-parent="#accordion">
-
-                  Our microbiome has a significant impact on our immune
-                  system. A healthy microbiome supports the immune system in
-                  body defense both by secreting metabolites that stimulate
-                  immune defense and by protecting the gut barrier. Imbalances
-                  in the microbiome play an important role in the emergence or
-                  progression of autoimmune diseases
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block2-small">
-          <div class="row">
-
-            <div class="col d-flex justify-content-between">
-              <a id="btn1" class="balance-provide__accardion balance-small__1" href="#" data-target="stronger"
-                aria-expanded="false" style="color: #e55d48;">Strong<br />immune system</a>
-
-              <a id="btn2" class="balance-provide__accardion balance-small__2" href="#" data-target="weight"
-                aria-expanded="false">Weight
-                control</a>
-              <a id="btn3" class="balance-provide__accardion balance-small__3" href="#" data-target="sleep"
-                aria-expanded="false">Sleep
-                Quality</a>
-              <a id="btn4" class="balance-provide__accardion balance-small__4" href="#" data-target="mental"
-                aria-expanded="false">Mental
-                health</a>
-            </div>
-          </div>
-          <div class="block2-small__img d-flex align-items-center justify-content-center">
-            <div class="hover_block_mobile"></div>
-            <div id="stronger-div" class="block2-small__text targetdivs" style="display: block;">
-              Our microbiome has a significant impact on our immune system. A
-              healthy microbiome supports the immune system in body defense
-              both by secreting metabolites that stimulate immune defense and
-              by protecting the gut barrier. Imbalances in the microbiome play
-              an important role in the emergence or progression of autoimmune
-              diseases
-            </div>
-            <div id="weight-div" class="block2-small__text targetdivs">
-              2 Our microbiome has a significant impact on our immune system. A
-              healthy microbiome supports the immune system in body defense
-              both by secreting metabolites that stimulate immune defense and
-              by protecting the gut barrier. Imbalances in the microbiome play
-              an important role in the emergence or progression of autoimmune
-              diseases
-            </div>
-            <div id="sleep-div" class="block2-small__text targetdivs">
-              3 Our microbiome has a significant impact on our immune system. A
-              healthy microbiome supports the immune system in body defense
-              both by secreting metabolites that stimulate immune defense and
-              by protecting the gut barrier. Imbalances in the microbiome play
-              an important role in the emergence or progression of autoimmune
-              diseases
-            </div>
-            <div id="mental-div" class="block2-small__text targetdivs">
-              4 Our microbiome has a significant impact on our immune system. A
-              healthy microbiome supports the immune system in body defense
-              both by secreting metabolites that stimulate immune defense and
-              by protecting the gut barrier. Imbalances in the microbiome play
-              an important role in the emergence or progression of autoimmune
-              diseases
-            </div>
-            <div id="digestive-div" class="block2-small__text targetdivs">
-              5 Our microbiome has a significant impact on our immune system. A
-              healthy microbiome supports the immune system in body defense
-              both by secreting metabolites that stimulate immune defense and
-              by protecting the gut barrier. Imbalances in the microbiome play
-              an important role in the emergence or progression of autoimmune
-              diseases
-            </div>
-            <div id="skin-div" class="block2-small__text targetdivs">
-              6 Our microbiome has a significant impact on our immune system. A
-              healthy microbiome supports the immune system in body defense
-              both by secreting metabolites that stimulate immune defense and
-              by protecting the gut barrier. Imbalances in the microbiome play
-              an important role in the emergence or progression of autoimmune
-              diseases
-            </div>
-            <div id="more-div" class="block2-small__text targetdivs">
-              7 Our microbiome has a significant impact on our immune system. A
-              healthy microbiome supports the immune system in body defense
-              both by secreting metabolites that stimulate immune defense and
-              by protecting the gut barrier. Imbalances in the microbiome play
-              an important role in the emergence or progression of autoimmune
-              diseases
-            </div>
-          </div>
-          <div class="row">
-            <div class="col d-flex justify-content-between">
-              <a id="btn7" class="balance-provide__accardion balance-small__7" href="#"
-                data-target="digestive">Digestive<br />system
-
-              </a>
-              <a id="btn6" class="balance-provide__accardion balance-small__6" href="#"
-                data-target="skin">Skin<br />health</a>
-              <a id="btn5" class="balance-provide__accardion balance-small__5" href="#" data-target="more">More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="block3">
-      <div class="doctor-small__small"></div>
-      <div class="container">
-        <img src="img/microscope.svg" class="microscope_img" />
-        <div class="row">
-          <div class="offset-xl-5 col-xl-7">
-            <span class="microbiome-text__subtitle">Enbiosis microbiome analysis based<br />
-              on artificial intelligence</span>
-            <p class="microbiome-text__fw">
-              In microbiome based studies conducted worldwide, 16S rRNA gene
-              is the most preferred region. ENBIOSIS uses the 16S rRNA next
-              generation sequencing method to reveal the microbiome profile.
-            </p>
-
-            <div class="microbiome-text">
-              <p class="microbiome-text__first">
-                After the microbiome is profiled, ENBIOSIS's artificial
-                intelligence technology combines the microbiome profile with
-                the data provided by the scientific literature on
-                microbiome-nutrition and prepares a personalized nutrition
-                guide. With every new data coming to ENBIOSIS, our artificial
-                intelligence technology continues to improve..
-              </p>
-              <p class="microbiome-text__second">
-                ENBIOSIS carries out its work in the Genome and Stem Cell
-                Center which is Turkey's leading genetic laboratory. It also
-                protects your biological materials here.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="last-block">
-      <img src="img/last-block-boocks.png" class="last-block__boocks" />
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="last-block__header">
-              <div class="last-block__title">Your own nutrition guide</div>
-              <div class="last-block__subtitle">
-                Discover your microniome,<br />
-                rule your diet, manage tour health!
-              </div>
-            </div>
-            <div class="last-block__price">From 999 TL</div>
-            <a href="#" class="last-block__button">Buy biotechnology</a>
-          </div>
-          <div class="last-block__boocks-small"></div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer class="pt-3 pb-1">
-    <div class="container">
-      <div class="flex-between logo-socical">
-        <a class="navbar-brand" href="# ">
-          <img src="img/Subtract.svg " alt="Logo " />
-          <img src="img/Enbiosis.svg " alt="Logo " />
-        </a>
-        <div class="d-inline-flex">
-          <ul class="social-networks">
-            <li>
-              <a href="# ">
-                <icon class="icon-facebook"></icon>
-              </a>
+      </nav>
+      <div class="sub-menu__main">
+        <div class="container">
+          <ul class="sub-menu__head-menu">
+            <li class="sub-menu__item">
+              <a class="sub-menu__-link" href="#">IBS</a>
             </li>
-            <li>
-              <a href="# ">
-                <icon class="icon-inst"></icon>
-              </a>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Bagisiklik</a>
             </li>
-            <li>
-              <a href="# ">
-                <icon class="icon-youtube"></icon>
-              </a>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Kilo-kontrolu</a>
             </li>
-            <li>
-              <a href="# ">
-                <icon class="icon-linkedin"></icon>
-              </a>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Gida-hassasiyeti</a>
             </li>
-            <li>
-              <a href="# ">
-                <icon class="icon-twiter"></icon>
-              </a>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Bagirsak hastaliklari</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Kisisellestirilmis beslenme</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Mikrobiyom testleri</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="flex-between">
-        <ul class="bottom-menu">
-          <li>
-            <a href="# " class="font-weight-bold">Our solutions</a>
-          </li>
-          <li>
-            <a href="# " class="font-weight-bold">Microbiome</a>
-          </li>
-          <li>
-            <a href="# " class="font-weight-bold">About us</a>
-          </li>
-          <li>
-            <a href="# " class="font-weight-bold">Contact us</a>
-          </li>
-          <li>
-            <a href="# " class="font-weight-bold">FAQ`s</a>
-          </li>
-        </ul>
+    </header>
+    <img src="img/microbiome.jpg" alt="Logo" class="microbiome-bg" />
+    <main class="main-block">
+      <div class="microbiome-bg__small"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-xl-7">
+            <div class="microbiome-text__main">
+              <p class="microbiome-text__title">
+                Ecosystem in your body: <br />
+                <span class="microbiome-text__subtitle">Microbiome</span>
+              </p>
+            </div>
+            <div class="microbiome-text">
+              <p class="microbiome-text__first">
+                Our bodies are home to trillions of microorganisms that
+                accompany us from the moment we are born, which are of
+                indisputable importance to our health and quality of life. These
+                microscopic creatures, their genetic materials, genome products
+                and their interactions with the environment make up our
+                microbiome as a whole.
+              </p>
+              <p class="microbiome-text__second">
+                The microbiome world that exists within us contacts us with the
+                metabolites they produce, although we are not aware of them. If
+                a microbiome is diverse and balanced, it is the biggest factor
+                in establishing this communication in favor of our health.
+              </p>
+            </div>
+            <p class="microbiome-text__last">
+              A balanced microbiome protects us against metabolic problems,
+              autoimmune diseases, diseases associated with the digestive system
+              and mental problems, and increases our existing quality of life by
+              contributing to physiological and psychological recovery.
+            </p>
+            <div class="microbiome-quote">
+              <div class="microbiome-quote__title">
+                "Your microbiome is like your ID card"
+              </div>
+              <div class="microbiome-quote__subtitle">
+                For your microbiome health, there should be solutions specific
+                to you.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="flex-between mb-4">
-        <ul class="informations">
-          <li class="inf-adr">
-            <span href="# ">Turkey Office:<br />Maslak 1453 T4-B/91 Sariyer/istanbul</span>
-          </li>
-          <li class="inf-adr">
-            <span href="# ">UAE Dubai Office:<br />Park avenue building Office:205 Dubai
-              Silicon Oasis/UAE</span>
-          </li>
-
-          <li>
-            <span class="email">+90 (850) 840 77 93<br />destek@enbiosis.com<br />Info@enbiosis.com</span>
-          </li>
-        </ul>
+      <div class="microbiome-carousel">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="microbiome-text__main">
+                <p class="microbiome-text__title">
+                  Microbiome <br />
+                  <span class="microbiome-text__subtitle"
+                    >How is it shaped?</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-around">
+            <div class="microbiome-slider">
+              <div
+                class="microbiome-slider__item d-flex justify-content-center"
+              >
+                <div class="microbiome-slider__img1">
+                  <div class="microbiome-slider__title">Drugs used</div>
+                  <div class="microbiome-slider__text">
+                    It shows your current status through 15 different modules,
+                    from intestinal movement to microbiome age, carbohydrate,
+                    fat, protein metabolisms to sleep quality.
+                  </div>
+                </div>
+              </div>
+              <div class="microbiome-slider__item">
+                <div class="microbiome-slider__img2">
+                  <div class="microbiome-slider__title">Drugs used</div>
+                  <div class="microbiome-slider__text">
+                    It shows your current status through 15 different modules,
+                    from intestinal movement to microbiome age, carbohydrate,
+                    fat, protein metabolisms to sleep quality.
+                  </div>
+                </div>
+              </div>
+              <div class="microbiome-slider__item">
+                <div class="microbiome-slider__img3">
+                  <div class="microbiome-slider__title">Drugs used</div>
+                  <div class="microbiome-slider__text">
+                    It shows your current status through 15 different modules,
+                    from intestinal movement to microbiome age, carbohydrate,
+                    fat, protein metabolisms to sleep quality.
+                  </div>
+                </div>
+              </div>
+              <div class="microbiome-slider__item">
+                <div class="microbiome-slider__img4">
+                  <div class="microbiome-slider__title">Drugs used</div>
+                  <div class="microbiome-slider__text">
+                    It shows your current status through 15 different modules,
+                    from intestinal movement to microbiome age, carbohydrate,
+                    fat, protein metabolisms to sleep quality.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+      <div class="balance-provide">
+        <img src="img/girljuice.svg" class="balance-provide__girl" />
+        <div class="balance-provide__clock">
+          <div class="clock-white"></div>
+          <div class="balance-provide__arrow"></div>
+          <div class="hover__clock"></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col d-flex justify-content-center balance-provide__title"
+            >
+              What does microbiome balance provide?
+            </div>
+          </div>
+          <div class="row block2">
+            <div class="col-sm-6 col-xl-5">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default balance-provide__item">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <a
+                      class="balance-provide__accardion balance-provide__1 collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapse1"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      Strong immune system
+                    </a>
+                  </div>
+                  <div
+                    id="collapse1"
+                    class="collapse balance-provide__text"
+                    aria-labelledby="heading1"
+                    data-parent="#accordion"
+                  >
+                    Our microbiome has a significant impact on our immune
+                    system. A healthy microbiome supports the immune system in
+                    body defense both by secreting metabolites that stimulate
+                    immune defense and by protecting the gut barrier. Imbalances
+                    in the microbiome play an important role in the emergence or
+                    progression of autoimmune diseases
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div
+                    class="panel-heading balance-provide__weight"
+                    role="tab"
+                    id="headingTwo"
+                  >
+                    <a
+                      class="balance-provide__accardion balance-provide__2 collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapse2"
+                      aria-expanded="false"
+                      aria-controls="collapse2"
+                    >
+                      Weight control
+                    </a>
+                  </div>
+                  <div
+                    id="collapse2"
+                    class="collapse balance-provide__text"
+                    aria-labelledby="heading2"
+                    data-parent="#accordion"
+                  >
+                    Our microbiome has a significant impact on our immune
+                    system. A healthy microbiome supports the immune system in
+                    body defense both by secreting metabolites that stimulate
+                    immune defense and by protecting the gut barrier. Imbalances
+                    in the microbiome play an important role in the emergence or
+                    progression of autoimmune diseases
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading3">
+                    <a
+                      class="balance-provide__accardion balance-provide__3 collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapse3"
+                      aria-expanded="false"
+                      aria-controls="collapse3"
+                    >
+                      Mental health
+                    </a>
+                  </div>
+                  <div
+                    id="collapse3"
+                    class="collapse balance-provide__text"
+                    aria-labelledby="heading3"
+                    data-parent="#accordion"
+                  >
+                    Our microbiome has a significant impact on our immune
+                    system. A healthy microbiome supports the immune system in
+                    body defense both by secreting metabolites that stimulate
+                    immune defense and by protecting the gut barrier. Imbalances
+                    in the microbiome play an important role in the emergence or
+                    progression of autoimmune diseases
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <a
+                      class="balance-provide__accardion balance-provide__4 collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapse4"
+                      aria-expanded="false"
+                      aria-controls="collapse4"
+                    >
+                      Sleep Quality
+                    </a>
+                  </div>
+                  <div
+                    id="collapse4"
+                    class="collapse balance-provide__text"
+                    aria-labelledby="heading4"
+                    data-parent="#accordion"
+                  >
+                    Our microbiome has a significant impact on our immune
+                    system. A healthy microbiome supports the immune system in
+                    body defense both by secreting metabolites that stimulate
+                    immune defense and by protecting the gut barrier. Imbalances
+                    in the microbiome play an important role in the emergence or
+                    progression of autoimmune diseases
+                  </div>
+                </div>
+                <div class="panel panel-default balance-provide__item1">
+                  <div class="panel-heading" role="tab" id="headingFive">
+                    <a
+                      class="balance-provide__accardion balance-provide__5 collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapse5"
+                      aria-expanded="false"
+                      aria-controls="collapse5"
+                    >
+                      Digestive system
+                    </a>
+                  </div>
+                  <div
+                    id="collapse5"
+                    class="collapse balance-provide__text"
+                    aria-labelledby="heading5"
+                    data-parent="#accordion"
+                  >
+                    Our microbiome has a significant impact on our immune
+                    system. A healthy microbiome supports the immune system in
+                    body defense both by secreting metabolites that stimulate
+                    immune defense and by protecting the gut barrier. Imbalances
+                    in the microbiome play an important role in the emergence or
+                    progression of autoimmune diseases
+                  </div>
+                </div>
+                <div class="panel panel-default balance-provide__item2">
+                  <div class="panel-heading" role="tab" id="headingSix">
+                    <a
+                      class="balance-provide__accardion balance-provide__6 collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapse6"
+                      aria-expanded="false"
+                      aria-controls="collapse6"
+                    >
+                      Skin health
+                    </a>
+                  </div>
+                  <div
+                    id="collapse6"
+                    class="collapse balance-provide__text"
+                    aria-labelledby="heading6"
+                    data-parent="#accordion"
+                  >
+                    Our microbiome has a significant impact on our immune
+                    system. A healthy microbiome supports the immune system in
+                    body defense both by secreting metabolites that stimulate
+                    immune defense and by protecting the gut barrier. Imbalances
+                    in the microbiome play an important role in the emergence or
+                    progression of autoimmune diseases
+                  </div>
+                </div>
+                <div class="panel panel-default balance-provide__item3">
+                  <div class="panel-heading" role="tab" id="headingTSeven">
+                    <a
+                      class="balance-provide__accardion balance-provide__7 collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapse7"
+                      aria-expanded="false"
+                      aria-controls="collapse7"
+                    >
+                      More
+                    </a>
+                  </div>
+                  <div
+                    id="collapse7"
+                    class="collapse balance-provide__text"
+                    aria-labelledby="heading7"
+                    data-parent="#accordion"
+                  >
+                    Our microbiome has a significant impact on our immune
+                    system. A healthy microbiome supports the immune system in
+                    body defense both by secreting metabolites that stimulate
+                    immune defense and by protecting the gut barrier. Imbalances
+                    in the microbiome play an important role in the emergence or
+                    progression of autoimmune diseases
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block2-small">
+            <div class="row">
+              <div class="col d-flex justify-content-between">
+                <a
+                  id="btn1"
+                  class="balance-provide__accardion balance-small__1"
+                  href="#"
+                  data-target="stronger"
+                  aria-expanded="false"
+                  style="color: #e55d48"
+                  >Strong<br />immune system</a
+                >
 
+                <a
+                  id="btn2"
+                  class="balance-provide__accardion balance-small__2"
+                  href="#"
+                  data-target="weight"
+                  aria-expanded="false"
+                  >Weight control</a
+                >
+                <a
+                  id="btn3"
+                  class="balance-provide__accardion balance-small__3"
+                  href="#"
+                  data-target="sleep"
+                  aria-expanded="false"
+                  >Sleep Quality</a
+                >
+                <a
+                  id="btn4"
+                  class="balance-provide__accardion balance-small__4"
+                  href="#"
+                  data-target="mental"
+                  aria-expanded="false"
+                  >Mental health</a
+                >
+              </div>
+            </div>
+            <div
+              class="block2-small__img d-flex align-items-center justify-content-center"
+            >
+              <div class="hover_block_mobile"></div>
+              <div
+                id="stronger-div"
+                class="block2-small__text targetdivs"
+                style="display: block"
+              >
+                Our microbiome has a significant impact on our immune system. A
+                healthy microbiome supports the immune system in body defense
+                both by secreting metabolites that stimulate immune defense and
+                by protecting the gut barrier. Imbalances in the microbiome play
+                an important role in the emergence or progression of autoimmune
+                diseases
+              </div>
+              <div id="weight-div" class="block2-small__text targetdivs">
+                2 Our microbiome has a significant impact on our immune system.
+                A healthy microbiome supports the immune system in body defense
+                both by secreting metabolites that stimulate immune defense and
+                by protecting the gut barrier. Imbalances in the microbiome play
+                an important role in the emergence or progression of autoimmune
+                diseases
+              </div>
+              <div id="sleep-div" class="block2-small__text targetdivs">
+                3 Our microbiome has a significant impact on our immune system.
+                A healthy microbiome supports the immune system in body defense
+                both by secreting metabolites that stimulate immune defense and
+                by protecting the gut barrier. Imbalances in the microbiome play
+                an important role in the emergence or progression of autoimmune
+                diseases
+              </div>
+              <div id="mental-div" class="block2-small__text targetdivs">
+                4 Our microbiome has a significant impact on our immune system.
+                A healthy microbiome supports the immune system in body defense
+                both by secreting metabolites that stimulate immune defense and
+                by protecting the gut barrier. Imbalances in the microbiome play
+                an important role in the emergence or progression of autoimmune
+                diseases
+              </div>
+              <div id="digestive-div" class="block2-small__text targetdivs">
+                5 Our microbiome has a significant impact on our immune system.
+                A healthy microbiome supports the immune system in body defense
+                both by secreting metabolites that stimulate immune defense and
+                by protecting the gut barrier. Imbalances in the microbiome play
+                an important role in the emergence or progression of autoimmune
+                diseases
+              </div>
+              <div id="skin-div" class="block2-small__text targetdivs">
+                6 Our microbiome has a significant impact on our immune system.
+                A healthy microbiome supports the immune system in body defense
+                both by secreting metabolites that stimulate immune defense and
+                by protecting the gut barrier. Imbalances in the microbiome play
+                an important role in the emergence or progression of autoimmune
+                diseases
+              </div>
+              <div id="more-div" class="block2-small__text targetdivs">
+                7 Our microbiome has a significant impact on our immune system.
+                A healthy microbiome supports the immune system in body defense
+                both by secreting metabolites that stimulate immune defense and
+                by protecting the gut barrier. Imbalances in the microbiome play
+                an important role in the emergence or progression of autoimmune
+                diseases
+              </div>
+            </div>
+            <div class="row">
+              <div class="col d-flex justify-content-between">
+                <a
+                  id="btn7"
+                  class="balance-provide__accardion balance-small__7"
+                  href="#"
+                  data-target="digestive"
+                  >Digestive<br />system
+                </a>
+                <a
+                  id="btn6"
+                  class="balance-provide__accardion balance-small__6"
+                  href="#"
+                  data-target="skin"
+                  >Skin<br />health</a
+                >
+                <a
+                  id="btn5"
+                  class="balance-provide__accardion balance-small__5"
+                  href="#"
+                  data-target="more"
+                  >More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block3">
+        <div class="doctor-small__small"></div>
+        <div class="container">
+          <img src="img/microscope.svg" class="microscope_img" />
+          <div class="row">
+            <div class="offset-xl-5 col-xl-7">
+              <span class="microbiome-text__subtitle"
+                >Enbiosis microbiome analysis based<br />
+                on artificial intelligence</span
+              >
+              <p class="microbiome-text__fw">
+                In microbiome based studies conducted worldwide, 16S rRNA gene
+                is the most preferred region. ENBIOSIS uses the 16S rRNA next
+                generation sequencing method to reveal the microbiome profile.
+              </p>
+
+              <div class="microbiome-text">
+                <p class="microbiome-text__first">
+                  After the microbiome is profiled, ENBIOSIS's artificial
+                  intelligence technology combines the microbiome profile with
+                  the data provided by the scientific literature on
+                  microbiome-nutrition and prepares a personalized nutrition
+                  guide. With every new data coming to ENBIOSIS, our artificial
+                  intelligence technology continues to improve..
+                </p>
+                <p class="microbiome-text__second">
+                  ENBIOSIS carries out its work in the Genome and Stem Cell
+                  Center which is Turkey's leading genetic laboratory. It also
+                  protects your biological materials here.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="last-block">
+        <img src="img/last-block-boocks.png" class="last-block__boocks" />
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="last-block__header">
+                <div class="last-block__title">Your own nutrition guide</div>
+                <div class="last-block__subtitle">
+                  Discover your microniome,<br />
+                  rule your diet, manage tour health!
+                </div>
+              </div>
+              <div class="last-block__price">From 999 TL</div>
+              <a href="#" class="last-block__button">Buy biotechnology</a>
+            </div>
+            <div class="last-block__boocks-small"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="pt-3 pb-1">
+      <div class="container">
+        <div class="flex-between logo-socical">
+          <a class="navbar-brand" href="# ">
+            <img src="img/Subtract.svg " alt="Logo " />
+            <img src="img/Enbiosis.svg " alt="Logo " />
+          </a>
+          <div class="d-inline-flex">
+            <ul class="social-networks">
+              <li>
+                <a href="# ">
+                  <icon class="icon-facebook"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-inst"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-youtube"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-linkedin"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-twiter"></icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-between">
+          <ul class="bottom-menu">
+            <li>
+              <a href="# " class="font-weight-bold">Our solutions</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">Microbiome</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">About us</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">Contact us</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">FAQ`s</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-between mb-4">
+          <ul class="informations">
+            <li class="inf-adr">
+              <span href="# "
+                >Turkey Office:<br />Maslak 1453 T4-B/91 Sariyer/istanbul</span
+              >
+            </li>
+            <li class="inf-adr">
+              <span href="# "
+                >UAE Dubai Office:<br />Park avenue building Office:205 Dubai
+                Silicon Oasis/UAE</span
+              >
+            </li>
+
+            <li>
+              <span class="email"
+                >+90 (850) 840 77 93<br />destek@enbiosis.com<br />Info@enbiosis.com</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
