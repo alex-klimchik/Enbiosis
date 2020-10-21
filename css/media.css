@@ -1894,7 +1894,7 @@
     height: 200px;
   }
 
-  .slick-slide {
+  .comments__slider_block .slick-slide {
     transition: transform 0.5s;
     transform: scale(0.6);
     font-size: 48px;
