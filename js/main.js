@@ -35,6 +35,13 @@ $(document).ready(function () {
     SubMenu.classList.toggle("_active");
   });
 
+  document.documentElement.addEventListener("click", function (e) {
+    if (!e.target.closest(".sub-menu")) {
+      let SubMenu = document.querySelector(".sub-menu__main");
+      SubMenu.classList.remove("_active");
+    }
+  });
+
   $(".minus").on("click", function () {
     $(($plus_minus_input = $plus_minus_input - 1));
     $("input.quantity-input").val($plus_minus_input);

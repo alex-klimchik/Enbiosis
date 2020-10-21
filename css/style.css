@@ -2529,6 +2529,16 @@ button {
   /* margin: 0 auto; */
 }
 
+.organizations__btn:hover {
+  background-color: #e97462;
+  color: #fff;
+}
+
+.organizations__btn:hover {
+  background-color: #dc4f39;
+  color: #fff;
+}
+
 .buy__btn {
   background: #e3614d;
   color: #fff;
