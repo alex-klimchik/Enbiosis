@@ -186,43 +186,5 @@ $(document).ready(function () {
 
 // validation date 1468
 
-(function($){ 
-  $('.mask').inputmask("datetime",{
-    mask: "1.y", 
-    placeholder: "MM/YY", 
-    leapday: "-02-29", 
-    separator: ".", 
-    alias: "dd/mm/yyyy"
-  });  
-})(jQuery)
 
-// (function($){ 
-//   $('.masktel').inputmask("datetime",{
-//     mask: "+", 
-//     placeholder: "+7 28 232 14 23", 
-//     // leapday: "-02-29", 
-//     separator: " ", 
-    
-//     // alias: "dd/mm/yyyy"
-//   });  
-// })(jQuery)
 
-// iframe
-
-// $(function() { 
-//   var videos  = $(".video");
-
-//       videos.on("click", function(){
-//           var elm = $(this),
-//               conts   = elm.contents(),
-//               le      = conts.length,
-//               ifr     = null;
-
-//           for(var i = 0; i<le; i++){
-//             if(conts[i].nodeType == 8) ifr = conts[i].textContent;
-//           }
-
-//           elm.addClass("player").html(ifr);
-//           elm.off("click");
-//       });
-// });

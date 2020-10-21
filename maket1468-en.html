@@ -41,7 +41,7 @@
               <ul class="navbar-nav head-menu">
                 <li class="nav-item">
                   <a
-                    class="nav-link sub-menu"
+                    class="nav-link sub-menu first-block-menu"
                     data-toggle="collapse"
                     data-target="#subMenu"
                     id="open-sub-menu_main"
@@ -635,6 +635,17 @@
         </div>
       </div>
     </footer>
+    <script>
+      (function($){ 
+  $('.mask').inputmask("datetime",{
+    mask: "1.y", 
+    placeholder: "MM/YY", 
+    leapday: "-02-29", 
+    separator: ".", 
+    alias: "dd/mm/yyyy"
+  });  
+})(jQuery)
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
