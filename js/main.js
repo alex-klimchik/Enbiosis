@@ -35,10 +35,18 @@ $(document).ready(function () {
     SubMenu.classList.toggle("_active");
   });
 
+  let hoverMenu = document.querySelector("#open-sub-menu_main");
+  hoverMenu.addEventListener("click", function (e) {
+    let hoverMenu = document.querySelector(".first-block-menu");
+    hoverMenu.classList.toggle("_active-hover");
+  });
+
   document.documentElement.addEventListener("click", function (e) {
     if (!e.target.closest(".sub-menu")) {
       let SubMenu = document.querySelector(".sub-menu__main");
       SubMenu.classList.remove("_active");
+      let hoverMenu = document.querySelector(".first-block-menu");
+      hoverMenu.classList.remove("_active-hover");
     }
   });
 

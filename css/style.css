@@ -27,14 +27,9 @@ iframe {
   color: #58c4d9 !important;
 }
 
-.nav-link:first-child {
-  border-bottom: 2px solid #fff;
-  width: 100%;
-}
-
-.nav-link:focus:first-child[aria-expanded="true"] {
-  border-bottom: 2px solid #58c4d9;
-  width: 100%;
+._active-hover {
+  border-bottom: 2px solid #58c4d9 !important;
+  width: 100% !important;
 }
 
 .dropdown-simple {
