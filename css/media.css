@@ -51,7 +51,7 @@
   }
 
   .guide__book {
-    top: 296px
+    top: 296px;
   }
 }
 
@@ -91,7 +91,6 @@
 }
 
 @media (min-width: 375px) {
-
   .guide__tablet {
     top: unset;
   }
@@ -358,10 +357,6 @@
   }
 }
 @media (min-width: 576px) {
-
-  .header__menu {
-    display: none;
-  }
   .block2-small {
     display: none;
   }
@@ -610,12 +605,20 @@
   }
 }
 @media (max-width: 767px) {
+  .sub-menu__head-menu {
+    display: none;
+  }
+
   .navbar-toggler[aria-expanded="true"].navbar-expand-sm .navbar-collapse {
     display: table !important;
   }
 
   .navbar-toggler[aria-expanded="false"].navbar-expand-sm .navbar-collapse {
     display: none !important;
+  }
+
+  .button-menu_display {
+    display: block !important;
   }
 
   .header__menu {
@@ -663,6 +666,13 @@
   }
 }
 @media (min-width: 768px) {
+  .sub-menu__visibility {
+    display: none;
+  }
+  .sub-menu__arrow-down {
+    display: none;
+  }
+
   .header__menu {
     display: flex;
   }
@@ -1473,11 +1483,10 @@
   }
 }
 @media (min-width: 1024px) {
-
   .footer-logo {
     margin-bottom: 24px;
   }
-  
+
   .question-list__item_btn.collapsed::after {
     right: -5%;
   }
