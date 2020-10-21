@@ -568,7 +568,7 @@ main {
   color: #178a9f;
 }
 
-.btn-block a {
+.btn-block button {
   display: inline-block;
   width: 255px;
   height: 48px;
