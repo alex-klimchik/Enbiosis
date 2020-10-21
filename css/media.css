@@ -232,7 +232,8 @@
   }
 
   .video__wrap,
-  .comments__video_wrap {
+  .comments__video_wrap,
+  iframe {
     width: 330px;
     height: 182px;
   }
@@ -1131,7 +1132,8 @@
   }
 
   .video__wrap,
-  .comments__video_wrap {
+  .comments__video_wrap,
+  iframe {
     width: 500px;
     height: 264px;
   }
@@ -1747,7 +1749,8 @@
   }
 
   .video__wrap,
-  .comments__video_wrap {
+  .comments__video_wrap,
+  iframe {
     width: 800px;
     height: 464px;
   }
@@ -2177,6 +2180,11 @@
   .floor {
     margin-top: -70px;
   }
+
+  .comments__cont {
+    width: 550px;
+    height: 408px;
+}
 }
 @media (max-width: 1200px) {
   .balance-provide__girl {
@@ -2261,6 +2269,11 @@
   .block2 {
     margin-left: 336px;
   }
+
+  .comments__cont {
+    width: 550px;
+    height: 408px;
+}
 }
 
 @media (min-width: 1400px) {
@@ -2269,7 +2282,8 @@
   }
 
   .video__wrap,
-  .comments__video_wrap {
+  .comments__video_wrap,
+  iframe {
     width: 1100px;
     height: 556px;
   }

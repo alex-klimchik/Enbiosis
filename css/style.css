@@ -2467,11 +2467,17 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
   width: 290px;
-  height: 146px;
+  height: 160px;
   margin: 0 auto;
   margin-top: 46px;
   margin-bottom: 126px;
 }
+
+
+/* .video__wrap iframe {
+  width: 290px;
+  height: 146px;
+} */
 
 .analusis__text {
   text-align: center;
@@ -2570,6 +2576,15 @@ button {
   display: block;
   margin: 0 auto;
   margin-bottom: 32px;
+}
+
+
+.comments__video_wrap,
+.video__wrap,
+iframe {
+  height: 160px;
+  width: 290px;
+
 }
 
 .comments__btn {
@@ -3133,4 +3148,40 @@ footer {
 
 .phone-input {
   border: none;
+}
+
+/* iframe */
+
+/* validation */
+
+.form-control:focus {
+  outline: none!important;
+  border: none;
+  box-shadow: unset!important;
+}
+
+.form-control:focus {
+  border: 2px solid #58C4D9;
+}
+
+.form__error {
+	color: red;
+	text-align: left;
+	font-size: 12px;
+	display: block;
+	margin-top: 3px;
+	display: none;
+}
+
+input:valid:not(:placeholder-shown) {
+  color: #000000;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border: none;
+  background: #FFF1EF;
+  color: red;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
 }

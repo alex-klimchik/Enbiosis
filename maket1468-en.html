@@ -194,7 +194,9 @@
                       type="text"
                       class="form-control info-input"
                       placeholder="Radgheh Cudropali"
+                      minlength="2"
                     />
+                    <span class="form__error">Please, enter at least 2 letters</span>
                   </div>
                   <div class="col-md-6"></div>
                 </div>
@@ -203,21 +205,27 @@
                     <label for="email" class="font-weight-bold mb-3"
                       >E-mail address</label
                     >
+                   
                     <input
                       type="email"
                       class="form-control info-input"
                       placeholder="email@gmail.com"
                     />
+                    <span class="form__error">The e-mail address you entered is not in our records</span>
                   </div>
                   <div class="col-md-6 mb-4">
                     <label for="phone" class="font-weight-bold mb-3"
                       >Your Phone Number:</label
                     >
                     <input
-                      type="phone"
+                      type="tel"
+                      name="phone"
                       class="form-control info-input"
                       placeholder="+7 28 232 14 23"
+                      minlength="15" 
+                      maxlength="15"                      
                     />
+                    <span class="form__error">Please, enter minimum 15 numbers</span>
                   </div>
                 </div>
                 <div class="row">
