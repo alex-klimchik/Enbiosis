@@ -4,6 +4,14 @@ body {
   font-size: 16px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+iframe {
+  border: none
+}
+
 .header {
   height: 72px;
   /* Drop Shadow */
@@ -491,7 +499,8 @@ main {
   color: #178a9f;
 }
 
-.btn-block button {
+.btn-block a {
+  display: inline-block;
   width: 255px;
   height: 48px;
   padding: 12px 107px;
@@ -571,6 +580,7 @@ main {
   line-height: 24px;
   text-align: center;
   color: #ffffff;
+  padding-top: 10px;
 }
 
 .logo-socical {
@@ -1025,6 +1035,10 @@ textarea::placeholder {
 
 .buy-section {
   margin-top: 72px;
+}
+
+.buy-btn1444 {
+
 }
 
 .first-block {
@@ -2005,6 +2019,17 @@ button {
   outline: none;
 }
 
+.cont-link:focus,
+.team-link:focus {
+  outline: none;
+}
+
+.cont-link,
+.team-link,
+.cont-link:hover,
+.team-link:hover {
+  color: #212529;
+}
 .slider-item__image {
   margin-top: 18px;
   padding-top: 20px;
@@ -2224,6 +2249,7 @@ button {
   color: white;
   font-size: 24px;
   cursor: pointer;
+  padding-top: 6px;
 }
 
 .refs__title {
@@ -2313,6 +2339,9 @@ button {
   font-size: 20px;
   line-height: 24px;
   cursor: pointer;
+  text-align: center;
+  padding-top: 10px;
+  display: block;
   /* margin: 0 auto; */
 }
 
@@ -2838,6 +2867,22 @@ footer {
   font-size: 12px;
 }
 
+.buy-btn1444 {
+  height: 50px;
+  width: 146px;
+  height: 28px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
+  background-color: #ee7663;
+  color: white;
+  border: none;
+  border-radius: 127px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 6px;
+}
+
 .guide__old-price {
   font-size: 12px;
   line-height: 22px;
@@ -2929,6 +2974,8 @@ footer {
   border-radius: 127px;
   color: white;
   font-weight: bold;
+  padding-top: 10px;
+  margin-top: -14px;
 }
 
 .modal-footer,

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maket 1448</title>
+    <title>Maket 1468</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -79,12 +79,12 @@
             >
               <ul class="navbar-nav navbar-right">
                 <li class="nav-item nav-link login-navlink-btn">
-                  <button
-                    type="button"
+                  <a
+                    href="#"
                     class="login-btn btn btn-outline-danger"
                   >
                     login
-                  </button>
+                </a>
                 </li>
                 <li class="nav-item nav-link drop-lang">
                   <div class="dropdown">
@@ -322,9 +322,11 @@
               <div class="d-inline-flex mt-3 bg-light-inpt credit-number">
                 <div class="input-form-credit-light credit-margin">
                   <input
-                    type="text "
+                    type="phone"
                     class="form-control text-center card-number"
                     placeholder="0000 "
+                    maxlength="4"
+                    pattern="[0-9]"
                   />
                 </div>
                 <span class="dots">-</span>
@@ -333,6 +335,8 @@
                     type="text "
                     class="form-control text-center card-number"
                     placeholder="0000 "
+                    maxlength="4"
+                    pattern="[0-9]"
                   />
                 </div>
                 <span class="dots">-</span>
@@ -341,6 +345,9 @@
                     type="text "
                     class="form-control text-center card-number"
                     placeholder="0000 "
+                    maxlength="4"
+                    pattern="[0-9]"
+
                   />
                 </div>
                 <span class="dots">-</span>
@@ -349,6 +356,8 @@
                     type="text "
                     class="form-control text-center card-number"
                     placeholder="0000 "
+                    maxlength="4"
+                    pattern="[0-9]"
                   />
                 </div>
               </div>
@@ -396,7 +405,7 @@
                 </li>
               </ul>
             </div>
-            <div class="btn-block mt-3"><button>Buy</button></div>
+            <div class="btn-block mt-3"><a href="#">Buy</a></div>
           </form>
         </div>
       </div>
