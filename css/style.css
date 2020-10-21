@@ -27,14 +27,9 @@ iframe {
   color: #58c4d9 !important;
 }
 
-.nav-link:first-child {
-  border-bottom: 2px solid #fff;
-  width: 100%;
-}
-
-.nav-link:focus:first-child[aria-expanded="true"] {
-  border-bottom: 2px solid #58c4d9;
-  width: 100%;
+._active-hover {
+  border-bottom: 2px solid #58c4d9 !important;
+  width: 100% !important;
 }
 
 .dropdown-simple {
@@ -573,8 +568,38 @@ main {
   width: 255px;
   height: 48px;
   padding: 12px 107px;
-  background: #e55d48;
-  border: 1px solid #e55d48;
+  background: #e3614d;
+  border: 1px solid #e3614d;
+  box-sizing: border-box;
+  border-radius: 127px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.btn-block a:hover {
+  display: inline-block;
+  width: 255px;
+  height: 48px;
+  padding: 12px 107px;
+  background: #e97462;
+  border: 1px solid #e97462;
+  box-sizing: border-box;
+  border-radius: 127px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.btn-block a:active {
+  display: inline-block;
+  width: 255px;
+  height: 48px;
+  padding: 12px 107px;
+  background: #dc4f39;
+  border: 1px solid #dc4f39;
   box-sizing: border-box;
   border-radius: 127px;
   color: white;
@@ -938,6 +963,26 @@ li {
   font-size: 20px;
 }
 
+.guid-box__buy:hover {
+  width: 255px;
+  height: 48px;
+  background-color: #e97462;
+  border-radius: 127px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.guid-box__buy:active {
+  width: 255px;
+  height: 48px;
+  background-color: #dc4f39;
+  border-radius: 127px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .middle-box {
   padding-top: 20px;
 }
@@ -1124,11 +1169,6 @@ textarea::placeholder {
   color: #fff;
 }
 
-.button-discover-z {
-  position: relative;
-  z-index: 10;
-}
-
 .first-price__old {
   font-size: 16px;
   font-weight: 700;
@@ -1192,12 +1232,36 @@ textarea::placeholder {
   display: flex;
   justify-content: center;
   padding: 13px 0;
-  border: 1px solid #e55d48;
+  border: 1px solid #e3614d;
   border-radius: 127px;
-  color: #e55d48;
+  color: #e3614d;
   font-weight: 700;
   margin: 24px 0;
   background: #fff;
+}
+
+.secondblock-discover__buttons:hover {
+  display: flex;
+  justify-content: center;
+  padding: 13px 0;
+  border: 1px solid #e3614d;
+  border-radius: 127px;
+  color: #fff;
+  font-weight: 700;
+  margin: 24px 0;
+  background: #e3614d;
+}
+
+.secondblock-discover__buttons:active {
+  display: flex;
+  justify-content: center;
+  padding: 13px 0;
+  border: 1px solid #e3614d;
+  border-radius: 127px;
+  color: #fff;
+  font-weight: 700;
+  margin: 24px 0;
+  background: #dc4f39;
 }
 
 .secondblock-discover__gruop {
@@ -1483,18 +1547,6 @@ textarea::placeholder {
   font-size: 12px;
 }
 
-.sixthblock-discover__buttons {
-  display: flex;
-  justify-content: center;
-  padding: 13px 0;
-  border: 1px solid #e55d48;
-  border-radius: 127px;
-  color: #e55d48;
-  font-weight: 700;
-  margin: 40px 0;
-  background: #fff;
-}
-
 p {
   margin-bottom: 0;
 }
@@ -1659,6 +1711,12 @@ p {
   font-weight: 700;
 }
 
+.balance-provide__accardion[aria-expanded="true"] {
+  color: #e55d48 !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .balance-provide__accardion:hover {
   color: #e55d48 !important;
   cursor: pointer;
@@ -1732,9 +1790,32 @@ p {
   color: #fff;
   font-weight: 600;
   font-size: 20px;
-  background: #ee7663;
+  background: #e3614d;
   border-radius: 127px;
   padding: 12px 30px;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+.last-block__button:hover {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  background: #e97462;
+  border-radius: 127px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+.last-block__button:active {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  background: #dc4f39;
+  border-radius: 127px;
+  padding: 12px 30px;
+  cursor: pointer;
 }
 
 .last-block__boocks {
@@ -2320,6 +2401,36 @@ button {
   padding-top: 6px;
 }
 
+.goal__btn:hover {
+  display: block;
+  margin: 0 auto;
+  background: #e97462;
+  border-radius: 127px;
+  width: 290px;
+  height: 48px;
+  text-align: center;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding-top: 6px;
+}
+
+.goal__btn:active {
+  display: block;
+  margin: 0 auto;
+  background: #dc4f39;
+  border-radius: 127px;
+  width: 290px;
+  height: 48px;
+  text-align: center;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding-top: 6px;
+}
+
 .refs__title {
   text-align: center;
   margin-bottom: 32px;
@@ -2413,9 +2524,31 @@ button {
   /* margin: 0 auto; */
 }
 
+.organizations__btn:hover {
+  background-color: #e97462;
+  color: #fff;
+}
+
+.organizations__btn:hover {
+  background-color: #dc4f39;
+  color: #fff;
+}
+
 .buy__btn {
   background: #e3614d;
-  margin-bottom: 28px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.buy__btn:hover {
+  background: #e97462;
+  color: #fff;
+}
+
+.buy__btn:active {
+  background: #dc4f39;
+  color: #fff;
 }
 
 .organizations__btn {
@@ -2503,6 +2636,24 @@ button {
   display: block;
   margin: 0 auto;
   margin-bottom: 94px;
+}
+
+.analusis__btn:hover,
+.microbiome__btn:hover,
+.comments__btn:hover,
+.aware__btn:hover {
+  background-color: #e97462;
+  border: 1px solid #e97462;
+  color: #fff;
+}
+
+.analusis__btn:active,
+.microbiome__btn:active,
+.comments__btn:active,
+.aware__btn:active {
+  background-color: #dc4f39;
+  border: 1px solid #dc4f39;
+  color: #fff;
 }
 
 .microbiome {
@@ -2941,7 +3092,46 @@ footer {
   width: 146px;
   height: 28px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
-  background-color: #ee7663;
+  background-color: #e3614d;
+  color: white;
+  border: none;
+  border-radius: 127px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.buy-btn1444 {
+  width: 146px;
+  height: 28px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
+  background-color: #e3614d;
+  color: white;
+  border: none;
+  border-radius: 127px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.buy-btn1444:hover {
+  width: 146px;
+  height: 28px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
+  background-color: #e97462;
+  color: white;
+  border: none;
+  border-radius: 127px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.buy-btn1444:active {
+  width: 146px;
+  height: 28px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
+  background-color: #dc4f39;
   color: white;
   border: none;
   border-radius: 127px;
