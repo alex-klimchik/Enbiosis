@@ -72,26 +72,6 @@ iframe {
   display: none;
 }
 
-/* .head-menu {
-  margin-bottom: -20px;
-} */
-
-/* .header__menu {
-  background-color: white;
-  margin-right: -18px;
-    margin-left: -18px;
-
-}
-
-.head-menu {
-  align-items: center;
-}
-
-.navbar-right {
-  flex-direction: row;
-  padding: 0 20px;
-  padding-bottom: 20px;
-} */
 
 .head-menu .nav-item .nav-link {
   padding-right: 15px;
@@ -724,6 +704,9 @@ main {
   color: rgba(0, 0, 0, 0.4);
 }
 
+.dropdown-simple {
+  margin-left: 10px;
+}
 .email {
   text-align: right;
   font-weight: 500;
@@ -3187,40 +3170,6 @@ footer {
   margin-left: 10px;
 }
 
-/* .icon-facebook {
-  background-image: url(../img/cib_facebook.svg);
-} */
-
-/* .icon-inst {
-  background-image: url(../img/instagram-with-circle.svg);
-}
-
-.icon-youtube {
-  background-image: url(../img/youtube-with-circle.svg);
-}
-
-.icon-linkedin {
-  background-image: url(../img/linkedin-with-circle.svg);
-}
-
-.icon-twiter {
-  background-image: url(../img/twitter-with-circle.svg);
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-size: auto 100%;
-  vertical-align: middle;
-} */
-
-/* .bottom-menu li a {
-  color: white !important;
-} */
-
-/* .email,
-.informations li {
-  color: #6c9bb7;
-} */
-
 .mainpic {
   width: 344px;
   height: 302px;
@@ -3380,9 +3329,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
 /* media */
 
 @media (min-width: 320px) {
-  /* .buy__btn {
-  font-size: 16px;
-} */
 
   .carousel-control-next-icon {
     margin-left: 34px;
