@@ -330,7 +330,11 @@
       <section class="video-block">
         <div class="container">
           <div class="video__wrap">
-            <iframe  src="https://www.youtube.com/embed/Kb8CW3axqRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a class="thumbnail-link">
+              <img src="./img/video1-desctop.png" class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/Kb8CW3axqRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-frame"></iframe>
+          </a>
+          </div>
           </div>
         </div>
       </section>
@@ -372,7 +376,7 @@
       </section>
       <section class="balance">
         <div class="balance-provide">
-          <img src="img/girljuice.svg" class="balance-provide__girl" />
+          <img src="img/clock1copy.png" class="balance-provide__girl" />
           <div class="balance-provide__clock">
             <div class="clock-white"></div>
             <div class="balance-provide__arrow"></div>
@@ -516,6 +520,7 @@
                   </div>
                 </div>
               </div>
+              <!-- <div class="image-cont"></div> -->
             </div>
             <div class="block2-small">
               <div class="row">
@@ -613,7 +618,11 @@
       <section class="comments">
           <h2 class="comments__title font-weight-bold">Comments</h2>
           <div class="comments__video_wrap">
-            <iframe  src="https://www.youtube.com/embed/Kb8CW3axqRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+            <a class="comments__video_link">
+              <img src="./img/video2-desctop.png" alt="" class="comments__video_poster">
+            <iframe  src="https://www.youtube.com/embed/Kb8CW3axqRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="comments__video_frame"></iframe>        
+          </a>
+          </div>
               <div class="team__slider comments__slider_block">
                 <div class="team__item comments-item">
                   <div class="team__cont comments__cont">
@@ -1277,5 +1286,16 @@
     <script src="js/slick.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      var video = document.querySelector('.thumbnail-link')
+      video.onclick = function() {
+      document.querySelector('.video-thumbnail').style.display = "none"
+      }
+
+      var commentsVideo = document.querySelector('.comments__video_link')
+      commentsVideo.onclick = function() {
+      document.querySelector('.comments__video_poster').style.display = "none"
+      }
+    </script>
   </body>
 </html>

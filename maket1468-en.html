@@ -12,6 +12,7 @@
     <script src="https://githubraw.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -191,7 +192,9 @@
                       placeholder="Radgheh Cudropali"
                       minlength="2"
                     />
-                    <span class="form__error">Please, enter at least 2 letters</span>
+                    <span class="form__error"
+                      >Please, enter at least 2 letters</span
+                    >
                   </div>
                   <div class="col-md-6"></div>
                 </div>
@@ -200,13 +203,16 @@
                     <label for="email" class="font-weight-bold mb-3"
                       >E-mail address</label
                     >
-                   
+
                     <input
                       type="email"
                       class="form-control info-input"
                       placeholder="email@gmail.com"
                     />
-                    <span class="form__error">The e-mail address you entered is not in our records</span>
+                    <span class="form__error"
+                      >The e-mail address you entered is not in our
+                      records</span
+                    >
                   </div>
                   <div class="col-md-6 mb-4">
                     <label for="phone" class="font-weight-bold mb-3"
@@ -217,10 +223,12 @@
                       name="phone"
                       class="form-control info-input"
                       placeholder="+7 28 232 14 23"
-                      minlength="15" 
-                      maxlength="15"                      
+                      minlength="15"
+                      maxlength="15"
                     />
-                    <span class="form__error">Please, enter minimum 15 numbers</span>
+                    <span class="form__error"
+                      >Please, enter minimum 15 numbers</span
+                    >
                   </div>
                 </div>
                 <div class="row">
@@ -392,7 +400,6 @@
                 <span class="icon-connection"></span>
               </div>
               <div class="d-inline-flex mt-3 bg-light-inpt credit-number">
-               
                 <div class="input-form-credit-light credit-margin">
                   <input
                     type="text"
@@ -401,7 +408,7 @@
                     placeholder="0000 "
                     maxlength="4"
                     pattern="[\d]{4}"
-                    required 
+                    required
                     title="Please, enter only numbers"
                   />
                 </div>
@@ -413,7 +420,7 @@
                     placeholder="0000 "
                     maxlength="4"
                     pattern="[\d]{4}"
-                    required 
+                    required
                     title="Please, enter only numbers"
                   />
                 </div>
@@ -425,9 +432,8 @@
                     placeholder="0000 "
                     maxlength="4"
                     pattern="[\d]{4}"
-                    required 
+                    required
                     title="Please, enter only numbers"
-
                   />
                 </div>
                 <span class="dots">-</span>
@@ -438,11 +444,10 @@
                     placeholder="0000 "
                     maxlength="4"
                     pattern="[\d]{4}"
-                    required 
+                    required
                     title="Please, enter only numbers"
                   />
                 </div>
-            
               </div>
               <div class="right mt-3">
                 <div class="input-form-light-date">
@@ -451,8 +456,11 @@
                     class="form-control text-center mask"
                     placeholder="MM/YY "
                     maxlength="5"
+                    data-valid-example="05/18"
                     required
                   />
+                  <input type="hidden" name="SecureCard-expiryMonth" class="input-month"> 
+<input type="hidden" name="SecureCard-expiryYear" class="input-year"> 
                 </div>
               </div>
               <div class="flex-between mt-3">
@@ -474,7 +482,7 @@
                 placeholder="999 "
                 maxlength="3"
                 pattern="[\d]{3}"
-                required 
+                required
                 title="Please, enter only numbers"
               />
             </div>
@@ -630,17 +638,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      (function($){ 
-  $('.mask').inputmask("datetime",{
-    mask: "1.y", 
-    placeholder: "MM/YY", 
-    leapday: "-02-29", 
-    separator: ".", 
-    alias: "dd/mm/yyyy"
-  });  
-})(jQuery)
-    </script>
+
     <script src="js/main.js"></script>
   </body>
 </html>
