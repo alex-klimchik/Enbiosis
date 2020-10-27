@@ -3879,6 +3879,24 @@ input:invalid:not(:placeholder-shown) + .form__error {
   transform: unset;
 }
 
+.primary__button_desctop {
+  display: none;
+}
+
+.primary-background__big,
+.yonet__background_big {
+  display: none;
+}
+
+
+.comments .team__slider .slick-center div {
+  transform: unset;
+}
+
+.comments__slider_item_text {
+  line-height: 21px;
+}
+
 /* media */
 
 @media (min-width: 320px) {
@@ -4034,6 +4052,10 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
   .comments__cont {
     height: 528px;
+  }
+
+  .comments__slider_item_text {
+    line-height: 27px;
   }
 
   /* 1470 */
@@ -4427,6 +4449,12 @@ input:invalid:not(:placeholder-shown) + .form__error {
     height: unset !important;
   }
 }
+
+@media (min-width: 620px) {
+  .primary__background {
+    height: 630px;
+  }
+}
 @media (max-width: 776px) {
   .banner-box .doctor-icon {
     position: absolute;
@@ -4629,6 +4657,10 @@ input:invalid:not(:placeholder-shown) + .form__error {
   }
 }
 @media (min-width: 768px) {
+
+  .comments .team__slider .slick-center div {
+    transform: scale(1.1);
+  }
   .sub-menu__visibility {
     display: none;
   }
@@ -5266,15 +5298,12 @@ input:invalid:not(:placeholder-shown) + .form__error {
   }
 
   .primary-background__big {
-    background-image: url(../img/primary-desctop.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 600px;
+    display: table;
+    height: 436px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    background-size: contain;
   }
 
   .primary__title,
@@ -5333,6 +5362,10 @@ input:invalid:not(:placeholder-shown) + .form__error {
     line-height: 24px;
   }
 
+  .kesfet {
+    margin-bottom: 0;
+  }
+
   .kesfet__description {
     margin-bottom: 20px;
   }
@@ -5350,17 +5383,15 @@ input:invalid:not(:placeholder-shown) + .form__error {
     display: none;
   }
 
-
   .yonet {
     position: relative;
+    margin-top: -44px;
   }
 
   .yonet__background_big {
-    background-image: url(../img/yonet-image-desctop.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    display: block;
     width: 100%;
-    height: 600px;
+    height: 540px;
     position: absolute;
     top: 38px;
     right: 0;
@@ -5371,29 +5402,29 @@ input:invalid:not(:placeholder-shown) + .form__error {
     font-size: 15px;
   }
 
+  .yonet__title {
+    margin-top: 36px;
+  }
+
   .yonet__title,
   .yonet__description {
     margin-bottom: 10px;
   }
 
   .scores {
-    margin-top: 0;
+    margin-top: -62px;
   }
-
-
-
-  
-
-
-
-
-
 }
 
 .modal-backdrop {
   z-index: 600;
 }
 
+@media (min-width: 850px) {
+  .primary {
+    margin-bottom: 108px;
+  }
+}
 @media (min-width: 992px) {
   .question-list__item_answer::after {
     top: -18px;
@@ -5617,6 +5648,126 @@ input:invalid:not(:placeholder-shown) + .form__error {
 @media (min-width: 1000px) {
   .send-btn {
     margin-top: unset;
+  }
+
+  /* 1470 */
+
+  .primary {
+    margin-bottom: 0px;
+  }
+
+  .primary__title,
+  .dogan__title,
+  .dunyasi__title,
+  .kesfet__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .primary__description,
+  .dogan__description,
+  .dunyasi__description,
+  .kesfet__description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .primary__button {
+    display: none;
+  }
+
+  .primary__button_desctop {
+    width: 290px;
+    height: 48px;
+    border-radius: 127px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+    background: #e3614d;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .primary__description,
+  .dogan__description,
+  .yonet__description {
+    margin-bottom: 32px;
+  }
+
+  .dogan__image,
+  .kesfet__image {
+    margin-left: 90px;
+  }
+
+  .dogan__image {
+    margin-top: 164px;
+  }
+
+  .dogan {
+    background-image: url(../img/dogan-back-desctop.png);
+    padding-bottom: 136px;
+  }
+
+  .dunyasi__image {
+    margin-left: 50px;
+  }
+
+  .kesfet {
+    background-image: url(../img/kesfet-back-desctop.png);
+    padding-bottom: 48px;
+    margin-bottom: 0;
+    padding-top: 24px;
+  }
+
+  .kesfet__image {
+    margin-top: 154px;
+  }
+
+  .yonet {
+    margin-top: -114px;
+  }
+
+  .yonet__background_big {
+    width: 97%;
+  }
+
+  .yonet__text {
+    font-size: 20px;
+  }
+
+  .yonet__title {
+    margin-top: 130px;
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .scores {
+    background-image: url(../img/scores-back-desctop.png);
+    margin-top: -86px;
+    padding-bottom: 130px;
+  }
+
+  .fourthblock-sidebar {
+    margin-top: 100px;
+  }
+
+  .process1470 {
+    background-image: url(../img/process-back-desctop.png);
+  }
+
+  .primary__button_link {
+    font-size: 16px;
+  }
+
+  .video-block1470 {
+    margin-bottom: 100px;
   }
 }
 
@@ -5942,6 +6093,16 @@ input:invalid:not(:placeholder-shown) + .form__error {
     width: 242px;
     height: 46px;
   }
+
+  /* 1470 */
+
+  .primary {
+    margin-bottom: 130px;
+  }
+
+  .primary__title {
+    margin-top: 56px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -6196,6 +6357,24 @@ input:invalid:not(:placeholder-shown) + .form__error {
   .table-responsive {
     overflow-x: unset !important;
   }
+
+  /* 1470 */
+
+  .dogan__image {
+    margin-top: 154px;
+  }
+
+  .kesfet {
+    padding-top: 20px;
+  }
+
+  .yonet__background_big {
+    width: 100%;
+  }
+
+  .team1470 .team__slider .slick-center div {
+    transform: unset;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -6345,6 +6524,54 @@ input:invalid:not(:placeholder-shown) + .form__error {
     width: 550px;
     height: 408px;
   }
+
+  /* 1470 */
+
+  .primary-background__big {
+    height: 500px;
+  }
+
+  .primary__title {
+    margin-top: 100px;
+  }
+
+  .yonet__background_big {
+    height: 610px;
+  }
+
+  .scores1470 {
+    margin-top: -50px;
+  }
+
+  .dogan {
+    padding-top: 33px;
+    padding-bottom: 170px;
+  }
+
+  .kesfet {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  .kesfet__image {
+    margin-top: 90px;
+  }
+
+  .scores {
+    margin-top: -50px;
+  }
+
+  .fourthblock-sidebar1470 {
+    margin-top: 132px;
+  }
+
+  .fourthblock-small1470 {
+    margin-top: 240px;
+  }
+
+  .scores1470 {
+    margin-top: 0;
+  }
 }
 @media (max-width: 1200px) {
   .balance-provide__girl {
@@ -6429,6 +6656,12 @@ input:invalid:not(:placeholder-shown) + .form__error {
     width: 550px;
     height: 408px;
   }
+
+  .last-block1470 {
+    background: unset;
+    background-image: url(../img/last-back1470-desctop.png);
+    background-repeat: round;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -6463,6 +6696,20 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
   .microbiome__image {
     margin-top: -68px;
+  }
+
+  /* 1470 */
+
+  .primary-background__big {
+    height: 555px;
+  }
+
+  .primary__title {
+    margin-top: 156px;
+  }
+
+  .video-block1470 {
+    margin-bottom: 130px;
   }
 }
 
@@ -6578,6 +6825,79 @@ input:invalid:not(:placeholder-shown) + .form__error {
     width: 120px;
     margin-left: 28px;
   }
+
+  /* 1470 */
+
+  .dogan {
+    padding-bottom: 128px;
+    margin-bottom: 0;
+  }
+
+  .dogan__image {
+    background-image: url(../img/dogan-image-desctop.png);
+    margin-top: 120px;
+    height: 500px;
+    margin-bottom: 0;
+  }
+
+  .dogan__title,
+  .dunyasi__title {
+    margin-top: 150px;
+  }
+
+  .dunyasi {
+    margin-bottom: 70px;
+  }
+
+  .dunyasi__image {
+    background-image: url(../img/dunyasi-image-desctop.png);
+    height: 500px;
+  }
+
+  .kesfet {
+    padding-top: 100px;
+    padding-bottom: 160px;
+  }
+
+  .kesfet__image {
+    background-image: url(../img/kesfet-image-desctop.png);
+    height: 500px;
+    margin-top: 0;
+  }
+
+  .yonet__background_big {
+    height: 830px;
+  }
+
+  .yonet {
+    margin-top: -133px;
+  }
+
+  .scores {
+    margin-top: 116px;
+  }
+
+  .yonet__title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 180px;
+  }
+
+  .yonet__description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .yonet__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .scores {
+    margin-top: 0;
+  }
+
+
 }
 
 @media (min-width: 1441px) {
@@ -6606,6 +6926,28 @@ input:invalid:not(:placeholder-shown) + .form__error {
   .twenty-two {
     width: 238px;
   }
+
+  /* 1470 */
+
+  .primary-background__big {
+    height: 744px;
+}
+
+.primary__title {
+  margin-top: 200px;
+}
+
+.primary {
+  margin-bottom: 264px;
+}
+
+.yonet__background_big {
+  height: 908px;
+}
+
+
+
+
 }
 
 @media (min-width: 1900px) {
