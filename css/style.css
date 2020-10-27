@@ -4061,13 +4061,17 @@ input:invalid:not(:placeholder-shown) + .form__error {
   display: none;
 }
 
-.comments .team__slider .slick-center div {
+.comments .team__slider .slick-center div,
+.press-block1469 .slider-container .slick-center div,
+.team1469 .team__slider .slick-center div
+ {
   transform: unset;
 }
 
 .comments__slider_item_text {
   line-height: 21px;
 }
+
 
 /* media */
 
@@ -4871,7 +4875,9 @@ input:invalid:not(:placeholder-shown) + .form__error {
   }
 }
 @media (min-width: 768px) {
-  .comments .team__slider .slick-center div {
+  .comments .team__slider .slick-center div,
+  .team1469 .team__slider .slick-center div,
+  .press-block1469 .slider-container .slick-center div {
     transform: scale(1.1);
   }
   .bizeulasin {
@@ -6988,6 +6994,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
     background: unset;
     background-image: url(../img/last-back1470-desctop.png);
     background-repeat: round;
+    background-size: cover;
   }
 }
 

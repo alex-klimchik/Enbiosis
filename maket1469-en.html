@@ -598,8 +598,8 @@
       <section class="video-block">
         <div class="container">
           <div class="video__wrap">
-            <a class="thumbnail-link">
-              <img src="./img/video1-desctop.png" class="video-thumbnail">
+            <a class="thumbnail-link thumbnail-link__second">
+              <img src="./img/video1-desctop.png" class="video-thumbnail video-thumbnail__second">
             <iframe src="https://www.youtube.com/embed/Kb8CW3axqRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-frame"></iframe>
           </a>
           </div>
@@ -607,7 +607,7 @@
         </div>
       </section>
 
-      <section class="team second-maket">
+      <section class="team second-maket team1469">
         <h2 class="font-weight-bold team__title ourteam-title__padding">Our team</h2>
         <div class="team__slider responsive">
           <div class="team__item">
@@ -788,7 +788,7 @@
         </div>
       </section>
 
-      <section class="press-block">
+      <section class="press-block press-block1469">
         <div class="press__wrap press__wrap1440">
           <div class="container">
             <h3 class="press__title press__title1440 font-weight-bold">
@@ -1028,6 +1028,11 @@
       var video = document.querySelector('.thumbnail-link')
       video.onclick = function() {
       document.querySelector('.video-thumbnail').style.display = "none"
+      }
+
+      var video = document.querySelector('.thumbnail-link__second')
+      video.onclick = function() {
+      document.querySelector('.video-thumbnail__second').style.display = "none"
       }
 
       window.onload = function () {
