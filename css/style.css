@@ -12,6 +12,171 @@ iframe {
   border: none;
 }
 
+.ibsile {
+  width: 100%;
+  position: relative;
+}
+
+.firstblock-ibsile__title {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0 0 24px 0;
+}
+
+.girlwithbooks-title {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 50px 0 24px 0;
+}
+
+.girlwithbooks-text__text {
+  line-height: 30px;
+}
+
+.firstblock-isbile__artikyalniz {
+  background: url("../img/artikyalniz-mobile.svg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 360px;
+}
+
+.firstblock-isbile__artikyalnizbig {
+  position: absolute;
+  right: 0;
+}
+
+.firstblock-isbile__artikyalnizsm {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+.firstblock-ibsile {
+  margin-top: 64px;
+}
+
+.firstblock-ibsile__button {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  background: #e3614d;
+  border-radius: 127px;
+  padding: 12px 30px;
+}
+
+.firstblock-ibsile__button:hover {
+  color: #fff;
+  background: #e97462;
+}
+
+.firstblock-ibsile__button:active {
+  color: #fff;
+  background: #dc4f39;
+}
+
+.hangisisenin {
+  background: url("../img/hangisisenin.svg") no-repeat center;
+  width: 100%;
+  height: 1078px;
+  background-size: cover;
+}
+
+span#procent {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #3a3a3a;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 65px;
+}
+
+#procent::before {
+  content: "%";
+}
+.canvas-wrap {
+  width: 100%;
+  padding: 100px 0 32px 0;
+}
+
+#canvas {
+  width: 100%;
+}
+
+.hangisisenin-title {
+  font-size: 24px;
+  padding: 32px 0 24px 0;
+}
+
+.hangisisenin-description {
+  line-height: 35px;
+}
+
+.girlwithbooks {
+  position: relative;
+}
+
+.girlwithbooks-img {
+  background: url("../img/booksandgirls.svg") no-repeat top;
+  background-size: cover;
+  width: 100%;
+  height: 388px;
+}
+
+.girlwithbooks-img-bg {
+  width: 90%;
+  position: absolute;
+  right: 0;
+  z-index: -5;
+}
+
+.ourteam-title__padding {
+  padding-top: 60px;
+}
+
+.foodscore {
+  background: url("../img/foodscore.svg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1272px;
+  padding-top: 50px;
+  line-height: 30px;
+}
+
+.foodscore-small__footer {
+  border-left: 3px solid #92e5eb;
+  padding-left: 24px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.bizeulasin-text {
+  border-left: 3px solid #92e5eb;
+  margin: 50px 0 40px 0;
+  padding-left: 24px;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.bizeulasin-mobile {
+  margin: 20px 0 62px 0;
+}
+
+.bizeulasin-bg {
+  background: url("../img/bizeulasin-bg.svg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 2122px;
+}
+
 .header {
   height: 72px;
   /* Drop Shadow */
@@ -3074,7 +3239,6 @@ iframe {
 }
 
 .home-guide__title {
-  margin-top: 0;
   font-size: 32px;
   margin-top: 64px;
 }
@@ -3984,6 +4148,10 @@ input:invalid:not(:placeholder-shown) + .form__error {
   .secondblock-discover__imgrock {
     margin-top: 90px;
   }
+
+  .hangisisenin {
+    height: 845px;
+  }
 }
 
 @media (min-width: 360px) {
@@ -3993,11 +4161,19 @@ input:invalid:not(:placeholder-shown) + .form__error {
   .question-list__item_answer::after {
     top: -60px;
   }
+
+  .foodscore {
+    height: 1020px;
+  }
 }
 
 @media (min-width: 375px) {
   .guide__tablet {
     top: unset;
+  }
+
+  .girlwithbooks-img {
+    height: 600px;
   }
 
   .guide__book {
@@ -4208,6 +4384,10 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 @media (min-width: 425px) {
+  .foodscore {
+    height: 890px;
+  }
+
   .about__wrap {
     height: 558px;
   }
@@ -4223,6 +4403,10 @@ input:invalid:not(:placeholder-shown) + .form__error {
   .microbiome-container {
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  .firstblock-isbile__artikyalniz {
+    height: 450px;
   }
 
   /* 1444 */
@@ -4311,8 +4495,16 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 @media (min-width: 555px) and (max-width: 773px) {
+  .girlwithbooks-img {
+    height: 800px;
+  }
+
   .last-block__header {
     padding-top: 50px;
+  }
+
+  .firstblock-isbile__artikyalniz {
+    height: 650px;
   }
 
   .first-block {
@@ -4612,6 +4804,10 @@ input:invalid:not(:placeholder-shown) + .form__error {
     display: none;
   }
 
+  .firstblock-isbile__artikyalnizsm {
+    display: none;
+  }
+
   .nav-link:first-child {
     border-bottom: none;
     width: 100%;
@@ -4678,6 +4874,59 @@ input:invalid:not(:placeholder-shown) + .form__error {
   .comments .team__slider .slick-center div {
     transform: scale(1.1);
   }
+  .bizeulasin {
+    margin-top: -110px;
+  }
+
+  span#procent {
+    margin-top: -85px;
+  }
+
+  .bizeulasin-title-padding {
+    margin-top: -40px !important;
+  }
+
+  .bizeulasin-bg {
+    background: url("../img/bizeulasin-bg-big.svg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 2140px;
+    margin-top: -130px;
+    position: relative;
+    z-index: -100;
+  }
+
+  .bizeulasin-guide__title {
+    padding-top: 80px;
+  }
+
+  .bizeulasin-align {
+    display: flex;
+    align-items: center;
+  }
+
+  .girlwithbooks-img {
+    display: none;
+  }
+
+  .firstblock-isbile__artikyalniz {
+    display: none;
+  }
+
+  .foodscore {
+    background: url("../img/foodscore-bg-big.svg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 830px;
+  }
+
+  .hangisisenin {
+    background: url("../img/hangisisenin-bg-big.svg") center;
+    height: 565px;
+    display: flex;
+    align-items: center;
+  }
+
   .sub-menu__visibility {
     display: none;
   }
@@ -5581,6 +5830,34 @@ input:invalid:not(:placeholder-shown) + .form__error {
   .lastblock-discover {
     position: relative;
   }
+
+  /* 1469 */
+
+  span#procent {
+    margin-top: -10px;
+  }
+
+  .foodscore {
+    background: url("../img/foodscore-bg-big.svg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1417px;
+    padding-top: 127px;
+  }
+
+  .bizeulasin-bg {
+    background-size: cover;
+    width: 100%;
+    height: 1147px;
+    margin-top: -130px;
+    position: relative;
+    z-index: -100;
+  }
+
+  .question-list__item_answer::after {
+    top: -18px;
+    right: -28px;
+  }
 }
 @media (max-width: 992px) {
   .secondblock-discover__imgrock-big {
@@ -6397,6 +6674,29 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 @media (min-width: 1200px) {
+  .firstblock-isbile__artikyalnizsm {
+    display: none;
+  }
+
+  span#procent {
+    margin-top: -40px;
+  }
+  .canvas-wrap {
+    padding-top: 50px;
+  }
+  .girlwithbooks {
+    height: 943px;
+    display: flex;
+    align-items: center;
+    margin-top: -150px;
+    margin-bottom: -150px;
+  }
+
+  .firstblock-ibsile {
+    height: 600px;
+    margin-top: 223px;
+  }
+
   .roadmap-pic {
     margin-left: 72px;
   }
@@ -6593,6 +6893,14 @@ input:invalid:not(:placeholder-shown) + .form__error {
   }
 }
 @media (max-width: 1200px) {
+  .firstblock-isbile__artikyalnizbig {
+    display: none;
+  }
+
+  .girlwithbooks-img-bg {
+    display: none;
+  }
+
   .balance-provide__girl {
     display: none;
   }
@@ -6688,6 +6996,13 @@ input:invalid:not(:placeholder-shown) + .form__error {
     height: 668px;
   }
 
+  span#procent {
+    margin-top: -40px;
+  }
+  .canvas-wrap {
+    padding-top: 50px;
+  }
+
   .video__wrap,
   .video-thumbnail,
   .comments__video_wrap,
@@ -6735,6 +7050,10 @@ input:invalid:not(:placeholder-shown) + .form__error {
 @media (min-width: 1440px) {
   .container {
     max-width: 1320px;
+  }
+
+  span#procent {
+    margin-top: -20px;
   }
 
   .text {

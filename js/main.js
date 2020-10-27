@@ -26,8 +26,6 @@ slickElement
     }
   });
 
-
-
 $(document).ready(function () {
   $plus_minus_input = $("input.quantity-input").val();
 
@@ -85,38 +83,37 @@ $(document).ready(function () {
 
   $(".balance-provide__1").on("click", function () {
     $(".hover__clock").css("transform", "rotate(-30deg)");
-    $(".balance-provide__girl").attr('src', 'img/clock1.png')
-   
+    $(".balance-provide__girl").attr("src", "img/clock1.png");
   });
 
   $(".balance-provide__2").on("click", function () {
     $(".hover__clock").css("transform", "rotate(-10deg)");
-    $(".balance-provide__girl").attr('src', 'img/clock2.png')
+    $(".balance-provide__girl").attr("src", "img/clock2.png");
   });
 
   $(".balance-provide__3").on("click", function () {
     $(".hover__clock").css("transform", "rotate(2deg)");
-    $(".balance-provide__girl").attr('src', 'img/clock3.png')
+    $(".balance-provide__girl").attr("src", "img/clock3.png");
   });
 
   $(".balance-provide__4").on("click", function () {
     $(".hover__clock").css("transform", "rotate(15deg)");
-    $(".balance-provide__girl").attr('src', 'img/clock4.png')
+    $(".balance-provide__girl").attr("src", "img/clock4.png");
   });
 
   $(".balance-provide__5").on("click", function () {
     $(".hover__clock").css("transform", "rotate(25deg)");
-    $(".balance-provide__girl").attr('src', 'img/clock5.png')
+    $(".balance-provide__girl").attr("src", "img/clock5.png");
   });
 
   $(".balance-provide__6").on("click", function () {
     $(".hover__clock").css("transform", "rotate(35deg)");
-    $(".balance-provide__girl").attr('src', 'img/clock6.png')
+    $(".balance-provide__girl").attr("src", "img/clock6.png");
   });
 
   $(".balance-provide__7").on("click", function () {
     $(".hover__clock").css("transform", "rotate(45deg)");
-    $(".balance-provide__girl").attr('src', 'img/clock7.png')
+    $(".balance-provide__girl").attr("src", "img/clock7.png");
   });
 
   // СТРЕЛКА
@@ -196,39 +193,32 @@ $(document).ready(function () {
 
 // validation date 1468
 
-var expiryMask = function() {
+var expiryMask = function () {
   var inputChar = String.fromCharCode(event.keyCode);
   var code = event.keyCode;
   var allowedKeys = [8];
   if (allowedKeys.indexOf(code) !== -1) {
-      return;
+    return;
   }
 
-  event.target.value = event.target.value.replace(
-      /^([1-9]\/|[2-9])$/g, '0$1/'
-  ).replace(
-      /^(0[1-9]|1[0-2])$/g, '$1/'
-  ).replace(
-      /^([0-1])([3-9])$/g, '0$1/$2'
-  ).replace(
-      /^(0?[1-9]|1[0-2])([0-9]{2})$/g, '$1/$2'
-  ).replace(
-      /^([0]+)\/|[0]+$/g, '0'
-  ).replace(
-      /[^\d\/]|^[\/]*$/g, ''
-  ).replace(
-      /\/\//g, '/'
-  );
-}
+  event.target.value = event.target.value
+    .replace(/^([1-9]\/|[2-9])$/g, "0$1/")
+    .replace(/^(0[1-9]|1[0-2])$/g, "$1/")
+    .replace(/^([0-1])([3-9])$/g, "0$1/$2")
+    .replace(/^(0?[1-9]|1[0-2])([0-9]{2})$/g, "$1/$2")
+    .replace(/^([0]+)\/|[0]+$/g, "0")
+    .replace(/[^\d\/]|^[\/]*$/g, "")
+    .replace(/\/\//g, "/");
+};
 
-var splitDate = function($domobj, value) {
+var splitDate = function ($domobj, value) {
   var regExp = /(1[0-2]|0[1-9]|\d)\/(20\d{2}|19\d{2}|0(?!0)\d|[1-9]\d)/;
   var matches = regExp.exec(value);
   $domobj.siblings('.input-month[name$="expiryMonth"]').val(matches[1]);
   $domobj.siblings('.input-year[name$="expiryYear"]').val(matches[2]);
-}
+};
 
-$('.mask').on('keyup', function(){
+$(".mask").on("keyup", function () {
   expiryMask();
 });
 
@@ -236,7 +226,6 @@ $('.mask').on('keyup', function(){
 //   splitDate($(this), $(this).val());
 //   // moment().add(10, 'Y').format('MM/YY')
 // });
-
 
 //  iframe poster 1440
 
@@ -249,4 +238,3 @@ $('.mask').on('keyup', function(){
 // commentsVideo.onclick = function() {
 //   document.querySelector('.comments__video_poster').style.display = "none"
 // }
-
