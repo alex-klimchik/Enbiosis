@@ -598,8 +598,8 @@
       <section class="video-block">
         <div class="container">
           <div class="video__wrap">
-            <a class="thumbnail-link">
-              <img src="./img/video1-desctop.png" class="video-thumbnail">
+            <a class="thumbnail-link thumbnail-link__second">
+              <img src="./img/video1-desctop.png" class="video-thumbnail video-thumbnail__second">
             <iframe src="https://www.youtube.com/embed/Kb8CW3axqRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-frame"></iframe>
           </a>
           </div>
@@ -1023,11 +1023,14 @@
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
     <script>
-
-
       var video = document.querySelector('.thumbnail-link')
       video.onclick = function() {
       document.querySelector('.video-thumbnail').style.display = "none"
+      }
+
+      var video = document.querySelector('.thumbnail-link__second')
+      video.onclick = function() {
+      document.querySelector('.video-thumbnail__second').style.display = "none"
       }
 
       window.onload = function () {

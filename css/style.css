@@ -4655,12 +4655,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
   }
 }
 
-@media (min-width: 720px) {
-  .primary__background {
-    height: 756px;
-  }
-}
-
 @media (max-width: 776px) {
   .banner-box .doctor-icon {
     position: absolute;
@@ -4867,6 +4861,19 @@ input:invalid:not(:placeholder-shown) + .form__error {
   }
 }
 @media (min-width: 768px) {
+  .primary-background__big {
+    display: table;
+    height: 436px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .primary__background {
+    display: none;
+  }
+
   .bizeulasin {
     margin-top: -110px;
   }
@@ -5536,184 +5543,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
   /* 1470 */
 }
 @media (min-width: 992px) {
-  span#procent {
-    margin-top: -10px;
-  }
-
-  .foodscore {
-    background: url("../img/foodscore-bg-big.svg") no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 1417px;
-    padding-top: 127px;
-  }
-
-  .bizeulasin-bg {
-    background-size: cover;
-    width: 100%;
-    height: 1147px;
-    margin-top: -130px;
-    position: relative;
-    z-index: -100;
-  }
-
-  .question-list__item_answer::after {
-    top: -18px;
-    right: -28px;
-  }
-  .primary__background {
-    height: 866px;
-  }
-
-  .section-image {
-    height: 690px;
-  }
-
-  .yonet__image {
-    height: 802px;
-  }
-
-  .team1470 .team__slider .slick-center div {
-    transform: scale(1.1);
-  }
-
-  .team1470 {
-    background-image: unset;
-  }
-
-  .primary__background {
-    display: none;
-  }
-
-  .primary-background__big {
-    display: table;
-    height: 436px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-  }
-
-  .primary__title,
-  .dogan__title {
-    font-size: 26px;
-  }
-
-  .primary__description,
-  .primary__button_link,
-  .dogan__description {
-    font-size: 14px;
-    margin-bottom: 12px;
-  }
-
-  .primary__button {
-    margin: 0;
-    width: 224px;
-  }
-
-  .video-block1470 {
-    margin-top: 70px;
-  }
-
-  .section-image {
-    background-size: unset;
-    height: 300px;
-  }
-
-  .dogan__title {
-    margin-top: 62px;
-    line-height: 26px;
-  }
-
-  .dogan__description {
-    line-height: 24px;
-  }
-
-  .dogan__btn {
-    margin-left: 0;
-  }
-
-  .dyunasi {
-    margin-bottom: 0px;
-  }
-
-  .dunyasi__title,
-  .kesfet__title,
-  .yonet__title {
-    font-size: 26px;
-  }
-
-  .dunyasi__description,
-  .kesfet__description,
-  .yonet__description {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .kesfet {
-    margin-bottom: 0;
-  }
-
-  .kesfet__description {
-    margin-bottom: 20px;
-  }
-
-  .kesfet__title {
-    margin-top: 60px;
-  }
-
-  .kesfet__btn {
-    display: block;
-    margin-bottom: 30px;
-  }
-
-  .yonet__image {
-    display: none;
-  }
-
-  .yonet {
-    position: relative;
-    margin-top: -44px;
-  }
-
-  .yonet__background_big {
-    display: block;
-    width: 100%;
-    height: 540px;
-    position: absolute;
-    top: 38px;
-    right: 0;
-    z-index: -1;
-  }
-
-  .yonet__text {
-    font-size: 15px;
-  }
-
-  .yonet__title {
-    margin-top: 36px;
-  }
-
-  .yonet__title,
-  .yonet__description {
-    margin-bottom: 10px;
-  }
-
-  .scores {
-    margin-top: -62px;
-  }
-}
-
-.modal-backdrop {
-  z-index: 600;
-}
-
-@media (min-width: 850px) {
-  .primary {
-    margin-bottom: 108px;
-  }
-}
-@media (min-width: 992px) {
   .question-list__item_answer::after {
     top: -18px;
     right: -28px;
@@ -5851,6 +5680,174 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
   .lastblock-discover {
     position: relative;
+  }
+
+  span#procent {
+    margin-top: -10px;
+  }
+
+  .foodscore {
+    background: url("../img/foodscore-bg-big.svg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1417px;
+    padding-top: 127px;
+  }
+
+  .bizeulasin-bg {
+    background-size: cover;
+    width: 100%;
+    height: 1147px;
+    margin-top: -130px;
+    position: relative;
+    z-index: -100;
+  }
+
+  .question-list__item_answer::after {
+    top: -18px;
+    right: -28px;
+  }
+  .primary__background {
+    height: 866px;
+  }
+
+  .section-image {
+    height: 690px;
+  }
+
+  .yonet__image {
+    height: 802px;
+  }
+
+  .team1470 .team__slider .slick-center div {
+    transform: scale(1.1);
+  }
+
+  .team1470 {
+    background-image: unset;
+  }
+
+  .primary__background {
+    display: none;
+  }
+
+  .primary__title,
+  .dogan__title {
+    font-size: 26px;
+  }
+
+  .primary__description,
+  .primary__button_link,
+  .dogan__description {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .primary__button {
+    margin: 0;
+    width: 224px;
+  }
+
+  .video-block1470 {
+    margin-top: 70px;
+  }
+
+  .section-image {
+    background-size: unset;
+    height: 300px;
+  }
+
+  .dogan__title {
+    margin-top: 62px;
+    line-height: 26px;
+  }
+
+  .dogan__description {
+    line-height: 24px;
+  }
+
+  .dogan__btn {
+    margin-left: 0;
+  }
+
+  .dyunasi {
+    margin-bottom: 0px;
+  }
+
+  .dunyasi__title,
+  .kesfet__title,
+  .yonet__title {
+    font-size: 26px;
+  }
+
+  .dunyasi__description,
+  .kesfet__description,
+  .yonet__description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .kesfet {
+    margin-bottom: 0;
+  }
+
+  .kesfet__description {
+    margin-bottom: 20px;
+  }
+
+  .kesfet__title {
+    margin-top: 60px;
+  }
+
+  .kesfet__btn {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .yonet__image {
+    display: none;
+  }
+
+  .yonet {
+    position: relative;
+    margin-top: -44px;
+  }
+
+  .yonet__background_big {
+    display: block;
+    width: 100%;
+    height: 540px;
+    position: absolute;
+    top: 38px;
+    right: 0;
+    z-index: -1;
+  }
+
+  .yonet__text {
+    font-size: 15px;
+  }
+
+  .yonet__title {
+    margin-top: 36px;
+  }
+
+  .yonet__title,
+  .yonet__description {
+    margin-bottom: 10px;
+  }
+
+  .scores {
+    margin-top: -62px;
+  }
+}
+
+.modal-backdrop {
+  z-index: 600;
+}
+
+@media (min-width: 850px) {
+  .primary {
+    margin-bottom: 108px;
   }
 }
 @media (max-width: 992px) {
