@@ -1023,6 +1023,13 @@
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
     <script>
+
+
+      var video = document.querySelector('.thumbnail-link')
+      video.onclick = function() {
+      document.querySelector('.video-thumbnail').style.display = "none"
+      }
+
       window.onload = function () {
         var can = document.getElementById("canvas"),
           spanProcent = document.getElementById("procent"),
@@ -1051,7 +1058,7 @@
             c.arc(
               posX,
               posY,
-              130,
+              70,
               (Math.PI / 180) * 270,
               (Math.PI / 180) * (270 + 360)
             );
@@ -1067,7 +1074,7 @@
             c.arc(
               posX,
               posY,
-              130,
+              70,
               (Math.PI / 180) * 270,
               (Math.PI / 180) * (270 + deegres)
             );
