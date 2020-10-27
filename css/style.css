@@ -2549,6 +2549,17 @@ button {
   margin-bottom: 20px;
 }
 
+.primary__button:hover,
+.primary__button_desctop:hover {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  background: #e97462;
+  border-radius: 127px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
 .buy__btn:hover {
   background: #e97462;
   color: #fff;
@@ -3704,7 +3715,9 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 .dogan__btn:hover {
-  color: #e3614d;
+  background-color: #e97462;
+  border: 1px solid #e97462;
+  color: #fff;
 }
 
 .btn:focus {
@@ -3741,12 +3754,13 @@ input:invalid:not(:placeholder-shown) + .form__error {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 290px;
+  height: auto;
   margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 .dogan__image {
-  background-image: url(../img/dogan-image-mob.png);
   margin-top: 110px;
 }
 
@@ -3762,10 +3776,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
   margin-bottom: 24px;
 }
 
-.dunyasi__image {
-  background-image: url(../img/dunyasi-image.png);
-  margin-bottom: 0;
-}
 
 .kesfet {
   background-image: url(../img/kesfet-back-mob.png);
@@ -3776,7 +3786,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 .kesfet__image {
-  background-image: url(../img/kesfet-image-mob.png);
   margin-top: 100px;
 }
 
@@ -3887,7 +3896,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
 .yonet__background_big {
   display: none;
 }
-
 
 .comments .team__slider .slick-center div {
   transform: unset;
@@ -4064,9 +4072,9 @@ input:invalid:not(:placeholder-shown) + .form__error {
     height: 400px;
   }
 
-  .section-image {
+  /* .section-image {
     height: 345px;
-  }
+  } */
 
   .yonet__image {
     height: 442px;
@@ -4190,9 +4198,9 @@ input:invalid:not(:placeholder-shown) + .form__error {
     height: 450px;
   }
 
-  .section-image {
+  /* .section-image {
     height: 384px;
-  }
+  } */
 
   .video-thumbnail1470 {
     height: 198px;
@@ -4239,9 +4247,9 @@ input:invalid:not(:placeholder-shown) + .form__error {
     height: 470px;
   }
 
-  .section-image {
+  /* .section-image {
     height: 395px;
-  }
+  } */
 }
 
 @media (min-width: 425px) and (max-width: 773px) {
@@ -4275,9 +4283,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
     height: 545px;
   }
 
-  .section-image {
-    height: 445px;
-  }
 
   .yonet__image {
     height: 534px;
@@ -4299,9 +4304,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
     height: 600px;
   }
 
-  .section-image {
-    height: 501px;
-  }
 
   .yonet__image {
     height: 582px;
@@ -4349,9 +4351,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
   /* 1470 */
 
-  .section-image {
-    height: 510px;
-  }
 
   .yonet__image {
     height: 624px;
@@ -4455,6 +4454,25 @@ input:invalid:not(:placeholder-shown) + .form__error {
     height: 630px;
   }
 }
+
+@media (min-width: 650px) {
+  .primary__background {
+    height: 660px;
+}
+}
+
+@media (min-width: 680px) {
+  .primary__background {
+    height: 696px;
+  }
+}
+
+@media (min-width: 720px) {
+  .primary__background {
+    height: 756px;
+  }
+}
+
 @media (max-width: 776px) {
   .banner-box .doctor-icon {
     position: absolute;
@@ -4657,7 +4675,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
   }
 }
 @media (min-width: 768px) {
-
   .comments .team__slider .slick-center div {
     transform: scale(1.1);
   }
@@ -5701,10 +5718,12 @@ input:invalid:not(:placeholder-shown) + .form__error {
     margin-bottom: 32px;
   }
 
-  .dogan__image,
+  /* .dogan__image,
   .kesfet__image {
     margin-left: 90px;
-  }
+  } */
+
+  
 
   .dogan__image {
     margin-top: 164px;
@@ -6897,7 +6916,11 @@ input:invalid:not(:placeholder-shown) + .form__error {
     margin-top: 0;
   }
 
-
+  .dogan__image_content,
+  .dunyasi__image_content,
+  .kesfet__image_content {
+    display: none;
+  }
 }
 
 @media (min-width: 1441px) {
@@ -6931,23 +6954,19 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
   .primary-background__big {
     height: 744px;
-}
+  }
 
-.primary__title {
-  margin-top: 200px;
-}
+  .primary__title {
+    margin-top: 200px;
+  }
 
-.primary {
-  margin-bottom: 264px;
-}
+  .primary {
+    margin-bottom: 264px;
+  }
 
-.yonet__background_big {
-  height: 908px;
-}
-
-
-
-
+  .yonet__background_big {
+    height: 908px;
+  }
 }
 
 @media (min-width: 1900px) {
