@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maket 1469</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://githubraw.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light header">
+        <div class="container header__navigation">
+          <a class="navbar-brand" href="#">
+            <img src="img/Subtract.svg" alt="Logo" />
+            <img src="img/Enbiosis.svg" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <p class="navbar-toggler-icon"></p>
+          </button>
+          <div class="header__menu">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav head-menu">
+                <li class="nav-item">
+                  <a
+                    class="nav-link sub-menu first-block-menu"
+                    data-toggle="collapse"
+                    data-target="#subMenu"
+                    id="open-sub-menu_main"
+                    href="#"
+                    >Our solutions<img
+                      class="sub-menu__arrow-down"
+                      src="img/arrow-down-submenu.svg"
+                      alt=""
+                  /></a>
+                </li>
+                <div
+                  class="collapse sub-menu__visibility sub-menu__mobile"
+                  id="subMenu"
+                >
+                  <ul class="navbar-nav head-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">IBS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bagisiklik</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Kilo-kontrolu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Gida-hassasiyeti</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bagirsak hastaliklari</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        >Kisisellestirilmis beslenme</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Mikrobiyom testleri</a>
+                    </li>
+                  </ul>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Microbiome</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+                <li class="nav-item login__btn">
+                  <div class="nav-item__login">
+                    <a class="nav-link" href="#"></a>
+                  </div>
+                </li>
+                <li class="nav-item lang__btn">
+                  <div class="nav-item__language dropdown">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle switch-lang dropdown-simple"
+                      data-toggle="dropdown"
+                    >
+                      <i class="icon-earth"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">EN - English</a>
+                      <a class="dropdown-item" href="#">TR - Turkish</a>
+                      <a class="dropdown-item" href="#">RU - Русский</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="collapse navbar-collapse d-end-flex"
+              id="collapsibleNavbar"
+            >
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item nav-link login-navlink-btn">
+                  <button
+                    type="button"
+                    class="login-btn btn btn-outline-danger"
+                  >
+                    login
+                  </button>
+                </li>
+                <li class="nav-item nav-link drop-lang">
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle dropdown-simple dropdown-hover"
+                      data-toggle="dropdown"
+                    >
+                      Lanquage
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">EN - English</a>
+                      <a class="dropdown-item" href="#">TR - Turkish</a>
+                      <a class="dropdown-item" href="#">RU - Русский</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="sub-menu__main">
+        <div class="container">
+          <ul class="sub-menu__head-menu">
+            <li class="sub-menu__item">
+              <a class="sub-menu__-link" href="#">IBS</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Bagisiklik</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Kilo-kontrolu</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Gida-hassasiyeti</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Bagirsak hastaliklari</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Kisisellestirilmis beslenme</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Mikrobiyom testleri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="ibsile">
+
+              <img src="img/artikyalniz.jpg" alt="" class="firstblock-isbile__artikyalnizbig">
+
+              <img src="img/artikyalniz-mobile.svg" alt="" class="firstblock-isbile__artikyalnizsm">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="firstblock-ibsile">
+                      <div class="firstblock-ibsile__title">
+                        IBS i̇le mücadelende artik yalniz deği̇lsi̇n!
+                      </div>
+                      <div class="about__description">
+                        Hayatının kontrolünü eline almanın zamanı geldi! IBS problemini
+                        çözmeye çalışırken hangi besinleri tüketmen gerektiği konusunda
+                        yolunu kaybettiysen ENBIOSIS rehberin olmak için senin yanında!
+                      </div>
+                      <a href="#" class="firstblock-ibsile__button col-lg-6"> Hemen Satın Al</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="firstblock-isbile__artikyalniz"></div>
+      </section>
+      <section class="video-block">
+        <div class="container">
+          <div class="video__wrap">
+            <a class="thumbnail-link">
+              <img src="./img/video1-desctop.png" class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/Kb8CW3axqRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-frame"></iframe>
+          </a>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="hangisisenin">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="canvas-wrap">
+                <canvas id="canvas"></canvas>
+                <span id="procent"></span>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="hangisisenin-title">
+                İLAÇLAR, PROBİYOTİKLER, DİYETLER… PEKİ HANGİSİ SENİN İÇİN DOĞRU?
+              </div>
+              <div class="hangisisenin-description">
+                Dünya nüfusunun yaklaşık %15’i seninle aynı problemleri yaşıyor.
+                Karın ağrısı, değişen dışkılama alışkanlıkları ve sosyal
+                ortamdan uzaklaşma… Bunlar sana tanıdık geldi mi? IBS
+                semptomlarının gerçekleşme sıklığının ve şiddetinin kişiden
+                kişiye değiştiği durumlarda sana sunulan çözüm önerilerinin
+                diğerleri ile aynı olması bu hastalığını tedavi edememe sebebin
+                olabilir.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="girlwithbooks">
+        <img src="img/girlwithbooks-img-bg.svg" class="girlwithbooks-img-bg" alt="">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="girlwithbooks-text__title">
+                <div class="girlwithbooks-title">
+                  Hangi̇ besi̇nleri̇n sana uygun olduğunun cevabi i̇nternette deği̇l
+                  bağirsaklarinda!
+                </div>
+              </div>
+              <div class="girlwithbooks-text__text">
+                Bağırsaklarının trilyonlarca bakteriye ev sahipliği yaptığını
+                biliyor muydun? Peki ya bu bakterilerin
+                <b>IBS semptomların</b> ile ilişkili olduğunu? Yapılan
+                araştırmalar IBS hastaları ile sağlıklı bireylerin
+                <b>bağırsaklarında</b> yer alan bakteri türleri arasında ciddi
+                farklılıklar olduğunu bildirmektedir. Yani sancılı karın
+                ağrıların, şişkinlik şikayetlerin ve hayat kaliteni etkileyen
+                bağırsak haraketliliğindeki <b>değişim</b> aslında içinde
+                yaşayan mikroskobik canlıların miktarı, cinsi ve dağılımı ile
+                ilintilidir. Bu canlılarının oluşturduğu ekosistemi yani
+                mikrobiyomunu dengelemek onların hangi besinlere ihtiyacı
+                olduğunu bilmekle mümkündür!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="girlwithbooks-img"></div>
+      </section>
+      <section class="foodscore">
+        <div class="container">
+        <div class="row">
+          <div class="fourthblock-sidebar col-lg-5">
+            <div class="fourthblock-sidebar__listitem">
+              <div class="fourthblock-sidebar__barley">Barley</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar8.svg" alt="" />
+              </div>
+            </div>
+            <div class="fourthblock-sidebar__listitem">
+              <div class="fourthblock-sidebar__krilloil">
+                Krill Oil<br />
+                Supplements
+              </div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar8.svg" alt="" />
+              </div>
+            </div>
+            <div class="fourthblock-sidebar__listitem">
+              <div class="fourthblock-sidebar__fishoil">
+                Fish Oil<br />
+                Supplements
+              </div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar8.svg" alt="" />
+              </div>
+            </div>
+            <div class="fourthblock-sidebar__listitem">
+              <div class="fourthblock-sidebar__safflower">Safflower Oil</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar5.svg" alt="" />
+              </div>
+            </div>
+            <div class="fourthblock-sidebar__listitem">
+              <div class="fourthblock-sidebar__pump">Pumpkin</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar5.svg" alt="" />
+              </div>
+            </div>
+            <div class="fourthblock-sidebar__listitem">
+              <div class="fourthblock-sidebar__shell">Shell Bean</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar5.svg" alt="" />
+              </div>
+            </div>
+            <div class="fourthblock-sidebar__listitem">
+              <div class="fourthblock-sidebar__cheese">
+                White Cheese<br />
+                (Full-Fat)
+              </div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar5.svg" alt="" />
+              </div>
+            </div>
+            <div class="fourthblock-sidebar__listitem">
+              <div class="fourthblock-sidebar__bread">White Bread</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar5.svg" alt="" />
+              </div>
+            </div>
+            <div class="fourthblock-sidebar__listitem">
+              <div class="fourthblock-sidebar__pistachio">Pistachio</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar3.svg" alt="" />
+              </div>
+            </div>
+            <div class="fourthblock-sidebar__listitem">
+              <div class="fourthblock-sidebar__whiteflour">White Flour</div>
+              <div class="fourthblock-sidebar__right">
+                <img src="img/sidebar3.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="fourthblock-small col-12 offset-lg-1 col-lg-6">
+            <div class="fourthblock-small__header">
+              <h1 class="discover-title fourthblock-small__title">
+                Food Score:
+              </h1>
+              <br />
+              <p class="fourthblock-small__subtitle">
+                After revealing your current microbiome profile, scores show
+                which foods are best for you to reach a more balanced and
+                healthier microbiome profile.
+              </p>
+            </div>
+            <div class="fourthblock-small__textblock">
+              <div class="fourthblock-small__text8">
+                <div class="fourthblock-small__texttitle">
+                  Here's Your Food!
+                </div>
+                <div class="fourthblock-small__textfull">
+                  We will ask you to enrich these nutrients in your diet.
+                </div>
+              </div>
+              <div class="fourthblock-small__text5">
+                <div class="fourthblock-small__texttitle">
+                  Foods Compatible with You!
+                </div>
+                <div class="fourthblock-small__textfull">
+                  We will ask you to consume these foods in a balanced and
+                  varied way in your diet.
+                </div>
+              </div>
+              <div class="fourthblock-small__text1">
+                <div class="fourthblock-small__texttitle">
+                  Foods You Should Avoid!
+                </div>
+                <div class="fourthblock-small__textfull">
+                  We will ask you to consume these foods less in your diet
+                </div>
+              </div>
+            </div>
+            <div class="foodscore-small__footer">
+              It is now up to you to discover your microbiome world, come to the
+              source of problems, meet your body-controlling bacteria and manage
+              them!
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section class="bizeulasin">
+        <div class="container">
+          <div class="row bizeulasin-align">
+            <div class="col-md-7">
+              <div class="bizeulasin-text">
+                ENBIOSIS ile evde kolayca alacağın numunen sayesinde
+                bağırsaklarında neler olup bittiğini öğrenebilir ve
+                bakterilerini optimize edecek besinlerin hangileri olduğunu
+                keşfedebilirsin. ENBIOSIS diyetisyenleri tedavine destek olacak
+                bu süreçte senin yanında!
+              </div>
+              <a href="#" class="secondblock-discover__buttons">
+                Bize Ulaşın
+              </a>
+            </div>
+            <div
+              class="offset-md-1 offset-lg-2 col-md-3 d-flex justify-content-center"
+            >
+              <img src="img/bizeulasin-mobile.svg" class="bizeulasin-mobile" alt="" />
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lastblock-discover bizeulasin-bg">
+        <div class="container">
+          <img src="img/bg_elips.svg" alt="Logo" class="elips-bg-left" />
+          <img
+            src="img/bg_elips_bottom.svg"
+            alt="Logo"
+            class="elips-bg-right"
+          />
+          <div class="row d-flex justify-content-center">
+            <div class="home-guide__title bizeulasin-guide__title">
+              <h1 class="font-weight-bold">Your own nutrition guide</h1>
+            </div>
+          </div>
+          <div class="row d-flex align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="guid-box">
+                <div class="guid-box__title">
+                  <span>Microbiome Health Package</span>
+                </div>
+                <div class="guid-price">
+                  <span class="guid-price__new font-weight-bold">999 TL</span
+                  ><span class="guid-price__old">1499 TL</span>
+                </div>
+                <div class="">
+                  <ul class="guid-price__list">
+                    <li class="guid-price__item">Microbiome Analysis</li>
+                    <li class="guid-price__item">
+                      Personalized Nutrition Guide
+                    </li>
+                  </ul>
+                </div>
+                <div class="guid-box__books just-center">
+                  <img class="guid-box__ico-doctor" src="./img/book.png" />
+                </div>
+
+                <div class="just-center">
+                  <a href="#" class="guid-box__buy btn">Buy</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="guid-box">
+                <img class="bestchoose" src="img/better.svg" />
+                <img
+                  class="bestchoose rotate"
+                  src="img/Better-text.svg"
+                  style="position: absolute; top: 8px; right: 20px"
+                />
+                <div class="guid-box__title guid-box__margin">
+                  <span>Takipli Premium Mikrobiyom Sağlık Paketi</span>
+                </div>
+                <div class="guid-price">
+                  <span class="guid-price__new font-weight-bold">2499 TL</span
+                  ><span class="guid-price__old">2999 TL</span>
+                </div>
+                <ul class="guid-price__list">
+                  <li class="guid-price__item">2’li Mikrobiyom Analizi</li>
+                  <li class="guid-price__item">
+                    2’li Kişiselleştirilmiş Beslenme Rehberi
+                  </li>
+                  <li class="guid-price__item">
+                    12 Haftalık Diyetisyen Desteği
+                  </li>
+                </ul>
+                <div class="guid-box__books just-center">
+                  <img class="guid-box__ico-doctor" src="./img/threebook.png" />
+                </div>
+                <div class="guid-box__diss">
+                  <p>
+                    *ENBIOSIS ile başladığın yolculukta bağırsak
+                    bakterilerindeki iyileşmeye bağlı olarak vücudunun ihtiyaç
+                    duyduğu besinler de değişir, hayatın boyunca kendine daha
+                    iyi bakabilmen için takipli paketi öneriyoruz.
+                  </p>
+                </div>
+                <div class="just-center">
+                  <button class="guid-box__buy btn">Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="guid-box">
+                <div class="guid-box__title">
+                  <span>Microbiome Health Package Premium</span>
+                </div>
+                <div class="guid-price">
+                  <span class="guid-price__new font-weight-bold">1499 TL</span
+                  ><span class="guid-price__old">1999 TL</span>
+                </div>
+                <div class="">
+                  <ul class="guid-price__list">
+                    <li class="guid-price__item">Microbiome Analysis</li>
+                    <li class="guid-price__item">
+                      Personalized Nutrition Guide
+                    </li>
+                    <li class="guid-price__item">Dietician support</li>
+                  </ul>
+                </div>
+                <div class="guid-box__books just-center">
+                  <img class="guid-box__ico-doctor" src="img/twobook.png" />
+                </div>
+
+                <div class="just-center">
+                  <button class="guid-box__buy btn">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="fifthblock-title discover-title bizeulasin-title-padding">
+                How does the process work?
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="fifthblock">
+                <div class="fifthblock-column">
+                  <div class="fifthblock-column__imagepc">
+                    <img src="img/fifthblock-pc.svg" alt="" />
+                  </div>
+                  <div class="fifthblock-column__title">
+                    Order enbiosis<br />
+                    microbiome kit
+                  </div>
+                  <div class="fifthblock-column__text">
+                    order from www.enbiosis.com, sign up from the website with
+                    the code in your kit and complete the survey questions.
+                  </div>
+                </div>
+                <div class="fifthblock-column">
+                  <div class="fifthblock-column__imageblood">
+                    <img src="img/fifthblock-blood.svg" alt="" />
+                  </div>
+                  <div class="fifthblock-column__title">Sampling</div>
+                  <div class="fifthblock-column__text">
+                    Follow the steps in the kit delivered by cargo to your
+                    address and easily take the sample required for your
+                    microbiome analysis. Then send it to the address in the box
+                    for free.
+                  </div>
+                </div>
+                <div class="fifthblock-column">
+                  <div class="fifthblock-column__imagemicroscope">
+                    <img src="img/fifthblock-microscope.svg" alt="" />
+                  </div>
+                  <div class="fifthblock-column__title">
+                    Laborotory analysis
+                  </div>
+                  <div class="fifthblock-column__text">
+                    Your sample is processed in our metagenome laboratory and
+                    sequenced with 16S rRNA next generation sequencing method.
+                    The resulting data is analyzed and reported in detail with
+                    our artificial intelligence algorithms.
+                  </div>
+                </div>
+                <div class="fifthblock-column">
+                  <div class="fifthblock-column__imagechecklist">
+                    <img src="img/fifthblock-checklist.svg" alt="" />
+                  </div>
+                  <div class="fifthblock-column__title">
+                    Enbiosis Personalized<br />
+                    Nutrition Guide
+                  </div>
+                  <div class="fifthblock-column__text">
+                    Your reports will be checked by our experts and then
+                    delivered to you. Your nutritional scores are interpreted by
+                    ENBIOISIS dietitians and presented with a free 30-minute
+                    dietitian interview.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-block">
+        <div class="container">
+          <div class="video__wrap">
+            <a class="thumbnail-link">
+              <img src="./img/video1-desctop.png" class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/Kb8CW3axqRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-frame"></iframe>
+          </a>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team second-maket">
+        <h2 class="font-weight-bold team__title ourteam-title__padding">Our team</h2>
+        <div class="team__slider responsive">
+          <div class="team__item">
+            <div class="team__cont">
+              <a href="#" class="team-link">
+                <img
+                  src="./img/1440team1.png"
+                  alt=""
+                  class="team__image second"
+                />
+                <p class="team__name font-weight-bold m-0">
+                  Prof. Dr. Tarkan Karakan
+                </p>
+                <span class="font-weight-bold team__position"
+                  >Gastroenterologist</span
+                >
+                <p class="team__descr">
+                  Hacettepe University Faculty of Medicine - Johns Hopkins
+                  University - President of the Probiotic Prebiotic Association
+                  - Board member of the Gastrointestinal Endoscopy Association -
+                  WGO Probiotics Guideline Committee - Turkey Academy of
+                  Sciences Nutrition working group member - Ministry of
+                  Agriculture New Food Supports and Safety Committee
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="team__item">
+            <div class="team__cont">
+              <a href="#" class="team-link">
+                <img
+                  src="./img/1440team2.png"
+                  alt=""
+                  class="team__image second"
+                />
+                <p class="team__name font-weight-bold m-0">
+                  Prof. Dr. Tarkan Karakan
+                </p>
+                <span class="font-weight-bold team__position"
+                  >Gastroenterologist</span
+                >
+                <p class="team__descr">
+                  Hacettepe University Faculty of Medicine - Johns Hopkins
+                  University - President of the Probiotic Prebiotic Association
+                  - Board member of the Gastrointestinal Endoscopy Association -
+                  WGO Probiotics Guideline Committee - Turkey Academy of
+                  Sciences Nutrition working group member - Ministry of
+                  Agriculture New Food Supports and Safety Committee
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="team__item">
+            <div class="team__cont">
+              <a href="#" class="team-link">
+                <img
+                  src="./img/1440team3.png"
+                  alt=""
+                  class="team__image second"
+                />
+                <p class="team__name font-weight-bold m-0">
+                  Prof. Dr. Tarkan Karakan
+                </p>
+                <span class="font-weight-bold team__position"
+                  >Gastroenterologist</span
+                >
+                <p class="team__descr">
+                  Hacettepe University Faculty of Medicine - Johns Hopkins
+                  University - President of the Probiotic Prebiotic Association
+                  - Board member of the Gastrointestinal Endoscopy Association -
+                  WGO Probiotics Guideline Committee - Turkey Academy of
+                  Sciences Nutrition working group member - Ministry of
+                  Agriculture New Food Supports and Safety Committee
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="team__item">
+            <div class="team__cont">
+              <a href="#" class="team-link">
+                <img
+                  src="./img/1440team1.png"
+                  alt=""
+                  class="team__image second"
+                />
+                <p class="team__name font-weight-bold m-0">
+                  Prof. Dr. Tarkan Karakan
+                </p>
+                <span class="font-weight-bold team__position"
+                  >Gastroenterologist</span
+                >
+                <p class="team__descr">
+                  Hacettepe University Faculty of Medicine - Johns Hopkins
+                  University - President of the Probiotic Prebiotic Association
+                  - Board member of the Gastrointestinal Endoscopy Association -
+                  WGO Probiotics Guideline Committee - Turkey Academy of
+                  Sciences Nutrition working group member - Ministry of
+                  Agriculture New Food Supports and Safety Committee
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="team__item">
+            <div class="team__cont">
+              <a href="#" class="team-link">
+                <img
+                  src="./img/1440team2.png"
+                  alt=""
+                  class="team__image second"
+                />
+                <p class="team__name font-weight-bold m-0">
+                  Prof. Dr. Tarkan Karakan
+                </p>
+                <span class="font-weight-bold team__position"
+                  >Gastroenterologist</span
+                >
+                <p class="team__descr">
+                  Hacettepe University Faculty of Medicine - Johns Hopkins
+                  University - President of the Probiotic Prebiotic Association
+                  - Board member of the Gastrointestinal Endoscopy Association -
+                  WGO Probiotics Guideline Committee - Turkey Academy of
+                  Sciences Nutrition working group member - Ministry of
+                  Agriculture New Food Supports and Safety Committee
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="team__item">
+            <div class="team__cont">
+              <a href="#" class="team-link">
+                <img
+                  src="./img/1440team3.png"
+                  alt=""
+                  class="team__image second"
+                />
+                <p class="team__name font-weight-bold m-0">
+                  Prof. Dr. Tarkan Karakan
+                </p>
+                <span class="font-weight-bold team__position"
+                  >Gastroenterologist</span
+                >
+                <p class="team__descr">
+                  Hacettepe University Faculty of Medicine - Johns Hopkins
+                  University - President of the Probiotic Prebiotic Association
+                  - Board member of the Gastrointestinal Endoscopy Association -
+                  WGO Probiotics Guideline Committee - Turkey Academy of
+                  Sciences Nutrition working group member - Ministry of
+                  Agriculture New Food Supports and Safety Committee
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="team__item">
+            <div class="team__cont">
+              <a href="#" class="team-link">
+                <img
+                  src="./img/1440team1.png"
+                  alt=""
+                  class="team__image second"
+                />
+                <p class="team__name font-weight-bold m-0">
+                  Prof. Dr. Tarkan Karakan
+                </p>
+                <span class="font-weight-bold team__position"
+                  >Gastroenterologist</span
+                >
+                <p class="team__descr">
+                  Hacettepe University Faculty of Medicine - Johns Hopkins
+                  University - President of the Probiotic Prebiotic Association
+                  - Board member of the Gastrointestinal Endoscopy Association -
+                  WGO Probiotics Guideline Committee - Turkey Academy of
+                  Sciences Nutrition working group member - Ministry of
+                  Agriculture New Food Supports and Safety Committee
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="press-block">
+        <div class="press__wrap press__wrap1440">
+          <div class="container">
+            <h3 class="press__title press__title1440 font-weight-bold">
+              We in the press
+            </h3>
+            <div class="slider-container multiple-items">
+              <div class="items">
+                <div class="cont cont1440">
+                  <a href="#" class="cont-link">
+                    <img
+                      src="./img/sabah.jpg"
+                      alt="sabah"
+                      width="240"
+                      height="100"
+                      class="slider-item__image"
+                    />
+                    <p class="slider-item__text">
+                      order from www.enbiosis.com, sign up from the website with
+                      the code in your kit and complete the survey questions.
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="items">
+                <div class="cont cont1440">
+                  <a href="#" class="cont-link">
+                    <img
+                      src="./img/bloomberg.jpg"
+                      alt="sabah"
+                      width="240"
+                      height="100"
+                      class="slider-item__image"
+                    />
+                    <p class="slider-item__text">
+                      order from www.enbiosis.com, sign up from the website with
+                      the code in your kit and complete the survey questions.
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="items">
+                <div class="cont cont1440">
+                  <a href="#" class="cont-link">
+                    <img
+                      src="./img/webrazzi.jpg"
+                      alt="sabah"
+                      width="240"
+                      height="100"
+                      class="slider-item__image"
+                    />
+                    <p class="slider-item__text">
+                      order from www.enbiosis.com, sign up from the website with
+                      the code in your kit and complete the survey questions.
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="items">
+                <div class="cont cont1440">
+                  <a href="#" class="cont-link">
+                    <img
+                      src="./img/capital.jpg"
+                      alt="sabah"
+                      width="240"
+                      height="100"
+                      class="slider-item__image"
+                    />
+                    <p class="slider-item__text">
+                      order from www.enbiosis.com, sign up from the website with
+                      the code in your kit and complete the survey questions.
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="items">
+                <div class="cont cont1440">
+                  <a href="#" class="cont-link">
+                    <img
+                      src="./img/sabah.jpg"
+                      alt="sabah"
+                      width="240"
+                      height="100"
+                      class="slider-item__image"
+                    />
+                    <p class="slider-item__text">
+                      order from www.enbiosis.com, sign up from the website with
+                      the code in your kit and complete the survey questions.
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="items">
+                <div class="cont cont1440">
+                  <a href="#" class="cont-link">
+                    <img
+                      src="./img/capital.jpg"
+                      alt="sabah"
+                      width="240"
+                      height="100"
+                      class="slider-item__image"
+                    />
+                    <p class="slider-item__text">
+                      order from www.enbiosis.com, sign up from the website with
+                      the code in your kit and complete the survey questions.
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="items">
+                <div class="cont cont1440">
+                  <a href="#" class="cont-link">
+                    <img
+                      src="./img/webrazzi.jpg"
+                      alt="sabah"
+                      width="240"
+                      height="100"
+                      class="slider-item__image"
+                    />
+                    <p class="slider-item__text">
+                      order from www.enbiosis.com, sign up from the website with
+                      the code in your kit and complete the survey questions.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="last-block">
+        <img src="img/last-block-boocks.png" class="last-block__boocks" />
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="last-block__header">
+                <div class="last-block__title">Your own nutrition guide</div>
+                <div class="last-block__subtitle">
+                  Discover your microniome,<br />
+                  rule your diet, manage tour health!
+                </div>
+              </div>
+              <div class="last-block__price">From 999 TL</div>
+              <a href="#" class="last-block__button">Buy biotechnology</a>
+            </div>
+            <div class="last-block__boocks-small"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pt-3 pb-1">
+      <div class="container">
+        <div class="flex-between logo-socical">
+          <a class="navbar-brand footer-logo" href="# ">
+            <img src="img/Subtract.svg " alt="Logo " />
+            <img src="img/Enbiosis.svg " alt="Logo " />
+          </a>
+          <div class="d-inline-flex">
+            <ul class="social-networks">
+              <li>
+                <a href="# ">
+                  <icon class="icon-facebook"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-inst"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-youtube"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-linkedin"></icon>
+                </a>
+              </li>
+              <li>
+                <a href="# ">
+                  <icon class="icon-twiter"></icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-between">
+          <ul class="bottom-menu">
+            <li>
+              <a href="# " class="font-weight-bold">Our solutions</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">Microbiome</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">About us</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">Contact us</a>
+            </li>
+            <li>
+              <a href="# " class="font-weight-bold">FAQ`s</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-between mb-4">
+          <ul class="informations">
+            <li class="inf-adr">
+              <span href="# "
+                >Turkey Office:<br />Maslak 1453 T4-B/91 Sariyer/istanbul</span
+              >
+            </li>
+            <li class="inf-adr">
+              <span href="# "
+                >UAE Dubai Office:<br />Park avenue building Office:205 Dubai
+                Silicon Oasis/UAE</span
+              >
+            </li>
+
+            <li>
+              <span class="email"
+                >+90 (850) 840 77 93<br />destek@enbiosis.com<br />Info@enbiosis.com</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      window.onload = function () {
+        var can = document.getElementById("canvas"),
+          spanProcent = document.getElementById("procent"),
+          c = can.getContext("2d");
+
+        var posX = can.width / 2,
+          posY = can.height / 2,
+          fps = 1000 / 200,
+          procent = 0,
+          oneProcent = 360 / 100,
+          result = oneProcent * 19; // результат
+
+        c.lineCap = "round";
+        arcMove();
+
+        function arcMove() {
+          var deegres = 0;
+          var acrInterval = setInterval(function () {
+            deegres += 1;
+            c.clearRect(0, 0, can.width, can.height);
+            procent = deegres / oneProcent;
+
+            spanProcent.innerHTML = procent.toFixed();
+
+            c.beginPath();
+            c.arc(
+              posX,
+              posY,
+              130,
+              (Math.PI / 180) * 270,
+              (Math.PI / 180) * (270 + 360)
+            );
+            c.strokeStyle = "#808080";
+            c.setLineDash([5, 5]);
+            c.lineWidth = "1";
+            c.stroke();
+
+            c.beginPath();
+            c.strokeStyle = "#E55D48";
+            c.lineWidth = "10";
+            c.setLineDash([]);
+            c.arc(
+              posX,
+              posY,
+              130,
+              (Math.PI / 180) * 270,
+              (Math.PI / 180) * (270 + deegres)
+            );
+            c.stroke();
+            if (deegres >= result) clearInterval(acrInterval);
+          }, fps);
+        }
+      };
+    </script>
+  </body>
+</html>
