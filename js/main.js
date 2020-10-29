@@ -222,19 +222,16 @@ $(".mask").on("keyup", function () {
   expiryMask();
 });
 
-// $('.mask').on('focusout', function(){
-//   splitDate($(this), $(this).val());
-//   // moment().add(10, 'Y').format('MM/YY')
-// });
-
-//  iframe poster 1440
-
-// var video = document.querySelector('.thumbnail-link')
-// video.onclick = function() {
-//   document.querySelector('.video-thumbnail').style.display = "none"
+// if (window.matchMedia("(min-width: 576px) and (max-width: 767px)").matches) {
+//   $(document).ready(function () {
+//     $(".header__navigation").append(
+//       '<div class="header__wrap_test"><button class="navbar-toggler header__burger" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><p class="navbar-toggler-icon"></p></button><div class="header__menu"><div class="collapse navbar-collapse menu1471" id="collapsibleNavbar"><ul class="navbar-nav head-menu"><li class="nav-item"><a class="nav-link sub-menu first-block-menu" data-toggle="collapse" data-target="#subMenu" id="open-sub-menu_main" href="#">Our solutions<img class="sub-menu__arrow-down" src="img/arrow-down-submenu.svg" alt=""/></a></li> <div class="collapse sub-menu__visibility sub-menu__mobile" id="subMenu" > <ul class="navbar-nav head-menu"> <li class="nav-item"> <a class="nav-link" href="#">IBS</a> </li> <li class="nav-item"> <a class="nav-link" href="#">Bagisiklik</a> </li> <li class="nav-item"> <a class="nav-link" href="#">Kilo-kontrolu</a> </li> <li class="nav-item"> <a class="nav-link" href="#">Gida-hassasiyeti</a> </li> <li class="nav-item"> <a class="nav-link" href="#">Bagirsak hastaliklari</a> </li> <li class="nav-item"> <a class="nav-link" href="#" >Kisisellestirilmis beslenme</a > </li> <li class="nav-item"> <a class="nav-link" href="#">Mikrobiyom testleri</a> </li> </ul> </div> <li class="nav-item"> <a class="nav-link" href="#">Microbiome</a> </li> <li class="nav-item"> <a class="nav-link" href="#">About us</a> </li> <li class="nav-item"> <a class="nav-link" href="#">Contact us</a> </li> <li class="nav-item login__btn"> <div class="nav-item__login"> <a class="nav-link" href="#"></a> </div> </li> <li class="nav-item lang__btn"> <div class="nav-item__language dropdown"> <button type="button" class="btn dropdown-toggle switch-lang dropdown-simple" data-toggle="dropdown" > <i class="icon-earth"></i> </button> <div class="dropdown-menu"> <a class="dropdown-item" href="#">EN - English</a> <a class="dropdown-item" href="#">TR - Turkish</a> <a class="dropdown-item" href="#">RU - Русский</a> </div> </div> </li> </ul> </div> <div class="collapse navbar-collapse d-end-flex" id="collapsibleNavbar" > <ul class="navbar-nav navbar-right"> <li class="nav-item nav-link login-navlink-btn"> <a type="button" class="login-btn btn btn-outline-danger"> login </a> </li> <li class="nav-item nav-link drop-lang"> <div class="dropdown"> <button type="button" class="btn dropdown-toggle dropdown-simple dropdown-hover" data-toggle="dropdown" > Lanquage </button> <div class="dropdown-menu"> <a class="dropdown-item" href="#">EN - English</a> <a class="dropdown-item" href="#">TR - Turkish</a> <a class="dropdown-item" href="#">RU - Русский</a> </div> </div> </li> </ul> </div> </div> </div>'
+//     );
+//   });
 // }
 
-// var commentsVideo = document.querySelector('.comments__video_link')
-// commentsVideo.onclick = function() {
-//   document.querySelector('.comments__video_poster').style.display = "none"
+// if (window.matchMedia("(min-width: 768px)").matches) {
+//   $(document).ready(function () {
+//     $(".header__navigation").remove()
+//   })
 // }
