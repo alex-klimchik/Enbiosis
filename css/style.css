@@ -198,11 +198,11 @@ iframe {
   margin-top: 52px;
 }
 
-.sorunlarının1472 {
+.sorunlar1472 {
   padding: 150px 0 100px 0;
   position: relative;
 }
-.sorunlarının1472-img {
+.sorunlar1472-img {
   margin-top: 15px;
   position: absolute;
   right: 0;
@@ -4667,7 +4667,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 @media (min-width: 414px) {
-  .sorunlarının1472 {
+  .sorunlar1472 {
     padding-bottom: 154px;
   }
 
@@ -5190,7 +5190,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 @media (min-width: 620px) {
-  .sorunlarının1472 {
+  .sorunlar1472 {
     padding-bottom: 290px;
   }
 
@@ -5215,11 +5215,11 @@ input:invalid:not(:placeholder-shown) + .form__error {
   .primary__background {
     height: 756px;
   }
-  .sorunlarının1472-img {
+  .sorunlar1472-img {
     display: none;
   }
 
-  .sorunlarının1472 {
+  .sorunlar1472 {
     padding: 70px 0 50px 0;
     font-weight: 700;
   }
@@ -7527,11 +7527,11 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 @media (min-width: 1200px) {
-  .sorunlarının1472 {
+  .sorunlar1472 {
     padding: 70px 0 120px 0;
   }
 
-  .sorunlarının1472-img-big {
+  .sorunlar1472-img-big {
     position: absolute;
     top: 0;
     right: 0;
@@ -7797,7 +7797,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 @media (max-width: 1200px) {
-  .sorunlarının1472-img-big {
+  .sorunlar1472-img-big {
     display: none;
   }
 
