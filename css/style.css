@@ -213,7 +213,7 @@ iframe {
   background: url("../img/azalma.svg");
   background-size: cover;
   width: 100%;
-  padding: 83px 0;
+  padding: 95px 0;
 }
 
 .azalma1475 {
@@ -329,6 +329,12 @@ iframe {
 
 .firstblock-ibsile__title {
   font-size: 32px;
+  font-weight: bold;
+  padding: 0 0 24px 0;
+}
+
+.firstblock-ibsile__title1475 {
+  font-size: 40px;
   font-weight: bold;
   padding: 0 0 24px 0;
 }
@@ -2333,6 +2339,38 @@ p {
   cursor: pointer;
 }
 
+.buy-button1444 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  background: #e3614d;
+  border-radius: 127px;
+  padding: 12px 30px;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+.buy-button1444:hover {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  background: #e97462;
+  border-radius: 127px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+.buy-button1444:active {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  background: #dc4f39;
+  border-radius: 127px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
 .last-block__boocks {
   position: absolute;
   right: 0;
@@ -3695,74 +3733,6 @@ footer {
   margin-top: 8px;
 }
 
-.buy {
-  width: 146px;
-  height: 28px;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
-  background-color: #e3614d;
-  color: white;
-  border: none;
-  border-radius: 127px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  font-size: 12px;
-}
-
-.buy-btn1444 {
-  width: 146px;
-  height: 28px;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
-  background-color: #e3614d;
-  color: white;
-  border: none;
-  border-radius: 127px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  font-size: 12px;
-}
-
-.buy-btn1444:hover {
-  width: 146px;
-  height: 28px;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
-  background-color: #e97462;
-  color: white;
-  border: none;
-  border-radius: 127px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  font-size: 12px;
-}
-
-.buy-btn1444:active {
-  width: 146px;
-  height: 28px;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
-  background-color: #dc4f39;
-  color: white;
-  border: none;
-  border-radius: 127px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  font-size: 12px;
-}
-
-.buy-btn1444 {
-  height: 50px;
-  width: 146px;
-  height: 28px;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
-  background-color: #ee7663;
-  color: white;
-  border: none;
-  border-radius: 127px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  font-size: 12px;
-  text-align: center;
-  padding-top: 6px;
-}
-
 .guide__old-price {
   font-size: 12px;
   line-height: 22px;
@@ -4608,6 +4578,29 @@ input:invalid:not(:placeholder-shown) + .form__error {
     margin-left: 34px;
   }
 
+  .buy-btn1444 {
+    width: 146px;
+    padding: 12px 10px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
+    background-color: #e3614d;
+    color: white;
+    border: none;
+    border-radius: 127px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .buy-btn1444:hover {
+    background-color: #e97462;
+  }
+
+  .buy-btn1444:active {
+    background-color: #dc4f39;
+  }
+
   .carousel-control-prev-icon {
     margin-left: -34px;
   }
@@ -4994,6 +4987,15 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 @media (max-width: 426px) {
+  .firstblock-ibsile__title1475 {
+    font-size: 24px;
+  }
+
+  .bg-big-1475 {
+    height: 260vh;
+    padding-bottom: 100px;
+  }
+
   .title-1473 {
     font-size: 32px !important;
   }
@@ -5303,6 +5305,30 @@ input:invalid:not(:placeholder-shown) + .form__error {
     height: 756px;
   }
 
+  .buy-btn1444 {
+    width: 186px;
+    text-align: center;
+    padding: 12px 20px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
+    background-color: #e3614d;
+    color: white;
+    border: none;
+    border-radius: 127px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .buy-btn1444:hover {
+    background-color: #e97462;
+  }
+
+  .buy-btn1444:active {
+    background-color: #dc4f39;
+  }
+
   .sorunlar1472-img {
     display: none;
   }
@@ -5496,6 +5522,15 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 @media (max-width: 767px) {
+  .navbar-expand-sm .navbar-collapse {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .navbar-expand-sm .navbar-nav {
+    width: 100% !important;
+  }
+
   .sub-menu__head-menu {
     display: none;
   }
@@ -6245,11 +6280,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
     margin-left: 60px;
   }
 
-  .buy-btn1444 {
-    width: 162px;
-    height: 32px;
-  }
-
   .send-btn {
     margin-top: -108px;
   }
@@ -6729,6 +6759,11 @@ input:invalid:not(:placeholder-shown) + .form__error {
 }
 
 @media (max-width: 992px) {
+  .bg-big-1475 {
+    height: 220vh;
+    padding-bottom: 100px;
+  }
+
   .secondblock-discover__imgrock-big {
     display: none;
   }
@@ -6828,6 +6863,30 @@ input:invalid:not(:placeholder-shown) + .form__error {
     margin-top: unset;
   }
 
+  .buy-btn1444 {
+    width: 254px;
+    text-align: center;
+    padding: 12px 20px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.09);
+    background-color: #e3614d;
+    color: white;
+    border: none;
+    border-radius: 127px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .buy-btn1444:hover {
+    background-color: #e97462;
+  }
+
+  .buy-btn1444:active {
+    background-color: #dc4f39;
+  }
+
   /* 1470 */
 
   .primary {
@@ -6897,6 +6956,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
     padding-bottom: 48px;
     margin-bottom: 0;
     padding-top: 24px;
+    height: 710px;
   }
 
   .kesfet__image {
@@ -7334,11 +7394,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
     line-height: 30px;
   }
 
-  .buy-btn1444 {
-    width: 242px;
-    height: 46px;
-  }
-
   /* 1470 */
 
   .primary {
@@ -7672,10 +7727,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
   .firstblock-ibsile {
     height: 600px;
-    margin-top: 223px;
-  }
-
-  .firstblock-ibsile1475 {
     margin-top: 223px;
   }
 
